@@ -1,0 +1,1526 @@
+Date/Time:       2015-02-28 22:52:40 -0500
+OS Version:      10.9.5 (Build 13F34)
+Architecture:    x86_64
+Report Version:  18
+
+Command:         No Target
+Path:            No Target
+Version:         ??? (???)
+Parent:          UNKNOWN PROCESS [0]
+
+PID:             0
+Event:           shutdown stall
+Duration:        12.04s (sampling started after 2 seconds)
+Steps:           101 (100ms sampling interval)
+
+Hardware model:  MacBookAir6,2
+Active cpus:     4
+Fan speed:       1764 rpm (+339)
+
+Free pages:      789935 pages (-432)
+Pageins:         70 pages
+Pageouts:        0 pages
+Swapins:         118 pages
+Swapouts:        0 pages
+
+
+Process:         CalendarAgent [252]
+Path:            /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+Architecture:    x86_64
+Parent:          launchd [178]
+UID:             501
+Sudden Term:     Dirty (allows idle exit)
+Task size:       3184 pages (+126)
+Pageins:         5 pages
+CPU Time:        0.010s
+Importance:      Adaptive
+Timers:          Coalesced
+
+  Thread 0x8c4      DispatchQueue 1          priority 31         cpu time   0.006s
+  101 start + 1 (libdyld.dylib) [0x7fff914785fd]
+    101 ??? (CalendarAgent + 2828) [0x10550cb0c]
+      101 CFRunLoopRunSpecific + 309 (CoreFoundation) [0x7fff8eb76e75]
+        75  __CFRunLoopRun + 1525 (CoreFoundation) [0x7fff8eb776a5]
+          75  __CFRunLoopDoTimers + 298 (CoreFoundation) [0x7fff8ec2d5aa]
+            75  __CFRunLoopDoTimer + 1151 (CoreFoundation) [0x7fff8ebbbf1f]
+              75  __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 20 (CoreFoundation) [0x7fff8ebbc3e4]
+                75  __NSFireDelayedPerform + 333 (Foundation) [0x7fff87107347]
+                  75  -[CalNetworkChangeNotifier _sendNotification] + 85 (CalendarPersistence) [0x7fff8bfc6de9]
+                    75  -[NSArray makeObjectsPerformSelector:] + 480 (CoreFoundation) [0x7fff8eb9bcd0]
+                      44  -[CalDAVPrincipal systemNetworkDidChange] + 253 (CalendarPersistence) [0x7fff8c055c9d]
+                        44  -[CalDAVPrincipal attemptAutomaticConnect] + 148 (CalendarPersistence) [0x7fff8c0557e0]
+                          44  +[CalNetworkChangeNotifier isHostReachable:] + 50 (CalendarPersistence) [0x7fff8bfc7171]
+                            44  -[CalNetworkChangeNotifier isHostReachable:] + 138 (CalendarPersistence) [0x7fff8bfc7526]
+                              44  SCNetworkCheckReachabilityByName + 73 (SystemConfiguration) [0x7fff912259df]
+                                44  SCNetworkReachabilityGetFlags + 237 (SystemConfiguration) [0x7fff9120fa08]
+                                  44  __SCNetworkReachabilityGetFlags + 1925 (SystemConfiguration) [0x7fff9121032d]
+                                    44  getaddrinfo + 171 (libsystem_info.dylib) [0x7fff89ac8c5f]
+                                      44  si_addrinfo + 1468 (libsystem_info.dylib) [0x7fff89ac92c0]
+                                        44  search_addrinfo + 183 (libsystem_info.dylib) [0x7fff89ac952b]
+                                          44  mdns_addrinfo + 513 (libsystem_info.dylib) [0x7fff89ac975c]
+                                            44  _mdns_search + 672 (libsystem_info.dylib) [0x7fff89ac2b3b]
+                                              44  DNSServiceCreateConnection + 49 (libsystem_dnssd.dylib) [0x7fff86012a1f]
+                                                43  ConnectToServer + 899 (libsystem_dnssd.dylib) [0x7fff86011245]
+                                                  43  sleep$NOCANCEL + 42 (libsystem_c.dylib) [0x7fff85da1992]
+                                                    43  __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x7fff90463a52]
+                                                     *43  semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+                                                1   __close_nocancel + 20 (libsystem_kernel.dylib) [0x7fff90462f14]
+                                                  1   <executing in user space>
+                      31  -[CalSubscriptionSession systemNetworkDidChange] + 249 (CalendarPersistence) [0x7fff8bfd34d9]
+                        31  +[CalNetworkChangeNotifier isHostReachable:] + 50 (CalendarPersistence) [0x7fff8bfc7171]
+                          31  -[CalNetworkChangeNotifier isHostReachable:] + 138 (CalendarPersistence) [0x7fff8bfc7526]
+                            31  SCNetworkCheckReachabilityByName + 73 (SystemConfiguration) [0x7fff912259df]
+                              31  SCNetworkReachabilityGetFlags + 237 (SystemConfiguration) [0x7fff9120fa08]
+                                31  __SCNetworkReachabilityGetFlags + 1925 (SystemConfiguration) [0x7fff9121032d]
+                                  31  getaddrinfo + 171 (libsystem_info.dylib) [0x7fff89ac8c5f]
+                                    31  si_addrinfo + 1468 (libsystem_info.dylib) [0x7fff89ac92c0]
+                                      31  search_addrinfo + 183 (libsystem_info.dylib) [0x7fff89ac952b]
+                                        31  mdns_addrinfo + 513 (libsystem_info.dylib) [0x7fff89ac975c]
+                                          31  _mdns_search + 672 (libsystem_info.dylib) [0x7fff89ac2b3b]
+                                            31  DNSServiceCreateConnection + 49 (libsystem_dnssd.dylib) [0x7fff86012a1f]
+                                              30  ConnectToServer + 899 (libsystem_dnssd.dylib) [0x7fff86011245]
+                                                30  sleep$NOCANCEL + 42 (libsystem_c.dylib) [0x7fff85da1992]
+                                                  30  __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x7fff90463a52]
+                                                   *30  semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+                                              1   ConnectToServer + 889 (libsystem_dnssd.dylib) [0x7fff8601123b]
+                                                1   syslog + 141 (libsystem_asl.dylib) [0x7fff841f849d]
+                                                  1   vsyslog + 171 (libsystem_asl.dylib) [0x7fff841f8560]
+                                                    1   _asl_lib_vlog + 533 (libsystem_asl.dylib) [0x7fff841ea9d9]
+                                                      1   _asl_send_message + 1294 (libsystem_asl.dylib) [0x7fff841eb264]
+                                                        1   _asl_global_init + 93 (libsystem_asl.dylib) [0x7fff841ece3d]
+                                                          1   bootstrap_look_up2 + 40 (liblaunch.dylib) [0x7fff8bd1df95]
+                                                            1   bootstrap_look_up3 + 60 (liblaunch.dylib) [0x7fff8bd1dedc]
+                                                              1   ??? (liblaunch.dylib + 14426) [0x7fff8bd2085a]
+                                                                1   mach_msg_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa1a]
+                                                                 *1   ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+        26  __CFRunLoopRun + 1161 (CoreFoundation) [0x7fff8eb77539]
+          26  __CFRunLoopServiceMachPort + 181 (CoreFoundation) [0x7fff8eb77f15]
+            26  mach_msg_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa1a]
+             *26  ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0x8d0      DispatchQueue 2          priority 33        
+  101 _dispatch_mgr_thread + 52 (libdispatch.dylib) [0x7fff8d646136]
+    101 kevent64 + 10 (libsystem_kernel.dylib) [0x7fff90464662]
+     *101 ??? (mach_kernel + 3960080) [0xffffff80005c6d10]
+
+  Thread 0x148758   DispatchQueue 8          priority 33        
+  101 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    101 _pthread_wqthread + 314 (libsystem_pthread.dylib) [0x7fff91b25ef8]
+      101 _dispatch_worker_thread2 + 40 (libdispatch.dylib) [0x7fff8d647177]
+        101 _dispatch_root_queue_drain + 75 (libdispatch.dylib) [0x7fff8d645f87]
+          101 _dispatch_source_invoke + 413 (libdispatch.dylib) [0x7fff8d646885]
+            101 _dispatch_client_callout + 8 (libdispatch.dylib) [0x7fff8d64428d]
+              75  __30-[CalAgent setUpSignalHandler]_block_invoke + 45 (CalendarAgent) [0x105518e9c]
+                75  -[CalAgent shutdown] + 59 (CalendarAgent) [0x105519136]
+                  75  -[CalAgentAPSConnectionManager tearDown] + 54 (CalendarAgent) [0x10551c389]
+                    75  -[CalNetworkChangeNotifier removeListener:] + 21 (CalendarPersistence) [0x7fff8bf36aa2]
+                      75  __psynch_mutexwait + 10 (libsystem_kernel.dylib) [0x7fff90463746]
+                       *75  psynch_mtxcontinue + 0 (pthread) [0xffffff7f80b51a3b]
+              26  -[CalAgent exitWithStatus:] + 82 (CalendarAgent) [0x10551927c]
+                26  exit + 22 (libsystem_c.dylib) [0x7fff85dd0a4c]
+                  26  __cxa_finalize + 177 (libsystem_c.dylib) [0x7fff85dd07a1]
+                    26  _CFHTTPCookieStorageFlushCookieStores + 133 (CFNetwork) [0x7fff8d6b55a9]
+                      26  CFDictionaryApplyFunction + 173 (CoreFoundation) [0x7fff8eb4984d]
+                        26  CFBasicHashApply + 124 (CoreFoundation) [0x7fff8eb498fc]
+                          26  __CFDictionaryApplyFunction_block_invoke + 22 (CoreFoundation) [0x7fff8eb49936]
+                            26  ___CFHTTPCookieStorageFlushCookieStores_block_invoke + 116 (CFNetwork) [0x7fff8d6b5656]
+                              26  DiskCookieStorage::syncStorageWithCompletionLocked(unsigned char, void () block_pointer) + 3042 (CFNetwork) [0x7fff8d6b0230]
+                                26  DiskCookieStorage::readFileToCookies(MemoryCookies*) + 118 (CFNetwork) [0x7fff8d6add70]
+                                  26  CFReadStreamOpen + 95 (CoreFoundation) [0x7fff8ebb84cf]
+                                    26  _CFStreamOpen + 145 (CoreFoundation) [0x7fff8eb5eb71]
+                                      26  __open + 10 (libsystem_kernel.dylib) [0x7fff904635da]
+                                       *26  hndl_unix_scall64 + 22 (mach_kernel) [0xffffff80002f4176]
+                                         *26  unix_syscall64 + 499 (mach_kernel) [0xffffff8000640c63]
+                                           *26  open + 274 (mach_kernel) [0xffffff80003e7522]
+                                             *26  open1 + 309 (mach_kernel) [0xffffff80003e6c65]
+                                               *26  vn_open_auth + 214 (mach_kernel) [0xffffff80003f4b46]
+                                                 *26  namei + 1460 (mach_kernel) [0xffffff80003d5a74]
+                                                   *26  lookup + 499 (mach_kernel) [0xffffff80003d60b3]
+                                                     *26  vnode_authorize + 91 (mach_kernel) [0xffffff80003e036b]
+                                                       *26  kauth_authorize_action + 76 (mach_kernel) [0xffffff80005b61fc]
+                                                         *26  ??? (mach_kernel + 1965389) [0xffffff80003dfd4d]
+                                                           *26  kauth_acl_evaluate + 74 (mach_kernel) [0xffffff80005b665a]
+                                                             *26  kauth_cred_getguid + 115 (mach_kernel) [0xffffff80005b97f3]
+                                                               *26  ??? (mach_kernel + 3903099) [0xffffff80005b8e7b]
+                                                                 *26  ??? (mach_kernel + 3907378) [0xffffff80005b9f32]
+                                                                   *26  ??? (mach_kernel + 3916784) [0xffffff80005bc3f0]
+                                                                     *26  msleep + 114 (mach_kernel) [0xffffff80005e4072]
+                                                                       *26  ??? (mach_kernel + 4078761) [0xffffff80005e3ca9]
+                                                                         *26  lck_mtx_sleep_deadline + 87 (mach_kernel) [0xffffff800022d227]
+                                                                           *26  thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                                                                             *26  ??? (mach_kernel + 223579) [0xffffff800023695b]
+                                                                               *26  machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x95a      priority 31        
+  101 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    101 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      101 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        101 __NSThread__main__ + 1318 (Foundation) [0x7fff87109dfb]
+          101 +[NSURLConnection(Loader) _resourceLoadLoop:] + 348 (Foundation) [0x7fff87109ff7]
+            101 CFRunLoopRunSpecific + 309 (CoreFoundation) [0x7fff8eb76e75]
+              101 __CFRunLoopRun + 1161 (CoreFoundation) [0x7fff8eb77539]
+                101 __CFRunLoopServiceMachPort + 181 (CoreFoundation) [0x7fff8eb77f15]
+                  101 mach_msg_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa1a]
+                   *101 ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0x95f      priority 31        
+  101 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    101 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      101 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        101 __select + 10 (libsystem_kernel.dylib) [0x7fff904639aa]
+         *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0x148757   priority 31        
+  101 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    101 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *101 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x148855   priority 31        
+  101 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    101 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *101 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488fa   priority 31        
+  101 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    101 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *101 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x14886f   DispatchQueue 120        priority 31        
+  75 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    75 _pthread_wqthread + 314 (libsystem_pthread.dylib) [0x7fff91b25ef8]
+      75 _dispatch_worker_thread2 + 40 (libdispatch.dylib) [0x7fff8d647177]
+        75 _dispatch_root_queue_drain + 75 (libdispatch.dylib) [0x7fff8d645f87]
+          75 _dispatch_queue_invoke + 110 (libdispatch.dylib) [0x7fff8d6479c1]
+            75 _dispatch_queue_drain + 359 (libdispatch.dylib) [0x7fff8d646617]
+              75 _dispatch_queue_invoke + 110 (libdispatch.dylib) [0x7fff8d6479c1]
+                75 _dispatch_queue_drain + 359 (libdispatch.dylib) [0x7fff8d646617]
+                  75 _dispatch_mach_invoke + 154 (libdispatch.dylib) [0x7fff8d647682]
+                    75 _dispatch_queue_drain + 359 (libdispatch.dylib) [0x7fff8d646617]
+                      75 _dispatch_mach_msg_invoke + 143 (libdispatch.dylib) [0x7fff8d64839c]
+                        75 _dispatch_client_callout4 + 9 (libdispatch.dylib) [0x7fff8d647ae2]
+                          75 _xpc_connection_mach_event + 2261 (libxpc.dylib) [0x7fff8d1d0268]
+                            75 notify_server + 79 (libxpc.dylib) [0x7fff8d1d41cf]
+                              75 _Xmach_notify_port_destroyed + 84 (libxpc.dylib) [0x7fff8d1d4243]
+                                75 do_mach_notify_port_destroyed + 173 (libxpc.dylib) [0x7fff8d1d430e]
+                                  75 _xpc_connection_call_event_handler + 58 (libxpc.dylib) [0x7fff8d1d15cc]
+                                    75 ___ZL15setEventHandlerP17_xpc_connection_sU13block_pointerFvP19CLConnectionMessageEU13block_pointerFvvES6_PS6__block_invoke + 356 (CoreLocation) [0x7fff87ef0972]
+                                      75 ___ZN18CLConnectionClient30setInterruptionHandler_onQueueEU13block_pointerFvvE_block_invoke + 37 (CoreLocation) [0x7fff87ef2218]
+                                        75 ___ZL25_CLClientCreateConnectionP10__CLClient_block_invoke129 + 66 (CoreLocation) [0x7fff87ef9885]
+                                          75 CLClientInvokeCallback(__CLClient*, CLClientEvent, objc_object*) + 378 (CoreLocation) [0x7fff87ef65a2]
+                                            75 semaphore_timedwait_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa6e]
+                                             *75 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Thread 0x148862   priority 31        
+  75 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    75 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *75 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488f9   priority 31        
+  75 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    75 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *75 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488f9   DispatchQueue 347        priority 31         cpu time   0.003s
+  26 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    26 _pthread_wqthread + 314 (libsystem_pthread.dylib) [0x7fff91b25ef8]
+      26 _dispatch_worker_thread2 + 40 (libdispatch.dylib) [0x7fff8d647177]
+        26 _dispatch_root_queue_drain + 326 (libdispatch.dylib) [0x7fff8d646082]
+          26 _dispatch_client_callout + 8 (libdispatch.dylib) [0x7fff8d64428d]
+            26 _dispatch_async_redirect_invoke + 63 (libdispatch.dylib) [0x7fff8d648788]
+              26 _dispatch_source_invoke + 413 (libdispatch.dylib) [0x7fff8d646885]
+                26 _dispatch_client_callout + 8 (libdispatch.dylib) [0x7fff8d64428d]
+                  26 -[CalAgentAPSConnectionManager _registerAllTopics] + 1539 (CalendarAgent) [0x10551dab2]
+                    26 -[CalAgentAPSConnectionManager _sendAllSubscriptionRequestsForPrincipal:forDevelopment:] + 1587 (CalendarAgent) [0x10551d440]
+                      26 -[CalManagedObjectContext saveIfContextHasChanges] + 57 (CalendarPersistence) [0x7fff8bec264b]
+                        26 -[CalManagedObjectContext save:] + 71 (CalendarPersistence) [0x7fff8bec2706]
+                          26 -[NSManagedObjectContext save:] + 537 (CoreData) [0x7fff90e694f9]
+                            26 -[NSPersistentStoreCoordinator executeRequest:withContext:error:] + 3390 (CoreData) [0x7fff90e40d7e]
+                              26 stat$INODE64 + 10 (libsystem_kernel.dylib) [0x7fff90464dfa]
+                               *26 hndl_unix_scall64 + 22 (mach_kernel) [0xffffff80002f4176]
+                                 *26 unix_syscall64 + 499 (mach_kernel) [0xffffff8000640c63]
+                                   *26 stat64 + 156 (mach_kernel) [0xffffff80003e98dc]
+                                     *26 ??? (mach_kernel + 2038082) [0xffffff80003f1942]
+                                       *26 namei + 1460 (mach_kernel) [0xffffff80003d5a74]
+                                         *26 lookup + 499 (mach_kernel) [0xffffff80003d60b3]
+                                           *26 vnode_authorize + 91 (mach_kernel) [0xffffff80003e036b]
+                                             *26 kauth_authorize_action + 76 (mach_kernel) [0xffffff80005b61fc]
+                                               *26 ??? (mach_kernel + 1965389) [0xffffff80003dfd4d]
+                                                 *26 kauth_acl_evaluate + 74 (mach_kernel) [0xffffff80005b665a]
+                                                   *26 kauth_cred_getguid + 115 (mach_kernel) [0xffffff80005b97f3]
+                                                     *26 ??? (mach_kernel + 3903099) [0xffffff80005b8e7b]
+                                                       *26 ??? (mach_kernel + 3907378) [0xffffff80005b9f32]
+                                                         *26 ??? (mach_kernel + 3916784) [0xffffff80005bc3f0]
+                                                           *26 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+                                                             *26 ??? (mach_kernel + 4078761) [0xffffff80005e3ca9]
+                                                               *26 lck_mtx_sleep_deadline + 87 (mach_kernel) [0xffffff800022d227]
+                                                                 *26 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                                                                   *26 ??? (mach_kernel + 223579) [0xffffff800023695b]
+                                                                     *26 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x14886f   priority 31        
+  26 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    26 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *26 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Binary Images:
+         0x10550c000 -        0x10550cfff  CalendarAgent (176.2) <2FD3C03A-82F7-365A-8D0E-F5FE944D4016> /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+         0x105516000 -        0x105534ff7  com.apple.CalendarAgent 7.0 (176.2) <1B0380D0-EDA7-3C6B-BA7C-E2F98857D815> /System/Library/PrivateFrameworks/CalendarAgent.framework/Versions/A/CalendarAgent
+      0x7fff841e8000 -     0x7fff841f9ff7  libsystem_asl.dylib (217.1.4) <655FB343-52CF-3E2F-B14D-BEBF5AAEF94D> /usr/lib/system/libsystem_asl.dylib
+      0x7fff85d73000 -     0x7fff85dfcff7  libsystem_c.dylib (997.90.3) <6FD3A400-4BB2-3B95-B90C-BE6E9D0D78FA> /usr/lib/system/libsystem_c.dylib
+      0x7fff8600e000 -     0x7fff86016fff  libsystem_dnssd.dylib (522.92.1) <17B03FFD-92C5-3282-9981-EBB28B456207> /usr/lib/system/libsystem_dnssd.dylib
+      0x7fff870a3000 -     0x7fff873a3ff7  com.apple.Foundation 6.9 (1056.16) <24349208-3603-3F5D-95CC-B379616FBEF8> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+      0x7fff87ebd000 -     0x7fff87f1bff7  com.apple.corelocation 1486.17 (1486.24) <9FBB29F0-E000-3190-A96C-9EAA5CCCA2A0> /System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation
+      0x7fff89ac0000 -     0x7fff89ae7ffb  libsystem_info.dylib (449.1.3) <7D41A156-D285-3849-A2C3-C04ADE797D98> /usr/lib/system/libsystem_info.dylib
+      0x7fff8bd1d000 -     0x7fff8bd24ff8  liblaunch.dylib (842.92.1) <A40A0C7B-3216-39B4-8AE0-B5D3BAF1DA8A> /usr/lib/system/liblaunch.dylib
+      0x7fff8beb9000 -     0x7fff8c0f4fff  com.apple.CalendarPersistence 7.0 (138.4) <BDD9B054-F274-357F-8343-6F8DAC7B0B36> /System/Library/PrivateFrameworks/CalendarPersistence.framework/Versions/A/CalendarPersistence
+      0x7fff8d1c6000 -     0x7fff8d1eafff  libxpc.dylib (300.90.2) <AB40CD57-F454-3FD4-B415-63B3C0D5C624> /usr/lib/system/libxpc.dylib
+      0x7fff8d643000 -     0x7fff8d65dfff  libdispatch.dylib (339.92.1) <C4E4A18D-3C3B-3C9C-8709-A4270D998DE7> /usr/lib/system/libdispatch.dylib
+      0x7fff8d663000 -     0x7fff8d7feff8  com.apple.CFNetwork 673.3 (673.3) <4375B7CB-34B6-3A26-99AC-2D2404AD9C9B> /System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork
+      0x7fff8eb07000 -     0x7fff8ececfff  com.apple.CoreFoundation 6.9 (855.17) <729BD6DA-1F63-3E72-A148-26F21EBF52BB> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+      0x7fff9044e000 -     0x7fff9046aff7  libsystem_kernel.dylib (2422.115.4) <9EDE872E-2A9E-3A78-8E1D-AB790794A098> /usr/lib/system/libsystem_kernel.dylib
+      0x7fff90e24000 -     0x7fff9106cff7  com.apple.CoreData 107 (481.3) <E78734AA-E3D0-33CB-A014-620BBCAB2E96> /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData
+      0x7fff9120c000 -     0x7fff9126fffb  com.apple.SystemConfiguration 1.13.1 (1.13.1) <2C8E1A73-5AD6-3A7D-8ED8-D6755555A993> /System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration
+      0x7fff91475000 -     0x7fff91478ff7  libdyld.dylib (239.4) <7C9EC3B7-DDE3-33FF-953F-4067C743951D> /usr/lib/system/libdyld.dylib
+      0x7fff91b23000 -     0x7fff91b2aff7  libsystem_pthread.dylib (53.1.4) <AB498556-B555-310E-9041-F67EC9E00E2C> /usr/lib/system/libsystem_pthread.dylib
+ *0xffffff7f80b4d000 - 0xffffff7f80b54fff  com.apple.kec.pthread 1.0 (1) <882075E6-12C4-3225-8750-928715183739> /System/Library/Extensions/pthread.kext/Contents/MacOS/pthread
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         CVMServer [123]
+Path:            /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer
+Architecture:    x86_64
+Parent:          launchd [1]
+UID:             0
+Sudden Term:     Dirty
+Task size:       177 pages (-4)
+Importance:      Adaptive, Donating
+Timers:          Coalesced
+
+  Thread 0x3af      DispatchQueue 7          priority 31        
+  101 _dispatch_sig_thread + 45 (libdispatch.dylib) [0x7fff8d64e7c5]
+    101 __sigsuspend_nocancel + 10 (libsystem_kernel.dylib) [0x7fff90463caa]
+     *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0x3b0      DispatchQueue 2          priority 33        
+  101 _dispatch_mgr_thread + 52 (libdispatch.dylib) [0x7fff8d646136]
+    101 kevent64 + 10 (libsystem_kernel.dylib) [0x7fff90464662]
+     *101 ??? (mach_kernel + 3960080) [0xffffff80005c6d10]
+
+  Thread 0x1488e5   priority 31        
+  81 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    81 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *81 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488e8   priority 31        
+  80 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    80 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *80 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Binary Images:
+         0x10fc63000 -        0x10fc6bfff  CVMServer (58.1) <E83687C2-F456-3754-9563-120B4E3300F1> /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer
+      0x7fff8d643000 -     0x7fff8d65dfff  libdispatch.dylib (339.92.1) <C4E4A18D-3C3B-3C9C-8709-A4270D998DE7> /usr/lib/system/libdispatch.dylib
+      0x7fff9044e000 -     0x7fff9046aff7  libsystem_kernel.dylib (2422.115.4) <9EDE872E-2A9E-3A78-8E1D-AB790794A098> /usr/lib/system/libsystem_kernel.dylib
+      0x7fff91b23000 -     0x7fff91b2aff7  libsystem_pthread.dylib (53.1.4) <AB498556-B555-310E-9041-F67EC9E00E2C> /usr/lib/system/libsystem_pthread.dylib
+ *0xffffff7f80b4d000 - 0xffffff7f80b54fff  com.apple.kec.pthread 1.0 (1) <882075E6-12C4-3225-8750-928715183739> /System/Library/Extensions/pthread.kext/Contents/MacOS/pthread
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         launchd [1]
+Path:            /sbin/launchd
+Architecture:    unknown
+Parent:          kernel_task [0]
+UID:             0
+Task size:       1068 pages
+CPU Time:        0.042s
+
+  Thread 0xd2       DispatchQueue 1          priority 31         cpu time   0.002s
+  101 ??? [0x7fff914785fd]
+    101 ??? [0x101b9f8d9]
+      101 ??? [0x101ba198a]
+        101 ??? [0x7fff8d1de000]
+          101 ??? [0x7fff8d1dde6b]
+            101 ??? [0x7fff9045fa1a]
+             *101 ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0xdc       priority 31        
+  101 ??? [0x7fff91b28fc9]
+    101 ??? [0x7fff91b2472a]
+      101 ??? [0x7fff91b24899]
+        101 ??? [0x7fff904639aa]
+         *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0xdd       priority   25-81   cpu time   0.040s
+  101 ??? [0x7fff91b28fc9]
+    101 ??? [0x7fff91b2472a]
+      101 ??? [0x7fff91b24899]
+        100 ??? [0x101b9f9fd]
+          100 ??? [0x7fff85deec1f]
+            100 ??? [0x7fff90463a3a]
+             *100 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+        1   ??? [0x7fff90464e72]
+         *1   hndl_unix_scall64 + 22 (mach_kernel) [0xffffff80002f4176]
+           *1   unix_syscall64 + 499 (mach_kernel) [0xffffff8000640c63]
+             *1   sync + 23 (mach_kernel) [0xffffff80003e53a7]
+               *1   vfs_iterate + 266 (mach_kernel) [0xffffff80003de73a]
+                 *1   ??? (mach_kernel + 1987587) [0xffffff80003e5403]
+                   *1   VFS_SYNC + 198 (mach_kernel) [0xffffff80003fad96]
+                     *1   hfs_sync + 184 (mach_kernel) [0xffffff8000577ed8]
+                       *1   vnode_iterate + 557 (mach_kernel) [0xffffff80003d932d]
+                         *1   ??? (mach_kernel + 3637515) [0xffffff800057810b]
+                           *1   hfs_fsync + 1051 (mach_kernel) [0xffffff80005881eb]
+                             *1   hfs_update + 987 (mach_kernel) [0xffffff8000586f9b]
+                               *1   ??? (mach_kernel + 3525553) [0xffffff800055cbb1]
+                                 *1   BTUpdateRecord + 137 (mach_kernel) [0xffffff8000592a89]
+                                   *1   GetNode + 44 (mach_kernel) [0xffffff80005942dc]
+                                     *1   GetBTreeBlock + 178 (mach_kernel) [0xffffff80005584b2]
+                                       *1   buf_meta_bread + 23 (mach_kernel) [0xffffff80003c7c37]
+                                         *1   ??? (mach_kernel + 1866444) [0xffffff80003c7acc]
+                                           *1   VNOP_STRATEGY + 70 (mach_kernel) [0xffffff8000400a56]
+                                             *1   buf_strategy + 172 (mach_kernel) [0xffffff80003c585c]
+                                               *1   spec_strategy + 542 (mach_kernel) [0xffffff800040dede]
+                                                 *1   dkreadwrite(void*, dkrtype_t) + 890 (IOStorageFamily) [0xffffff7f807f9278]
+                                                   *1   IOGeneralMemoryDescriptor::prepare(unsigned int) + 78 (mach_kernel) [0xffffff80006bc7be]
+                                                     *1   IOGeneralMemoryDescriptor::wireVirtual(unsigned int) + 969 (mach_kernel) [0xffffff80006bc519]
+                                                       *1   vm_map_create_upl + 84 (mach_kernel) [0xffffff800029b3c4]
+                                                         *1   lck_rw_lock_shared_gen + 118 (mach_kernel) [0xffffff80002d5766]
+                                                           *1   thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                                                             *1   ??? (mach_kernel + 223579) [0xffffff800023695b]
+                                                               *1   machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Binary Images:
+ *0xffffff7f807ed000 - 0xffffff7f807fcfff  com.apple.iokit.IOStorageFamily 1.9 (1.9) <9B09B065-7F11-3241-B194-B72E5C23548B> /System/Library/Extensions/IOStorageFamily.kext/Contents/MacOS/IOStorageFamily
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         launchd [178]
+Path:            /sbin/launchd
+Architecture:    x86_64
+Parent:          launchd [1]
+UID:             501
+Sudden Term:     Dirty
+Task size:       259 pages
+CPU Time:        0.003s
+Importance:      Donating
+Timers:          Coalesced
+
+  Thread 0x65b      DispatchQueue 1          priority 31         cpu time   0.003s
+  101 start + 1 (libdyld.dylib) [0x7fff914785fd]
+    101 ??? (launchd + 18649) [0x10963f8d9]
+      101 ??? (launchd + 27018) [0x10964198a]
+        101 xpc_pipe_try_receive + 87 (libxpc.dylib) [0x7fff8d1de000]
+          101 _xpc_pipe_receive + 92 (libxpc.dylib) [0x7fff8d1dde6b]
+            101 mach_msg_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa1a]
+             *101 ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0x663      priority 31        
+  101 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    101 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      101 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        101 __select + 10 (libsystem_kernel.dylib) [0x7fff904639aa]
+         *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Binary Images:
+         0x10963b000 -        0x109661ff7  launchd (842.92.1) <364E35A7-9FA7-3950-8494-40B49A2E7250> /sbin/launchd
+      0x7fff8d1c6000 -     0x7fff8d1eafff  libxpc.dylib (300.90.2) <AB40CD57-F454-3FD4-B415-63B3C0D5C624> /usr/lib/system/libxpc.dylib
+      0x7fff9044e000 -     0x7fff9046aff7  libsystem_kernel.dylib (2422.115.4) <9EDE872E-2A9E-3A78-8E1D-AB790794A098> /usr/lib/system/libsystem_kernel.dylib
+      0x7fff91475000 -     0x7fff91478ff7  libdyld.dylib (239.4) <7C9EC3B7-DDE3-33FF-953F-4067C743951D> /usr/lib/system/libdyld.dylib
+      0x7fff91b23000 -     0x7fff91b2aff7  libsystem_pthread.dylib (53.1.4) <AB498556-B555-310E-9041-F67EC9E00E2C> /usr/lib/system/libsystem_pthread.dylib
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         securityd [15]
+Path:            /usr/sbin/securityd
+Architecture:    x86_64
+Parent:          launchd [1]
+UID:             0
+Sudden Term:     Dirty
+Task size:       777 pages (-4)
+Importance:      Adaptive, Boosted, Donating
+Timers:          Coalesced
+
+  Thread 0x11d      DispatchQueue 1          priority 31        
+  101 start + 1 (libdyld.dylib) [0x7fff914785fd]
+    101 ??? (securityd + 238216) [0x1054b7288]
+      101 ??? (securityd + 487785) [0x1054f4169]
+        101 ??? (securityd + 47080) [0x1054887e8]
+          101 mach_msg_overwrite_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa26]
+           *101 ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0x139      DispatchQueue 2          priority 33        
+  101 _dispatch_mgr_thread + 52 (libdispatch.dylib) [0x7fff8d646136]
+    101 kevent64 + 10 (libsystem_kernel.dylib) [0x7fff90464662]
+     *101 ??? (mach_kernel + 3960080) [0xffffff80005c6d10]
+
+  Thread 0x124      priority 31        
+  101 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    101 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      101 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        101 ??? (securityd + 46190) [0x10548846e]
+          101 ??? (securityd + 375618) [0x1054d8b42]
+            101 au_sdev_read_aia + 570 (libbsm.0.dylib) [0x7fff864ddac5]
+              101 fgetc + 44 (libsystem_c.dylib) [0x7fff85daf68e]
+                101 __srget + 14 (libsystem_c.dylib) [0x7fff85db5ff5]
+                  101 __srefill1 + 24 (libsystem_c.dylib) [0x7fff85db5edb]
+                    101 __read_nocancel + 10 (libsystem_kernel.dylib) [0x7fff904638ea]
+                     *101 hndl_unix_scall64 + 22 (mach_kernel) [0xffffff80002f4176]
+                       *101 unix_syscall64 + 499 (mach_kernel) [0xffffff8000640c63]
+                         *101 read_nocancel + 127 (mach_kernel) [0xffffff80005f20ff]
+                           *101 ??? (mach_kernel + 4137710) [0xffffff80005f22ee]
+                             *101 ??? (mach_kernel + 2047477) [0xffffff80003f3df5]
+                               *101 VNOP_READ + 225 (mach_kernel) [0xffffff80003fe241]
+                                 *101 spec_read + 253 (mach_kernel) [0xffffff800040d60d]
+                                   *101 ??? (mach_kernel + 3847193) [0xffffff80005ab419]
+                                     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+                                       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+                                         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+                                           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                                             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+                                               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x147e52   priority 31        
+  101 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    101 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      101 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        101 ??? (securityd + 46190) [0x10548846e]
+          101 ??? (securityd + 46301) [0x1054884dd]
+            101 ??? (securityd + 47080) [0x1054887e8]
+              101 mach_msg_overwrite_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa26]
+               *101 ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0x148795   priority 31        
+  101 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    101 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      101 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        101 ??? (securityd + 46190) [0x10548846e]
+          101 ??? (securityd + 46301) [0x1054884dd]
+            101 ??? (securityd + 47080) [0x1054887e8]
+              101 mach_msg_overwrite_trap + 10 (libsystem_kernel.dylib) [0x7fff9045fa26]
+               *101 ipc_mqueue_receive_continue + 0 (mach_kernel) [0xffffff80002167d0]
+
+  Thread 0x1488a7   priority 31        
+  100 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    100 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *100 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488b1   priority 33        
+  75 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    75 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *75 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Binary Images:
+         0x10547d000 -        0x105537ff7  securityd (55199.3) <EC50266C-46EF-327F-A9A8-E7CAE8FA9903> /usr/sbin/securityd
+      0x7fff85d73000 -     0x7fff85dfcff7  libsystem_c.dylib (997.90.3) <6FD3A400-4BB2-3B95-B90C-BE6E9D0D78FA> /usr/lib/system/libsystem_c.dylib
+      0x7fff864cf000 -     0x7fff864dffff  libbsm.0.dylib (33) <2CAC00A2-1352-302A-88FA-C567D4D69179> /usr/lib/libbsm.0.dylib
+      0x7fff8d643000 -     0x7fff8d65dfff  libdispatch.dylib (339.92.1) <C4E4A18D-3C3B-3C9C-8709-A4270D998DE7> /usr/lib/system/libdispatch.dylib
+      0x7fff9044e000 -     0x7fff9046aff7  libsystem_kernel.dylib (2422.115.4) <9EDE872E-2A9E-3A78-8E1D-AB790794A098> /usr/lib/system/libsystem_kernel.dylib
+      0x7fff91475000 -     0x7fff91478ff7  libdyld.dylib (239.4) <7C9EC3B7-DDE3-33FF-953F-4067C743951D> /usr/lib/system/libdyld.dylib
+      0x7fff91b23000 -     0x7fff91b2aff7  libsystem_pthread.dylib (53.1.4) <AB498556-B555-310E-9041-F67EC9E00E2C> /usr/lib/system/libsystem_pthread.dylib
+ *0xffffff7f80b4d000 - 0xffffff7f80b54fff  com.apple.kec.pthread 1.0 (1) <882075E6-12C4-3225-8750-928715183739> /System/Library/Extensions/pthread.kext/Contents/MacOS/pthread
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         spindump [14882]
+Path:            /usr/sbin/spindump
+Architecture:    x86_64
+Parent:          launchd [1]
+UID:             0
+Task size:       1103 pages (+205)
+Pageins:         60 pages
+CPU Time:        0.076s
+Importance:      Adaptive, Donating
+
+  Thread 0x148835   priority 31        
+  10 start + 1 (libdyld.dylib) [0x7fff914785fd]
+    10 ??? (spindump + 9932) [0x1017836cc]
+      10 dispatch_main + 43 (libdispatch.dylib) [0x7fff8d64e70f]
+        10 pthread_exit + 30 (libsystem_pthread.dylib) [0x7fff91b253e9]
+          10 _pthread_exit + 111 (libsystem_pthread.dylib) [0x7fff91b25479]
+            10 _pthread_tsd_cleanup + 182 (libsystem_pthread.dylib) [0x7fff91b285af]
+              10 _dispatch_queue_cleanup2 + 86 (libdispatch.dylib) [0x7fff8d64e765]
+                10 sleep$NOCANCEL + 42 (libsystem_c.dylib) [0x7fff85da1992]
+                  10 __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x7fff90463a52]
+                   *10 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Thread 0x14894d   DispatchQueue 2          priority 33         cpu time   0.002s
+  101 _dispatch_mgr_thread + 52 (libdispatch.dylib) [0x7fff8d646136]
+    101 kevent64 + 10 (libsystem_kernel.dylib) [0x7fff90464662]
+     *101 ??? (mach_kernel + 3960080) [0xffffff80005c6d10]
+
+  Thread 0x14894c   DispatchQueue 7          priority 31        
+  101 _dispatch_sig_thread + 45 (libdispatch.dylib) [0x7fff8d64e7c5]
+    101 __sigsuspend_nocancel + 10 (libsystem_kernel.dylib) [0x7fff90463caa]
+     *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread <multiple> DispatchQueue 15         priority 31         cpu time   0.071s
+  101 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    101 _pthread_wqthread + 314 (libsystem_pthread.dylib) [0x7fff91b25ef8]
+      101 _dispatch_worker_thread2 + 40 (libdispatch.dylib) [0x7fff8d647177]
+        101 _dispatch_root_queue_drain + 75 (libdispatch.dylib) [0x7fff8d645f87]
+          101 _dispatch_queue_invoke + 110 (libdispatch.dylib) [0x7fff8d6479c1]
+            101 _dispatch_queue_drain + 359 (libdispatch.dylib) [0x7fff8d646617]
+              101 _dispatch_source_invoke + 413 (libdispatch.dylib) [0x7fff8d646885]
+                101 _dispatch_client_callout + 8 (libdispatch.dylib) [0x7fff8d64428d]
+                  101 __syscall + 10 (libsystem_kernel.dylib) [0x7fff90463d3a]
+                   *101 hndl_unix_scall64 + 22 (mach_kernel) [0xffffff80002f4176]
+                     *101 unix_syscall64 + 499 (mach_kernel) [0xffffff8000640c63]
+                       *101 stack_snapshot2 + 376 (mach_kernel) [0xffffff80005b2b48]
+
+  Thread 0x14894e   priority   29-31   cpu time   0.002s
+  99 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    99 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *99 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+  1  __pthread_set_self + 16 (libsystem_pthread.dylib) [0x7fff91b28fac]
+   *1  wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x148951   priority 31        
+  99 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    99 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *99 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x148953   priority 31        
+  99 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    99 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *99 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x14894f   priority 31        
+  96 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    96 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *96 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x148950   priority 31        
+  96 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    96 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *96 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x14894b   priority   31-33  
+  93 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    93 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x7fff90463e6a]
+     *93 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x148955   priority 31        
+  2 thread_start + 13 (libsystem_pthread.dylib) [0x7fff91b28fc9]
+    2 _pthread_start + 137 (libsystem_pthread.dylib) [0x7fff91b2472a]
+      2 _pthread_body + 138 (libsystem_pthread.dylib) [0x7fff91b24899]
+        2 cleaner_thread_main(void*) + 42 (CoreSymbolication) [0x7fff87c31481]
+          2 __semwait_signal + 10 (libsystem_kernel.dylib) [0x7fff90463a3a]
+           *2 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Thread 0x148951   DispatchQueue 20         priority 33        
+  1 start_wqthread + 13 (libsystem_pthread.dylib) [0x7fff91b28fb9]
+    1 _pthread_wqthread + 314 (libsystem_pthread.dylib) [0x7fff91b25ef8]
+      1 _dispatch_worker_thread2 + 40 (libdispatch.dylib) [0x7fff8d647177]
+        1 _dispatch_root_queue_drain + 75 (libdispatch.dylib) [0x7fff8d645f87]
+          1 _dispatch_queue_invoke + 110 (libdispatch.dylib) [0x7fff8d6479c1]
+            1 _dispatch_queue_drain + 359 (libdispatch.dylib) [0x7fff8d646617]
+              1 _dispatch_source_invoke + 413 (libdispatch.dylib) [0x7fff8d646885]
+                1 _dispatch_client_callout + 8 (libdispatch.dylib) [0x7fff8d64428d]
+                  1 _dispatch_after_timer_callback + 77 (libdispatch.dylib) [0x7fff8d64c433]
+                    1 _dispatch_client_callout + 8 (libdispatch.dylib) [0x7fff8d64428d]
+                      1 _dispatch_call_block_and_release + 12 (libdispatch.dylib) [0x7fff8d6471bb]
+                        1 ??? (spindump + 41459) [0x10178b1f3]
+                         *1 ccsha1_vng_intel_compress_SSE3 + 3583 (corecrypto) [0xffffff7f80d5454f]
+
+  Binary Images:
+         0x101781000 -        0x1017abff7  spindump (161.2) <90FAF9E0-C52D-3010-94F6-D72EEFBB30F3> /usr/sbin/spindump
+      0x7fff85d73000 -     0x7fff85dfcff7  libsystem_c.dylib (997.90.3) <6FD3A400-4BB2-3B95-B90C-BE6E9D0D78FA> /usr/lib/system/libsystem_c.dylib
+      0x7fff87c1f000 -     0x7fff87ca0fff  com.apple.CoreSymbolication 3.0.1 (141.0.5) <20E484C4-9F0E-3DF6-BB27-D509859FF57A> /System/Library/PrivateFrameworks/CoreSymbolication.framework/Versions/A/CoreSymbolication
+      0x7fff8d643000 -     0x7fff8d65dfff  libdispatch.dylib (339.92.1) <C4E4A18D-3C3B-3C9C-8709-A4270D998DE7> /usr/lib/system/libdispatch.dylib
+      0x7fff9044e000 -     0x7fff9046aff7  libsystem_kernel.dylib (2422.115.4) <9EDE872E-2A9E-3A78-8E1D-AB790794A098> /usr/lib/system/libsystem_kernel.dylib
+      0x7fff91475000 -     0x7fff91478ff7  libdyld.dylib (239.4) <7C9EC3B7-DDE3-33FF-953F-4067C743951D> /usr/lib/system/libdyld.dylib
+      0x7fff91b23000 -     0x7fff91b2aff7  libsystem_pthread.dylib (53.1.4) <AB498556-B555-310E-9041-F67EC9E00E2C> /usr/lib/system/libsystem_pthread.dylib
+ *0xffffff7f80b4d000 - 0xffffff7f80b54fff  com.apple.kec.pthread 1.0 (1) <882075E6-12C4-3225-8750-928715183739> /System/Library/Extensions/pthread.kext/Contents/MacOS/pthread
+ *0xffffff7f80d3a000 - 0xffffff7f80d77ffa  com.apple.kec.corecrypto 1.0 (1.0) <DB137B94-65D2-32AF-B5BC-80A360E104C3> /System/Library/Extensions/corecrypto.kext/Contents/MacOS/corecrypto
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         UserKernel [14867]
+Path:            /Applications/League of Legends.app/Contents/LoL/RADS/system/UserKernel.app/Contents/MacOS/UserKernel
+Architecture:    i386
+Parent:          launchd [1]
+UID:             501
+Task size:       2325 pages (+57)
+Pageins:         4 pages
+CPU Time:        10.035s
+
+  Thread 0x1485a4   priority 0          cpu time  10.035s
+  101 ??? (UserKernel + 19125) [0x5ab5]
+    101 NSApplicationMain + 1165 (AppKit) [0x9134eff8]
+      101 -[NSApplication run] + 727 (AppKit) [0x9136615c]
+        101 -[NSApplication nextEventMatchingMask:untilDate:inMode:dequeue:] + 119 (AppKit) [0x91373870]
+          101 _DPSNextEvent + 1089 (AppKit) [0x91374148]
+            101 AEProcessAppleEvent + 55 (HIToolbox) [0x93085571]
+              101 aeProcessAppleEvent + 318 (AE) [0x92c00dce]
+                101 dispatchEventAndSendReply(AEDesc const*, AEDesc*) + 44 (AE) [0x92c00ed6]
+                  101 aeDispatchAppleEvent(AEDesc const*, AEDesc*, unsigned long, unsigned char*) + 387 (AE) [0x92c31b15]
+                    101 _NSAppleEventManagerGenericHandler + 218 (Foundation) [0x94a1b07b]
+                      101 -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:] + 430 (Foundation) [0x94a1b271]
+                        101 __76-[NSAppleEventManager setEventHandler:andSelector:forEventClass:andEventID:]_block_invoke + 121 (Foundation) [0x94a1b73a]
+                          101 -[NSObject performSelector:withObject:withObject:] + 77 (libobjc.A.dylib) [0x9111b304]
+                            101 -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:] + 277 (AppKit) [0x91378431]
+                              101 -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:] + 840 (AppKit) [0x91378b44]
+                                101 -[NSApplication _sendFinishLaunchingNotification] + 239 (AppKit) [0x9137c215]
+                                  101 -[NSApplication _postDidFinishNotification] + 367 (AppKit) [0x9137c575]
+                                    101 -[NSNotificationCenter postNotificationName:object:userInfo:] + 92 (Foundation) [0x949fb4df]
+                                      101 _CFXNotificationPost + 3435 (CoreFoundation) [0x99c2904b]
+                                        101 __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__ + 20 (CoreFoundation) [0x99d475a4]
+                                          101 __57-[NSNotificationCenter addObserver:selector:name:object:]_block_invoke + 49 (Foundation) [0x94a0c9f2]
+                                            101 ??? (UserKernel + 936018) [0xe5852]
+                                              101 ??? (UserKernel + 112576) [0x1c7c0]
+                                                101 ??? (UserKernel + 24174) [0x6e6e]
+                                                  90  ??? (UserKernel + 33010) [0x90f2]
+                                                    90  ??? (UserKernel + 34103) [0x9537]
+                                                      90  ??? (UserKernel + 44456) [0xbda8]
+                                                        90  ??? (UserKernel + 37193) [0xa149]
+                                                          90  ??? (UserKernel + 291019) [0x480cb]
+                                                            90  ??? (UserKernel + 605456) [0x94d10]
+                                                              90  curl_easy_perform + 243 (libcurl.4.dylib) [0x9604910f]
+                                                                89  curl_multi_perform + 157 (libcurl.4.dylib) [0x9604fc0e]
+                                                                  88  multi_runsingle + 746 (libcurl.4.dylib) [0x9604ffaa]
+                                                                    88  Curl_resolver_is_resolved + 362 (libcurl.4.dylib) [0x960621e0]
+                                                                      86  Curl_expire + 366 (libcurl.4.dylib) [0x9604f0a6]
+                                                                        47  multi_addtimeout + 119 (libcurl.4.dylib) [0x96051634]
+                                                                          15  curlx_tvdiff + 16 (libcurl.4.dylib) [0x9602c308]
+                                                                            15  <executing in user space>
+                                                                          8   curlx_tvdiff + 41 (libcurl.4.dylib) [0x9602c321]
+                                                                            8   <executing in user space>
+                                                                          8   curlx_tvdiff + 9 (libcurl.4.dylib) [0x9602c301]
+                                                                            8   <executing in user space>
+                                                                          5   curlx_tvdiff + 27 (libcurl.4.dylib) [0x9602c313]
+                                                                            5   <executing in user space>
+                                                                          4   curlx_tvdiff + 21 (libcurl.4.dylib) [0x9602c30d]
+                                                                            4   <executing in user space>
+                                                                          4   curlx_tvdiff + 6 (libcurl.4.dylib) [0x9602c2fe]
+                                                                            4   <executing in user space>
+                                                                          2   curlx_tvdiff + 24 (libcurl.4.dylib) [0x9602c310]
+                                                                            2   <executing in user space>
+                                                                          1   curlx_tvdiff + 39 (libcurl.4.dylib) [0x9602c31f]
+                                                                            1   <executing in user space>
+                                                                        8   curlx_tvdiff + 1 (libcurl.4.dylib) [0x9602c2f9]
+                                                                          8   <executing in user space>
+                                                                        6   multi_addtimeout + 89 (libcurl.4.dylib) [0x96051616]
+                                                                          6   <executing in user space>
+                                                                        5   multi_addtimeout + 78 (libcurl.4.dylib) [0x9605160b]
+                                                                          5   <executing in user space>
+                                                                        4   multi_addtimeout + 91 (libcurl.4.dylib) [0x96051618]
+                                                                          4   <executing in user space>
+                                                                        4   multi_addtimeout + 121 (libcurl.4.dylib) [0x96051636]
+                                                                          4   <executing in user space>
+                                                                        4   multi_addtimeout + 99 (libcurl.4.dylib) [0x96051620]
+                                                                          4   <executing in user space>
+                                                                        2   multi_addtimeout + 111 (libcurl.4.dylib) [0x9605162c]
+                                                                          2   <executing in user space>
+                                                                        2   curlx_tvnow + 36 (libcurl.4.dylib) [0x9602c2f8]
+                                                                          2   <executing in user space>
+                                                                        2   multi_addtimeout + 96 (libcurl.4.dylib) [0x9605161d]
+                                                                          2   <executing in user space>
+                                                                        1   multi_addtimeout + 103 (libcurl.4.dylib) [0x96051624]
+                                                                          1   <executing in user space>
+                                                                        1   multi_addtimeout + 107 (libcurl.4.dylib) [0x96051628]
+                                                                          1   <executing in user space>
+                                                                      2   Curl_expire + 201 (libcurl.4.dylib) [0x9604f001]
+                                                                        2   multi_addtimeout + 119 (libcurl.4.dylib) [0x96051634]
+                                                                          1   curlx_tvdiff + 6 (libcurl.4.dylib) [0x9602c2fe]
+                                                                            1   <executing in user space>
+                                                                          1   curlx_tvdiff + 41 (libcurl.4.dylib) [0x9602c321]
+                                                                            1   <executing in user space>
+                                                                  1   multi_runsingle + 4016 (libcurl.4.dylib) [0x96050c70]
+                                                                    1   Curl_pgrsUpdate + 51 (libcurl.4.dylib) [0x9602d04d]
+                                                                      1   curlx_tvnow + 25 (libcurl.4.dylib) [0x9602c2ed]
+                                                                        1   gettimeofday + 46 (libsystem_c.dylib) [0x9511d9d8]
+                                                                          1   __commpage_gettimeofday + 20 (libsystem_kernel.dylib) [0x960ae134]
+                                                                            1   mach_absolute_time + 20 (libsystem_kernel.dylib) [0x960ad0df]
+                                                                              1   <executing in user space>
+                                                                1   curl_multi_perform + 14 (libcurl.4.dylib) [0x9604fb7f]
+                                                                  1   curlx_tvnow + 25 (libcurl.4.dylib) [0x9602c2ed]
+                                                                    1   gettimeofday + 46 (libsystem_c.dylib) [0x9511d9d8]
+                                                                      1   __commpage_gettimeofday + 11 (libsystem_kernel.dylib) [0x960ae12b]
+                                                                        1   <executing in user space>
+                                                  11  ??? (UserKernel + 29778) [0x8452]
+                                                    11  ??? (UserKernel + 44456) [0xbda8]
+                                                      11  ??? (UserKernel + 37193) [0xa149]
+                                                        11  ??? (UserKernel + 291019) [0x480cb]
+                                                          11  ??? (UserKernel + 605456) [0x94d10]
+                                                            11  curl_easy_perform + 243 (libcurl.4.dylib) [0x9604910f]
+                                                              11  curl_multi_perform + 157 (libcurl.4.dylib) [0x9604fc0e]
+                                                                11  multi_runsingle + 746 (libcurl.4.dylib) [0x9604ffaa]
+                                                                  10  Curl_resolver_is_resolved + 362 (libcurl.4.dylib) [0x960621e0]
+                                                                    10  Curl_expire + 201 (libcurl.4.dylib) [0x9604f001]
+                                                                      7   multi_addtimeout + 119 (libcurl.4.dylib) [0x96051634]
+                                                                        3   curlx_tvdiff + 16 (libcurl.4.dylib) [0x9602c308]
+                                                                          3   <executing in user space>
+                                                                        2   curlx_tvdiff + 27 (libcurl.4.dylib) [0x9602c313]
+                                                                          2   <executing in user space>
+                                                                        1   curlx_tvdiff + 9 (libcurl.4.dylib) [0x9602c301]
+                                                                          1   <executing in user space>
+                                                                        1   curlx_tvdiff + 41 (libcurl.4.dylib) [0x9602c321]
+                                                                          1   <executing in user space>
+                                                                      1   multi_addtimeout + 99 (libcurl.4.dylib) [0x96051620]
+                                                                        1   <executing in user space>
+                                                                      1   multi_addtimeout + 121 (libcurl.4.dylib) [0x96051636]
+                                                                        1   <executing in user space>
+                                                                      1   multi_addtimeout + 91 (libcurl.4.dylib) [0x96051618]
+                                                                        1   <executing in user space>
+                                                                  1   Curl_resolver_is_resolved + 76 (libcurl.4.dylib) [0x960620c2]
+                                                                    1   pthread_mutex_unlock + 83 (libsystem_pthread.dylib) [0x949f4af9]
+                                                                      1   __mtx_droplock + 470 (libsystem_pthread.dylib) [0x949f4631]
+                                                                        1   <executing in user space>
+
+  Thread 0x1485a6   DispatchQueue 2687818412 priority 48        
+  101 _dispatch_mgr_thread + 52 (libdispatch.dylib) [0x91336532]
+    101 kevent64 + 10 (libsystem_kernel.dylib) [0x960b3992]
+     *101 ??? (mach_kernel + 3960080) [0xffffff80005c6d10]
+
+  Thread 0x14886b   priority 46        
+  97 start_wqthread + 30 (libsystem_pthread.dylib) [0x949f6cce]
+    97 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x960b3046]
+     *97 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x14886c   priority 48        
+  75 start_wqthread + 30 (libsystem_pthread.dylib) [0x949f6cce]
+    75 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x960b3046]
+     *75 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488ad   priority 46        
+  75 start_wqthread + 30 (libsystem_pthread.dylib) [0x949f6cce]
+    75 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x960b3046]
+     *75 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x1488ae   priority 48        
+  75 start_wqthread + 30 (libsystem_pthread.dylib) [0x949f6cce]
+    75 __workq_kernreturn + 10 (libsystem_kernel.dylib) [0x960b3046]
+     *75 wq_unpark_continue + 0 (pthread) [0xffffff7f80b506ae]
+
+  Thread 0x148960   priority 46        
+  30 thread_start + 34 (libsystem_pthread.dylib) [0x949f6cf2]
+    30 _pthread_start + 130 (libsystem_pthread.dylib) [0x949f1485]
+      30 _pthread_body + 144 (libsystem_pthread.dylib) [0x949f15fb]
+        30 curl_thread_create_thunk + 38 (libcurl.4.dylib) [0x96060c4f]
+          30 getaddrinfo_thread + 94 (libcurl.4.dylib) [0x960625fe]
+            30 Curl_getaddrinfo_ex + 59 (libcurl.4.dylib) [0x9605848b]
+              30 getaddrinfo + 174 (libsystem_info.dylib) [0x9346bc21]
+                30 si_addrinfo + 1408 (libsystem_info.dylib) [0x9346c23b]
+                  30 search_addrinfo + 152 (libsystem_info.dylib) [0x9346c465]
+                    30 mdns_addrinfo + 484 (libsystem_info.dylib) [0x9346c66e]
+                      30 _mdns_search + 707 (libsystem_info.dylib) [0x93465f34]
+                        30 DNSServiceCreateConnection + 66 (libsystem_dnssd.dylib) [0x963da8dd]
+                          30 ConnectToServer + 965 (libsystem_dnssd.dylib) [0x963d8e56]
+                            30 sleep$NOCANCEL$UNIX2003 + 45 (libsystem_c.dylib) [0x9513c708]
+                              30 __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x960b2b92]
+                               *30 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Thread 0x148961   priority 46        
+  30 thread_start + 34 (libsystem_pthread.dylib) [0x949f6cf2]
+    30 _pthread_start + 130 (libsystem_pthread.dylib) [0x949f1485]
+      30 _pthread_body + 144 (libsystem_pthread.dylib) [0x949f15fb]
+        30 curl_thread_create_thunk + 38 (libcurl.4.dylib) [0x96060c4f]
+          30 getaddrinfo_thread + 94 (libcurl.4.dylib) [0x960625fe]
+            30 Curl_getaddrinfo_ex + 59 (libcurl.4.dylib) [0x9605848b]
+              30 getaddrinfo + 174 (libsystem_info.dylib) [0x9346bc21]
+                30 si_addrinfo + 1408 (libsystem_info.dylib) [0x9346c23b]
+                  30 search_addrinfo + 152 (libsystem_info.dylib) [0x9346c465]
+                    30 mdns_addrinfo + 484 (libsystem_info.dylib) [0x9346c66e]
+                      30 _mdns_search + 707 (libsystem_info.dylib) [0x93465f34]
+                        30 DNSServiceCreateConnection + 66 (libsystem_dnssd.dylib) [0x963da8dd]
+                          30 ConnectToServer + 965 (libsystem_dnssd.dylib) [0x963d8e56]
+                            30 sleep$NOCANCEL$UNIX2003 + 45 (libsystem_c.dylib) [0x9513c708]
+                              30 __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x960b2b92]
+                               *30 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Thread 0x148962   priority 46        
+  30 thread_start + 34 (libsystem_pthread.dylib) [0x949f6cf2]
+    30 _pthread_start + 130 (libsystem_pthread.dylib) [0x949f1485]
+      30 _pthread_body + 144 (libsystem_pthread.dylib) [0x949f15fb]
+        30 curl_thread_create_thunk + 38 (libcurl.4.dylib) [0x96060c4f]
+          30 getaddrinfo_thread + 94 (libcurl.4.dylib) [0x960625fe]
+            30 Curl_getaddrinfo_ex + 59 (libcurl.4.dylib) [0x9605848b]
+              30 getaddrinfo + 174 (libsystem_info.dylib) [0x9346bc21]
+                30 si_addrinfo + 1408 (libsystem_info.dylib) [0x9346c23b]
+                  30 search_addrinfo + 152 (libsystem_info.dylib) [0x9346c465]
+                    30 mdns_addrinfo + 484 (libsystem_info.dylib) [0x9346c66e]
+                      30 _mdns_search + 707 (libsystem_info.dylib) [0x93465f34]
+                        30 DNSServiceCreateConnection + 66 (libsystem_dnssd.dylib) [0x963da8dd]
+                          30 ConnectToServer + 965 (libsystem_dnssd.dylib) [0x963d8e56]
+                            30 sleep$NOCANCEL$UNIX2003 + 45 (libsystem_c.dylib) [0x9513c708]
+                              30 __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x960b2b92]
+                               *30 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Thread 0x148942   priority 46        
+  11 thread_start + 34 (libsystem_pthread.dylib) [0x949f6cf2]
+    11 _pthread_start + 130 (libsystem_pthread.dylib) [0x949f1485]
+      11 _pthread_body + 144 (libsystem_pthread.dylib) [0x949f15fb]
+        11 curl_thread_create_thunk + 38 (libcurl.4.dylib) [0x96060c4f]
+          11 getaddrinfo_thread + 94 (libcurl.4.dylib) [0x960625fe]
+            11 Curl_getaddrinfo_ex + 59 (libcurl.4.dylib) [0x9605848b]
+              11 getaddrinfo + 174 (libsystem_info.dylib) [0x9346bc21]
+                11 si_addrinfo + 1408 (libsystem_info.dylib) [0x9346c23b]
+                  11 search_addrinfo + 152 (libsystem_info.dylib) [0x9346c465]
+                    11 mdns_addrinfo + 484 (libsystem_info.dylib) [0x9346c66e]
+                      11 _mdns_search + 707 (libsystem_info.dylib) [0x93465f34]
+                        11 DNSServiceCreateConnection + 66 (libsystem_dnssd.dylib) [0x963da8dd]
+                          11 ConnectToServer + 965 (libsystem_dnssd.dylib) [0x963d8e56]
+                            11 sleep$NOCANCEL$UNIX2003 + 45 (libsystem_c.dylib) [0x9513c708]
+                              11 __semwait_signal_nocancel + 10 (libsystem_kernel.dylib) [0x960b2b92]
+                               *11 semaphore_wait_continue + 0 (mach_kernel) [0xffffff800023b570]
+
+  Binary Images:
+              0x1000 -           0x1a2fff  com.riotgames.UserKernel 1.0 (1) <72CD13C4-F143-37E7-A14E-0D1233E86C12> /Applications/League of Legends.app/Contents/LoL/RADS/system/UserKernel.app/Contents/MacOS/UserKernel
+          0x91101000 -         0x912a94af  libobjc.A.dylib (551.1) <31CBE178-E972-30D1-ADC6-4B8345CAE326> /usr/lib/libobjc.A.dylib
+          0x91333000 -         0x9134bffd  libdispatch.dylib (339.92.1) <7E7A88BF-74B3-363B-B534-6F757DF2DDE3> /usr/lib/system/libdispatch.dylib
+          0x9134c000 -         0x91f6aff3  com.apple.AppKit 6.9 (1265.21) <1D31697B-6F33-3239-BACE-5D1361B1F79A> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+          0x92bf6000 -         0x92c54ffd  com.apple.AE 665.5 (665.5) <54F2F247-160C-3A22-A6E3-5D49655A67AB> /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+          0x9304c000 -         0x933c1ff9  com.apple.HIToolbox 2.1.1 <FE3938F3-6338-3C5E-AAB3-47B2F5FAC762> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+          0x93463000 -         0x9348bfff  libsystem_info.dylib (449.1.3) <BB68E8CC-422F-3121-8C86-D0F766FB696D> /usr/lib/system/libsystem_info.dylib
+          0x949f0000 -         0x949f7ffb  libsystem_pthread.dylib (53.1.4) <8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C> /usr/lib/system/libsystem_pthread.dylib
+          0x949f8000 -         0x94d25ffe  com.apple.Foundation 6.9 (1056.16) <F4D43475-9915-3552-B8E1-4F3E1C9E5394> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+          0x9510c000 -         0x9519eff9  libsystem_c.dylib (997.90.3) <80D21D3D-1031-314C-B1F0-0B35B977CEFB> /usr/lib/system/libsystem_c.dylib
+          0x9602a000 -         0x96070ff7  libcurl.4.dylib (78.94.1) <0EBB0049-F944-3A3F-ACBF-80D742C4945B> /usr/lib/libcurl.4.dylib
+          0x9609b000 -         0x960b8ff4  libsystem_kernel.dylib (2422.115.4) <011434BC-0EFD-35E9-B76D-A22B76DC83DC> /usr/lib/system/libsystem_kernel.dylib
+          0x963d6000 -         0x963defff  libsystem_dnssd.dylib (522.92.1) <7E36B79E-6BF4-3462-9A84-C0744D029636> /usr/lib/system/libsystem_dnssd.dylib
+          0x99c19000 -         0x99e1bfff  com.apple.CoreFoundation 6.9 (855.17) <E382BBB6-4F41-3959-ADC7-238BE49A2155> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+ *0xffffff7f80b4d000 - 0xffffff7f80b54fff  com.apple.kec.pthread 1.0 (1) <882075E6-12C4-3225-8750-928715183739> /System/Library/Extensions/pthread.kext/Contents/MacOS/pthread
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+
+Process:         kernel_task [0]
+Path:            kernel_task
+Architecture:    x86_64
+Parent:          kernel_task [0]
+UID:             0
+Version:         Darwin Kernel Version 13.4.0: Sun Aug 17 19:50:11 PDT 2014; root:xnu-2422.115.4~1/RELEASE_X86_64
+Task size:       143753 pages (+59)
+CPU Time:        29.959s
+
+  Thread 0x1        priority 92        
+ *101 vm_pageout_continue + 0 (mach_kernel) [0xffffff8000299160]
+
+  Thread 0x2        priority 0          cpu time   8.739s
+ *97  idle_thread + 0 (mach_kernel) [0xffffff80002378c0]
+ *4   call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *4   idle_thread + 24 (mach_kernel) [0xffffff80002378d8]
+     *4   processor_idle + 170 (mach_kernel) [0xffffff800023758a]
+       *4   machine_idle + 478 (mach_kernel) [0xffffff80002ddd7e]
+
+  Thread 0x3        priority 95        
+ *101 ??? (mach_kernel + 204928) [0xffffff8000232080]
+
+  Thread 0x4        priority 80        
+ *101 ??? (mach_kernel + 285408) [0xffffff8000245ae0]
+
+  Thread 0x5        priority 93        
+ *101 ??? (mach_kernel + 286128) [0xffffff8000245db0]
+
+  Thread 0x6        priority 95        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 328401) [0xffffff80002502d1]
+     *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+       *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+         *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x7        priority 94        
+ *101 ??? (mach_kernel + 302640) [0xffffff8000249e30]
+
+  Thread 0x8        priority 95        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 mapping_replenish + 402 (mach_kernel) [0xffffff80002c8852]
+     *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+       *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+         *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x9        priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xb        priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xd        priority 93        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1d       priority 81        
+ *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0x1f       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x22       priority 0          cpu time   1.182s
+ *95  idle_thread + 0 (mach_kernel) [0xffffff80002378c0]
+ *6   call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *6   idle_thread + 24 (mach_kernel) [0xffffff80002378d8]
+     *6   processor_idle + 170 (mach_kernel) [0xffffff800023758a]
+       *6   machine_idle + 478 (mach_kernel) [0xffffff80002ddd7e]
+
+  Thread 0x25       priority 0         
+ *101 idle_thread + 0 (mach_kernel) [0xffffff80002378c0]
+
+  Thread 0x28       priority 0          cpu time   9.951s
+ *89  call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *89  idle_thread + 24 (mach_kernel) [0xffffff80002378d8]
+     *89  processor_idle + 170 (mach_kernel) [0xffffff800023758a]
+       *89  machine_idle + 478 (mach_kernel) [0xffffff80002ddd7e]
+ *12  idle_thread + 0 (mach_kernel) [0xffffff80002378c0]
+
+  Thread 0x2d       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x49       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x59       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x5b       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x5d       priority 81         cpu time   0.006s
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x5e       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x5f       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x7b       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x8a       priority 81         cpu time   0.004s
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xa0       priority 81        
+ *101 ??? (mach_kernel + 1936704) [0xffffff80003d8d40]
+
+  Thread 0xa2       priority 81        
+ *101 ??? (mach_kernel + 4254752) [0xffffff800060ec20]
+
+  Thread 0xa3       priority 81        
+ *101 ??? (mach_kernel + 3853936) [0xffffff80005ace70]
+
+  Thread 0xa4       priority 81        
+ *101 ??? (mach_kernel + 3887248) [0xffffff80005b5090]
+
+  Thread 0xa5       priority 81        
+ *101 ??? (mach_kernel + 3887248) [0xffffff80005b5090]
+
+  Thread 0xa6       priority 81        
+ *101 ??? (mach_kernel + 3887248) [0xffffff80005b5090]
+
+  Thread 0xa7       priority 81        
+ *101 ??? (mach_kernel + 3887248) [0xffffff80005b5090]
+
+  Thread 0xa9       priority 81        
+ *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0xaa       priority 81        
+ *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0xab       priority 81        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2304861) [0xffffff8000432b5d]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0xac       priority 81        
+ *101 ??? (mach_kernel + 4080224) [0xffffff80005e4260]
+
+  Thread 0xad       priority 95        
+ *101 ??? (mach_kernel + 4099040) [0xffffff80005e8be0]
+
+  Thread 0xbd       priority 81        
+ *101 sockwall_gc_thread + 0 (ALF) [0xffffff7f82236996]
+
+  Thread 0xbf       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xc1       priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xc4       priority 82         cpu time   0.002s
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xd3       priority 81        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 4446962) [0xffffff800063daf2]
+     *101 mach_msg_receive + 162 (mach_kernel) [0xffffff800021def2]
+       *101 ipc_mqueue_receive + 66 (mach_kernel) [0xffffff80002168b2]
+         *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+           *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+             *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0xd4       priority 92        
+ *101 ??? (mach_kernel + 657584) [0xffffff80002a08b0]
+
+  Thread 0xd5       priority 31        
+ *101 ??? (mach_kernel + 625968) [0xffffff8000298d30]
+
+  Thread 0xd6       priority 31        
+ *101 vm_pressure_thread + 0 (mach_kernel) [0xffffff8000299230]
+
+  Thread 0xd7       priority 92        
+ *101 ??? (mach_kernel + 582048) [0xffffff800028e1a0]
+
+  Thread 0xd8       priority 92        
+ *101 ??? (mach_kernel + 449952) [0xffffff800026dda0]
+
+  Thread 0xd9       priority 92        
+ *101 ??? (mach_kernel + 655024) [0xffffff800029feb0]
+
+  Thread 0xda       priority 92        
+ *101 ??? (mach_kernel + 655024) [0xffffff800029feb0]
+
+  Thread 0x115      priority 81        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 4411866) [0xffffff80006351da]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x150      priority 81        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2307549) [0xffffff80004335dd]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x151      priority 82        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2291428) [0xffffff800042f6e4]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x1bc      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1bd      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1be      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1c0      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1c1      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1c6      priority 81        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2307549) [0xffffff80004335dd]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x1c7      priority 82        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2291230) [0xffffff800042f61e]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x1c9      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1cd      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1da      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1f5      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1f8      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x1ff      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x200      priority 95        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 1005327) [0xffffff80002f570f]
+     *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+       *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+         *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+           *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x201      priority 95        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 1006247) [0xffffff80002f5aa7]
+     *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+       *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+         *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+           *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x202      priority 95        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 1006247) [0xffffff80002f5aa7]
+     *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+       *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+         *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+           *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x203      priority 95        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 1006247) [0xffffff80002f5aa7]
+     *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+       *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+         *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+           *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x24d      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x24e      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x250      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x2c4      priority 92        
+ *101 ??? (mach_kernel + 9264) [0xffffff8000202430]
+
+  Thread 0x2c5      priority   12-42   cpu time  10.037s
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *42  ??? (mach_kernel + 11546) [0xffffff8000202d1a]
+     *12  proc_set_task_policy_thread + 132 (mach_kernel) [0xffffff8000242ad4]
+       *11  ??? (mach_kernel + 266240) [0xffffff8000241000]
+         *2   ??? (mach_kernel + 271832) [0xffffff80002425d8]
+           *1   rethrottle_thread + 156 (mach_kernel) [0xffffff800040ea5c]
+           *1   rethrottle_thread + 21 (mach_kernel) [0xffffff800040e9d5]
+         *1   ??? (mach_kernel + 271758) [0xffffff800024258e]
+         *1   ??? (mach_kernel + 270790) [0xffffff80002421c6]
+         *1   ??? (mach_kernel + 271720) [0xffffff8000242568]
+         *1   ??? (mach_kernel + 271285) [0xffffff80002423b5]
+         *1   ??? (mach_kernel + 271627) [0xffffff800024250b]
+         *1   ??? (mach_kernel + 271080) [0xffffff80002422e8]
+         *1   ??? (mach_kernel + 270984) [0xffffff8000242288]
+         *1   ??? (mach_kernel + 272071) [0xffffff80002426c7]
+         *1   ??? (mach_kernel + 271813) [0xffffff80002425c5]
+       *1   ??? (mach_kernel + 266265) [0xffffff8000241019]
+     *9   ??? (mach_kernel + 267001) [0xffffff80002412f9]
+       *4   lck_mtx_lock + 69 (mach_kernel) [0xffffff80002d16b5]
+       *3   lck_mtx_lock + 44 (mach_kernel) [0xffffff80002d169c]
+       *1   lck_mtx_lock + 39 (mach_kernel) [0xffffff80002d1697]
+       *1   lck_mtx_lock + 108 (mach_kernel) [0xffffff80002d16dc]
+     *5   proc_set_task_policy_thread + 47 (mach_kernel) [0xffffff8000242a7f]
+       *4   lck_mtx_lock + 44 (mach_kernel) [0xffffff80002d169c]
+       *1   lck_mtx_lock + 69 (mach_kernel) [0xffffff80002d16b5]
+     *4   ??? (mach_kernel + 267220) [0xffffff80002413d4]
+       *2   wait_queue_wakeup_all + 264 (mach_kernel) [0xffffff800024ef98]
+         *1   ml_set_interrupts_enabled + 27 (mach_kernel) [0xffffff80002d6b1b]
+         *1   ml_set_interrupts_enabled + 43 (mach_kernel) [0xffffff80002d6b2b]
+           *1   ast_pending + 17 (mach_kernel) [0xffffff80002cb891]
+       *1   wait_queue_wakeup_all + 44 (mach_kernel) [0xffffff800024eebc]
+       *1   thread_wakeup_prim_internal + 192 (mach_kernel) [0xffffff8000235480]
+     *3   ??? (mach_kernel + 267200) [0xffffff80002413c0]
+       *2   lck_mtx_lock + 44 (mach_kernel) [0xffffff80002d169c]
+       *1   lck_mtx_lock + 69 (mach_kernel) [0xffffff80002d16b5]
+     *3   ??? (mach_kernel + 267146) [0xffffff800024138a]
+       *3   lck_mtx_unlock + 71 (mach_kernel) [0xffffff80002d1cb7]
+     *2   proc_set_task_policy_thread + 140 (mach_kernel) [0xffffff8000242adc]
+       *2   lck_mtx_unlock + 71 (mach_kernel) [0xffffff80002d1cb7]
+     *1   ??? (mach_kernel + 266192) [0xffffff8000240fd0]
+     *1   proc_set_task_policy_thread + 121 (mach_kernel) [0xffffff8000242ac9]
+       *1   ??? (mach_kernel + 272158) [0xffffff800024271e]
+     *1   lck_mtx_unlock + 71 (mach_kernel) [0xffffff80002d1cb7]
+     *1   ??? (mach_kernel + 267228) [0xffffff80002413dc]
+   *41  ??? (mach_kernel + 11483) [0xffffff8000202cdb]
+     *11  ??? (mach_kernel + 267220) [0xffffff80002413d4]
+       *8   wait_queue_wakeup_all + 264 (mach_kernel) [0xffffff800024ef98]
+         *5   ml_set_interrupts_enabled + 27 (mach_kernel) [0xffffff80002d6b1b]
+         *1   ml_set_interrupts_enabled + 46 (mach_kernel) [0xffffff80002d6b2e]
+         *1   ml_set_interrupts_enabled + 43 (mach_kernel) [0xffffff80002d6b2b]
+         *1   ast_pending + 0 (mach_kernel) [0xffffff80002cb880]
+       *2   thread_wakeup_prim_internal + 150 (mach_kernel) [0xffffff8000235456]
+       *1   thread_wakeup_prim_internal + 42 (mach_kernel) [0xffffff80002353ea]
+     *9   proc_set_task_policy_thread + 132 (mach_kernel) [0xffffff8000242ad4]
+       *9   ??? (mach_kernel + 266240) [0xffffff8000241000]
+         *1   ??? (mach_kernel + 271804) [0xffffff80002425bc]
+         *1   ??? (mach_kernel + 271015) [0xffffff80002422a7]
+         *1   ??? (mach_kernel + 271779) [0xffffff80002425a3]
+         *1   ??? (mach_kernel + 271096) [0xffffff80002422f8]
+         *1   ??? (mach_kernel + 271039) [0xffffff80002422bf]
+         *1   ??? (mach_kernel + 271244) [0xffffff800024238c]
+         *1   ??? (mach_kernel + 272076) [0xffffff80002426cc]
+         *1   ??? (mach_kernel + 271758) [0xffffff800024258e]
+         *1   ??? (mach_kernel + 271827) [0xffffff80002425d3]
+     *4   proc_set_task_policy_thread + 140 (mach_kernel) [0xffffff8000242adc]
+       *2   lck_mtx_unlock + 71 (mach_kernel) [0xffffff80002d1cb7]
+       *1   lck_mtx_unlock + 155 (mach_kernel) [0xffffff80002d1d0b]
+       *1   lck_mtx_unlock + 80 (mach_kernel) [0xffffff80002d1cc0]
+     *4   lck_mtx_unlock + 71 (mach_kernel) [0xffffff80002d1cb7]
+     *3   ??? (mach_kernel + 267200) [0xffffff80002413c0]
+       *1   lck_mtx_lock + 69 (mach_kernel) [0xffffff80002d16b5]
+       *1   lck_mtx_lock + 25 (mach_kernel) [0xffffff80002d1689]
+       *1   lck_mtx_lock + 59 (mach_kernel) [0xffffff80002d16ab]
+     *3   ??? (mach_kernel + 267001) [0xffffff80002412f9]
+       *2   lck_mtx_lock + 69 (mach_kernel) [0xffffff80002d16b5]
+     *2   ??? (mach_kernel + 267146) [0xffffff800024138a]
+       *1   lck_mtx_unlock + 71 (mach_kernel) [0xffffff80002d1cb7]
+       *1   lck_mtx_unlock + 46 (mach_kernel) [0xffffff80002d1c9e]
+     *1   ??? (mach_kernel + 266266) [0xffffff800024101a]
+     *1   proc_set_task_policy_thread + 121 (mach_kernel) [0xffffff8000242ac9]
+       *1   ??? (mach_kernel + 272293) [0xffffff80002427a5]
+     *1   lck_mtx_unlock + 80 (mach_kernel) [0xffffff80002d1cc0]
+     *1   lck_mtx_unlock + 66 (mach_kernel) [0xffffff80002d1cb2]
+     *1   ??? (mach_kernel + 267230) [0xffffff80002413de]
+   *8   ??? (mach_kernel + 11254) [0xffffff8000202bf6]
+     *2   _rtc_nanotime_read + 12 (mach_kernel) [0xffffff80002d759c]
+     *2   _rtc_nanotime_read + 31 (mach_kernel) [0xffffff80002d75af]
+     *1   _rtc_nanotime_read + 19 (mach_kernel) [0xffffff80002d75a3]
+     *1   clock_get_system_nanotime + 45 (mach_kernel) [0xffffff80002db1bd]
+     *1   _rtc_nanotime_read + 37 (mach_kernel) [0xffffff80002d75b5]
+     *1   clock_get_system_nanotime + 60 (mach_kernel) [0xffffff80002db1cc]
+   *5   ??? (mach_kernel + 11488) [0xffffff8000202ce0]
+     *3   ??? (mach_kernel + 15817) [0xffffff8000203dc9]
+       *3   lck_mtx_lock_spin + 40 (mach_kernel) [0xffffff80002d1588]
+     *2   lck_rw_lock_shared + 32 (mach_kernel) [0xffffff80002d1120]
+   *1   ??? (mach_kernel + 11276) [0xffffff8000202c0c]
+   *1   ??? (mach_kernel + 11726) [0xffffff8000202dce]
+   *1   clock_get_system_nanotime + 67 (mach_kernel) [0xffffff80002db1d3]
+   *1   proc_set_task_policy_thread + 177 (mach_kernel) [0xffffff8000242b01]
+   *1   ??? (mach_kernel + 11707) [0xffffff8000202dbb]
+
+  Thread 0x36a      priority 81        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2307549) [0xffffff80004335dd]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x36b      priority 82        
+ *101 call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *101 ??? (mach_kernel + 2291230) [0xffffff800042f61e]
+     *101 msleep + 114 (mach_kernel) [0xffffff80005e4072]
+       *101 ??? (mach_kernel + 4079173) [0xffffff80005e3e45]
+         *101 lck_mtx_sleep + 78 (mach_kernel) [0xffffff800022d18e]
+           *101 thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+             *101 ??? (mach_kernel + 223579) [0xffffff800023695b]
+               *101 machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x39b      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x3ab      priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xff3c4    priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xff3c7    priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xff3d0    priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0xff3d8    priority 81        
+ *101 IOWorkLoop::threadMain() + 0 (mach_kernel) [0xffffff80006af580]
+
+  Thread 0x13a3b6   priority 93         cpu time   0.010s
+ *99  ??? (mach_kernel + 303120) [0xffffff800024a010]
+ *2   call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *2   ??? (mach_kernel + 303626) [0xffffff800024a20a]
+     *2   IOTimerEventSource::timeoutAndRelease(void*, void*) + 267 (mach_kernel) [0xffffff80006b359b]
+       *2   wlc_watchdog_timer + 14 (AirPortBrcm4360) [0xffffff7f81419d95]
+         *2   wlc_watchdog + 2361 (AirPortBrcm4360) [0xffffff7f81447cff]
+           *2   wlc_phy_watchdog + 1552 (AirPortBrcm4360) [0xffffff7f814b2424]
+             *2   wlc_phy_hwaci_engine_acphy + 285 (AirPortBrcm4360) [0xffffff7f814972e1]
+               *2   wlc_bmac_suspend_mac_and_wait + 63 (AirPortBrcm4360) [0xffffff7f8140827d]
+                 *2   wlc_bmac_wait_for_wake + 110 (AirPortBrcm4360) [0xffffff7f8140e97c]
+                   *2   delay_for_interval + 39 (mach_kernel) [0xffffff8000222167]
+                     *2   thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                       *2   ??? (mach_kernel + 223579) [0xffffff800023695b]
+                         *2   machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x13a3b7   priority 93         cpu time   0.007s
+ *100 ??? (mach_kernel + 303120) [0xffffff800024a010]
+ *1   call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *1   ??? (mach_kernel + 303626) [0xffffff800024a20a]
+     *1   IOTimerEventSource::timeoutAndRelease(void*, void*) + 267 (mach_kernel) [0xffffff80006b359b]
+       *1   wlc_watchdog_timer + 14 (AirPortBrcm4360) [0xffffff7f81419d95]
+         *1   wlc_watchdog + 2361 (AirPortBrcm4360) [0xffffff7f81447cff]
+           *1   wlc_phy_watchdog + 3308 (AirPortBrcm4360) [0xffffff7f814b2b00]
+             *1   wlc_phy_watchdog_acphy + 48 (AirPortBrcm4360) [0xffffff7f814843bc]
+               *1   wlc_bmac_suspend_mac_and_wait + 202 (AirPortBrcm4360) [0xffffff7f81408308]
+                 *1   delay_for_interval + 39 (mach_kernel) [0xffffff8000222167]
+                   *1   thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                     *1   ??? (mach_kernel + 223579) [0xffffff800023695b]
+                       *1   machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Thread 0x13a3d8   priority 93         cpu time   0.006s
+ *101 ??? (mach_kernel + 303120) [0xffffff800024a010]
+
+  Thread 0x13a3f2   priority 93         cpu time   0.011s
+ *98  ??? (mach_kernel + 303120) [0xffffff800024a010]
+ *3   call_continuation + 23 (mach_kernel) [0xffffff80002d7607]
+   *3   ??? (mach_kernel + 303626) [0xffffff800024a20a]
+     *3   IOTimerEventSource::timeoutAndRelease(void*, void*) + 267 (mach_kernel) [0xffffff80006b359b]
+       *3   wlc_watchdog_timer + 14 (AirPortBrcm4360) [0xffffff7f81419d95]
+         *3   wlc_watchdog + 2361 (AirPortBrcm4360) [0xffffff7f81447cff]
+           *1   wlc_phy_watchdog + 3308 (AirPortBrcm4360) [0xffffff7f814b2b00]
+             *1   wlc_phy_watchdog_acphy + 48 (AirPortBrcm4360) [0xffffff7f814843bc]
+               *1   wlc_bmac_suspend_mac_and_wait + 202 (AirPortBrcm4360) [0xffffff7f81408308]
+                 *1   delay_for_interval + 39 (mach_kernel) [0xffffff8000222167]
+                   *1   thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                     *1   ??? (mach_kernel + 223579) [0xffffff800023695b]
+                       *1   machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+           *1   wlc_phy_watchdog + 1526 (AirPortBrcm4360) [0xffffff7f814b240a]
+             *1   wlc_phy_desense_aci_engine_acphy + 553 (AirPortBrcm4360) [0xffffff7f81496f8e]
+               *1   wlc_phy_desense_apply_acphy + 42 (AirPortBrcm4360) [0xffffff7f81496a4e]
+                 *1   wlc_bmac_suspend_mac_and_wait + 63 (AirPortBrcm4360) [0xffffff7f8140827d]
+                   *1   wlc_bmac_wait_for_wake + 110 (AirPortBrcm4360) [0xffffff7f8140e97c]
+                     *1   delay_for_interval + 39 (mach_kernel) [0xffffff8000222167]
+                       *1   thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                         *1   ??? (mach_kernel + 223579) [0xffffff800023695b]
+                           *1   machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+           *1   wlc_phy_watchdog + 1552 (AirPortBrcm4360) [0xffffff7f814b2424]
+             *1   wlc_phy_hwaci_engine_acphy + 285 (AirPortBrcm4360) [0xffffff7f814972e1]
+               *1   wlc_bmac_suspend_mac_and_wait + 63 (AirPortBrcm4360) [0xffffff7f8140827d]
+                 *1   wlc_bmac_wait_for_wake + 110 (AirPortBrcm4360) [0xffffff7f8140e97c]
+                   *1   delay_for_interval + 39 (mach_kernel) [0xffffff8000222167]
+                     *1   thread_block_reason + 204 (mach_kernel) [0xffffff8000235d5c]
+                       *1   ??? (mach_kernel + 223579) [0xffffff800023695b]
+                         *1   machine_switch_context + 354 (mach_kernel) [0xffffff80002d8452]
+
+  Binary Images:
+ *0xffffff7f807ed000 - 0xffffff7f807fcfff  com.apple.iokit.IOStorageFamily 1.9 (1.9) <9B09B065-7F11-3241-B194-B72E5C23548B> /System/Library/Extensions/IOStorageFamily.kext/Contents/MacOS/IOStorageFamily
+ *0xffffff7f80b4d000 - 0xffffff7f80b54fff  com.apple.kec.pthread 1.0 (1) <882075E6-12C4-3225-8750-928715183739> /System/Library/Extensions/pthread.kext/Contents/MacOS/pthread
+ *0xffffff7f80d3a000 - 0xffffff7f80d77ffa  com.apple.kec.corecrypto 1.0 (1.0) <DB137B94-65D2-32AF-B5BC-80A360E104C3> /System/Library/Extensions/corecrypto.kext/Contents/MacOS/corecrypto
+ *0xffffff7f81393000 - 0xffffff7f8168bff5  com.apple.driver.AirPort.Brcm4360 8.4.2 (842.21.65) <FA3F419E-85AE-34E6-9126-402A6624F794> /System/Library/Extensions/IO80211Family.kext/Contents/PlugIns/AirPortBrcm4360.kext/Contents/MacOS/AirPortBrcm4360
+ *0xffffff7f82231000 - 0xffffff7f82237fff  com.apple.nke.applicationfirewall 5.0 (153) <9D914876-4363-3882-961E-22323F1FCC62> /System/Library/Extensions/ALF.kext/Contents/MacOS/ALF
+ *0xffffff8000200000 - 0xffffff80007a823a  mach_kernel (2422.115.4) <9477416E-7BCA-3679-AF97-E1EAAD3DD5A0> /mach_kernel
+
+  Kextstat:
+Index Refs Address            Size       Wired      Name (Version) <Linked Against>
+    1   75 0xffffff7f807e4000 0x8d80     0x8d80     com.apple.kpi.bsd (13.4.0)
+    2    7 0xffffff7f80b26000 0x28c0     0x28c0     com.apple.kpi.dsep (13.4.0)
+    3   97 0xffffff7f807ac000 0x1e050    0x1e050    com.apple.kpi.iokit (13.4.0)
+    4  103 0xffffff7f807cb000 0xbf40     0xbf40     com.apple.kpi.libkern (13.4.0)
+    5   90 0xffffff7f807a9000 0x2d10     0x2d10     com.apple.kpi.mach (13.4.0)
+    6   39 0xffffff7f807d7000 0x7d90     0x7d90     com.apple.kpi.private (13.4.0)
+    7   54 0xffffff7f807df000 0x48e0     0x48e0     com.apple.kpi.unsupported (13.4.0)
+    8    0 0xffffff7f80b4d000 0xb000     0xb000     com.apple.kec.pthread (1) <7 6 5 4 1>
+    9    2 0xffffff7f80d3a000 0x47000    0x47000    com.apple.kec.corecrypto (1.0) <7 6 5 4 3 1>
+   10   22 0xffffff7f81057000 0x9000     0x9000     com.apple.iokit.IOACPIFamily (1.4) <7 6 4 3>
+   11   27 0xffffff7f808bf000 0x2b000    0x2b000    com.apple.iokit.IOPCIFamily (2.9) <7 6 5 4 3>
+   12    2 0xffffff7f821c1000 0x59000    0x59000    com.apple.driver.AppleACPIPlatform (2.0) <11 10 7 6 5 4 3 1>
+   13    1 0xffffff7f80d81000 0xb000     0xb000     com.apple.driver.AppleFDEKeyStore (28.30) <9 7 6 5 4 3 1>
+   14    2 0xffffff7f81046000 0xf000     0xf000     com.apple.iokit.IOReportFamily (23) <5 4 3>
+   15    6 0xffffff7f807ed000 0x25000    0x25000    com.apple.iokit.IOStorageFamily (1.9) <7 6 5 4 3 1>
+   16    0 0xffffff7f81116000 0x19000    0x19000    com.apple.driver.DiskImages (371.1) <15 7 6 5 4 3 1>
+   17    0 0xffffff7f81c98000 0x14000    0x14000    com.apple.driver.AppleKeyStore (2) <9 7 6 5 4 3 1>
+   18    0 0xffffff7f80b29000 0x3000     0x3000     com.apple.security.TMSafetyNet (7) <7 6 5 4 2 1>
+   19    2 0xffffff7f80b2c000 0x5000     0x5000     com.apple.kext.AppleMatch (1.0.0d1) <4 1>
+   20    1 0xffffff7f80b31000 0x14000    0x14000    com.apple.security.sandbox (278.11.1) <19 7 6 5 4 3 2 1>
+   21    0 0xffffff7f80b45000 0x7000     0x7000     com.apple.security.quarantine (3) <20 19 7 6 5 4 2 1>
+   22    0 0xffffff7f82231000 0x8000     0x8000     com.apple.nke.applicationfirewall (153) <7 6 5 4 3 1>
+   23    0 0xffffff7f82195000 0x3000     0x3000     com.apple.driver.AppleAPIC (1.7) <4 3>
+   24    3 0xffffff7f80fd8000 0x4000     0x4000     com.apple.iokit.IOSMBusFamily (1.1) <5 4 3>
+   25    0 0xffffff7f82220000 0x7000     0x7000     com.apple.driver.AppleACPIEC (2.0) <24 12 10 5 4 3>
+   26    0 0xffffff7f81bb5000 0x4000     0x4000     com.apple.driver.AppleSMBIOS (2.1) <7 4 3>
+   27    0 0xffffff7f81eaa000 0x3000     0x3000     com.apple.driver.AppleHPET (1.8) <10 7 5 4 3>
+   28    6 0xffffff7f80d8c000 0x72000    0x72000    com.apple.iokit.IOHIDFamily (2.0.0) <13 7 6 5 4 3 2 1>
+   29    0 0xffffff7f8222a000 0x4000     0x4000     com.apple.driver.AppleACPIButtons (2.0) <28 12 10 7 6 5 4 3 1>
+   30    0 0xffffff7f81be1000 0x7000     0x7000     com.apple.driver.AppleRTC (2.0) <10 5 4 3 1>
+   31    1 0xffffff7f8214d000 0x5000     0x5000     com.apple.driver.AppleEFIRuntime (2.0) <7 6 5 4 3>
+   32    0 0xffffff7f82152000 0xa000     0xa000     com.apple.driver.AppleEFINVRAM (2.0) <31 7 6 5 4 3>
+   33    0 0xffffff7f81bbb000 0x8000     0x8000     com.apple.driver.AppleSmartBatteryManager (161.0.0) <24 10 5 4 3 1>
+   34    1 0xffffff7f81cb3000 0x8000     0x8000     com.apple.driver.AppleIntelLpssDmac (2.0.34) <11 10 5 4 3>
+   35    1 0xffffff7f81cbb000 0x9000     0x9000     com.apple.driver.AppleIntelLpssGspi (2.0.34) <11 10 7 5 4 3>
+   36   12 0xffffff7f80cb6000 0x61000    0x61000    com.apple.iokit.IOUSBFamily (686.4.1) <11 7 5 4 3 1>
+   37    0 0xffffff7f80e21000 0x1d000    0x1d000    com.apple.driver.AppleUSBXHCI (683.4.0) <36 11 7 5 4 3 1>
+   38    1 0xffffff7f81cc4000 0x13000    0x13000    com.apple.driver.AppleIntelLpssSpiController (2.0.34) <35 34 10 5 4 3>
+   39    1 0xffffff7f81e8b000 0x16000    0x16000    com.apple.driver.AppleHSSPISupport (24.1) <38 10 5 4 3 1>
+   40    5 0xffffff7f80c75000 0x2d000    0x2d000    com.apple.iokit.IONetworkingFamily (3.2) <7 6 5 4 3 1>
+   41    1 0xffffff7f8130c000 0x7000     0x7000     com.apple.driver.mDNSOffloadUserClient (1.0.1b5) <40 4 3 1>
+   42    1 0xffffff7f81313000 0x79000    0x79000    com.apple.iokit.IO80211Family (640.36) <40 7 6 5 4 3 1>
+   43    0 0xffffff7f81393000 0x3be000   0x3be000   com.apple.driver.AirPort.Brcm4360 (842.21.65) <42 41 40 11 7 5 4 3 1>
+   44    5 0xffffff7f80ece000 0xd9000    0xd9000    com.apple.iokit.IOThunderboltFamily (3.3.1) <5 4 3 1>
+   45    0 0xffffff7f81ad6000 0x18000    0x18000    com.apple.driver.AppleThunderboltNHI (2.0.1) <44 11 10 5 4 3 1>
+   46    2 0xffffff7f812c1000 0x16000    0x16000    com.apple.iokit.IOAHCIFamily (2.6.5) <5 4 3 1>
+   47    0 0xffffff7f8219a000 0x1a000    0x1a000    com.apple.driver.AppleAHCIPort (3.0.5) <46 11 5 4 3 1>
+   48    0 0xffffff7f812e7000 0x18000    0x18000    com.apple.iokit.IOAHCIBlockStorage (2.6.0) <46 15 6 5 4 3 1>
+   49    0 0xffffff7f81a20000 0x3000     0x3000     com.apple.driver.XsanFilter (404) <15 5 4 3 1>
+   50    2 0xffffff7f81a7e000 0x17000    0x17000    com.apple.driver.AppleMultitouchDriver (245.13.1) <28 5 4 3 1>
+   51    0 0xffffff7f81ea4000 0x6000     0x6000     com.apple.driver.AppleHSSPIHIDDriver (24.1) <50 39 28 5 4 3 1>
+   52    0 0xffffff7f81a99000 0x7000     0x7000     com.apple.driver.AppleHIDKeyboard (170.15) <28 4 3>
+   53    0 0xffffff7f81aa7000 0x3000     0x3000     com.apple.driver.AppleTopCaseHIDEventDriver (10.21) <50 28 6 5 4 3 1>
+   54    0 0xffffff7f80d37000 0x3000     0x3000     com.apple.iokit.IOUSBUserClient (660.4.2) <36 7 5 4 3 1>
+   55    0 0xffffff7f80e7f000 0x18000    0x18000    com.apple.driver.AppleUSBHub (683.4.0) <36 5 4 3 1>
+   56    0 0xffffff7f81893000 0x9000     0x9000     com.apple.BootCache (35) <7 6 5 4 3 1>
+   57    0 0xffffff7f82137000 0x4000     0x4000     com.apple.AppleFSCompression.AppleFSCompressionTypeZlib (1.0.0d1) <6 4 3 2 1>
+   58    0 0xffffff7f8213d000 0x5000     0x5000     com.apple.AppleFSCompression.AppleFSCompressionTypeLZVN (1.0.0d1) <6 4 3 2 1>
+   59    0 0xffffff7f82144000 0x3000     0x3000     com.apple.AppleFSCompression.AppleFSCompressionTypeDataless (1.0.0d1) <7 6 4 3 2 1>
+   61    1 0xffffff7f80e1a000 0x7000     0x7000     com.apple.driver.AppleUSBComposite (656.4.1) <36 4 3 1>
+   62    0 0xffffff7f80e11000 0x9000     0x9000     com.apple.iokit.IOUSBHIDDriver (660.4.0) <36 28 5 4 3 1>
+   63    0 0xffffff7f80e78000 0x7000     0x7000     com.apple.driver.AppleUSBMergeNub (650.4.0) <61 36 4 3 1>
+   64    3 0xffffff7f8087d000 0x2b000    0x2b000    com.apple.iokit.IOSCSIArchitectureModelFamily (3.6.7) <5 4 3 1>
+   65    1 0xffffff7f80d23000 0x11000    0x11000    com.apple.iokit.IOUSBMassStorageClass (3.6.0) <64 36 15 5 4 3 1>
+   66    1 0xffffff7f80b98000 0x15000    0x15000    com.apple.iokit.IOSCSIBlockCommandsDevice (3.6.7) <64 15 5 4 3 1>
+   67    0 0xffffff7f81b8f000 0x8000     0x8000     com.apple.driver.AppleUSBCardReader (3.4.1) <66 65 64 36 15 5 4 3 1>
+   68    0 0xffffff7f81ac4000 0x5000     0x5000     com.apple.driver.AppleThunderboltPCIDownAdapter (1.4.5) <44 11 5 4 3 1>
+   69    1 0xffffff7f81b14000 0xf000     0xf000     com.apple.driver.AppleThunderboltDPAdapterFamily (3.1.7) <44 10 5 4 3 1>
+   70    0 0xffffff7f81b3d000 0x6000     0x6000     com.apple.driver.AppleThunderboltDPInAdapter (3.1.7) <69 44 5 4 3 1>
+   72   13 0xffffff7f810c3000 0x38000    0x38000    com.apple.iokit.IOGraphicsFamily (2.4.1) <11 7 5 4 3 1>
+   73    2 0xffffff7f81cd9000 0x65000    0x65000    com.apple.iokit.IOAcceleratorFamily2 (98.23) <72 11 7 6 5 4 3 1>
+   74    2 0xffffff7f81dc3000 0x6000     0x6000     com.apple.AppleGraphicsDeviceControl (3.6.22) <7 6 5 4 3 1>
+   75    0 0xffffff7f81dc9000 0x68000    0x68000    com.apple.driver.AppleIntelFramebufferAzul (8.2.8) <74 73 72 14 11 10 7 6 5 4 3 1>
+   76    4 0xffffff7f81106000 0x10000    0x10000    com.apple.iokit.IONDRVSupport (2.4.1) <72 11 7 5 4 3>
+   77    1 0xffffff7f80fc3000 0x13000    0x13000    com.apple.iokit.IOSurface (91.1) <7 5 4 3 1>
+   78    0 0xffffff7f81d4b000 0x51000    0x51000    com.apple.driver.AppleIntelHD5000Graphics (8.2.8) <77 73 72 11 7 5 4 3 1>
+   79    1 0xffffff7f81c45000 0xe000     0xe000     com.apple.driver.AppleSMBusController (1.0.12d1) <24 11 10 5 4 3>
+   80    0 0xffffff7f81c56000 0xe000     0xe000     com.apple.driver.AppleMCCSControl (1.2.5) <79 72 11 10 7 5 4 3 1>
+   81    1 0xffffff7f8210b000 0x5000     0x5000     com.apple.driver.AppleBacklightExpert (1.0.4) <76 72 11 5 4 3>
+   82    0 0xffffff7f8218d000 0x5000     0x5000     com.apple.driver.AppleBacklight (170.4.11) <81 76 72 11 5 4 3>
+   85    0 0xffffff7f8215c000 0x14000    0x14000    com.apple.driver.AppleCameraInterface (4.26.0) <11 7 6 5 4 3 1>
+   88    4 0xffffff7f81060000 0xa000     0xa000     com.apple.driver.IOPlatformPluginFamily (5.7.1d6) <10 7 6 5 4 3>
+   89    4 0xffffff7f8106a000 0x13000    0x13000    com.apple.driver.AppleSMC (3.1.8) <10 7 5 4 3 1>
+   90    1 0xffffff7f8107f000 0x11000    0x11000    com.apple.driver.X86PlatformPlugin (1.0.0) <89 88 36 10 7 6 5 4 3 1>
+   91    0 0xffffff7f81c90000 0x3000     0x3000     com.apple.driver.AppleLPC (1.7.0) <88 11 5 4 3>
+   93    0 0xffffff7f81e86000 0x3000     0x3000     com.apple.driver.AppleHWAccess (1) <7 5 4 3>
+   94    0 0xffffff7f817ab000 0x5000     0x5000     com.apple.Dont_Steal_Mac_OS_X (7.0.0) <89 7 4 3 1>
+   95    2 0xffffff7f81edf000 0xc000     0xc000     com.apple.iokit.IOHDAFamily (2.6.3f4) <5 4 3 1>
+   96    1 0xffffff7f81ef2000 0x1a000    0x1a000    com.apple.driver.AppleHDAController (2.6.3f4) <95 72 11 7 6 5 4 3 1>
+   97    0 0xffffff7f81baa000 0x5000     0x5000     com.apple.driver.AppleSMCLMU (2.0.4d1) <89 72 5 4 3>
+   98    1 0xffffff7f811b9000 0x1d000    0x1d000    com.apple.iokit.IOBluetoothHostControllerUSBTransport (4.2.7f3) <36 11 10 7 5 4 3 1>
+   99    0 0xffffff7f811d6000 0x7000     0x7000     com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport (4.2.7f3) <98 36 11 10 7 5 4 3>
+  100    0 0xffffff7f81af2000 0x17000    0x17000    com.apple.driver.AppleThunderboltIP (1.1.2) <44 40 11 5 4 3 1>
+  103    0 0xffffff7f811e0000 0x9d000    0x9d000    com.apple.iokit.IOBluetoothFamily (4.2.7f3) <36 14 7 5 4 3 1>
+  105    0 0xffffff7f80ca9000 0x7000     0x7000     com.apple.iokit.IOUserEthernet (1.0.0d1) <40 6 5 4 3 1>
+  106    2 0xffffff7f818ae000 0x12000    0x12000    com.apple.kext.OSvKernDSPLib (1.14) <5 4>
+  107    3 0xffffff7f818c0000 0x2f000    0x2f000    com.apple.iokit.IOAudioFamily (1.9.7fc2) <106 5 4 3 1>
+  108    1 0xffffff7f81f0c000 0x2f000    0x2f000    com.apple.vecLib.kext (1.0.0) <6 5 4 3>
+  109    1 0xffffff7f81f3b000 0xcd000    0xcd000    com.apple.driver.DspFuncLib (2.6.3f4) <108 107 106 6 5 4 3 1>
+  110    0 0xffffff7f82011000 0x94000    0x94000    com.apple.driver.AppleHDA (2.6.3f4) <109 107 96 95 76 72 6 5 4 3 1>
+  112    0 0xffffff7f81090000 0x6000     0x6000     com.apple.driver.X86PlatformShim (1.0.0) <90 89 88 7 4 3>
+  113    0 0xffffff7f81c38000 0x4000     0x4000     com.apple.driver.ApplePlatformEnabler (2.0.9d7) <7 5 4 3>
+  114    0 0xffffff7f820ed000 0x13000    0x13000    com.apple.driver.AGPM (100.14.34) <88 76 74 72 11 5 4 3>
+  115    0 0xffffff7f818f7000 0x5000     0x5000     com.apple.driver.AudioAUUC (1.60) <107 72 11 10 7 5 4 3 1>
+  116    1 0xffffff7f80fe1000 0xe000     0xe000     com.apple.iokit.IOSerialFamily (10.0.7) <7 6 5 4 3 1>
+  117    0 0xffffff7f811a5000 0xa000     0xa000     com.apple.iokit.IOBluetoothSerialManager (4.2.7f3) <116 7 5 4 3 1>
+  119    0 0xffffff7f81a75000 0x5000     0x5000     com.apple.driver.AppleUpstreamUserClient (3.5.13) <72 11 10 7 5 4 3 1>
+  120    1 0xffffff7f8189e000 0x5000     0x5000     com.apple.kext.triggers (1.0) <7 6 5 4 3 1>
+  121    0 0xffffff7f818a3000 0x9000     0x9000     com.apple.filesystems.autofs (3.0) <120 7 6 5 4 3 1>
+  123    0 0xffffff7f82251000 0xa000     0xa000     com.cisco.kext.acsock (1.1.0) <5 4 1>
+

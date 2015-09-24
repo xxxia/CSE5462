@@ -1,0 +1,697 @@
+Main thread :
+
+<CFRunLoop 0x7f9293700d80 [0x7fff7dda5f00]>{wakeup port = 0x1703, stopped = false, ignoreWakeUps = true, 
+current mode = kCFRunLoopDefaultMode,
+common modes = <CFBasicHash 0x7f9293700e40 [0x7fff7dda5f00]>{type = mutable set, count = 1,
+entries =>
+	2 : <CFString 0x7fff7dd8bd00 [0x7fff7dda5f00]>{contents = "kCFRunLoopDefaultMode"}
+}
+,
+common mode items = (null),
+modes = <CFBasicHash 0x7f9293700ea0 [0x7fff7dda5f00]>{type = mutable set, count = 2,
+entries =>
+	0 : <CFRunLoopMode 0x7f92935218c0 [0x7fff7dda5f00]>{name = kCFRunLoopCommonModes, port set = 0xf627, queue = 0x7f9293520dc0, source = 0x7f9293520e30 (not fired), timer port = 0xfa03, 
+	sources0 = (null),
+	sources1 = (null),
+	observers = (null),
+	timers = (null),
+	currently 447264906 (135017880052365) / soft deadline in: 1.84466091e+10 sec (@ -1) / hard deadline in: 1.84466091e+10 sec (@ -1)
+},
+
+	2 : <CFRunLoopMode 0x7f9293700ee0 [0x7fff7dda5f00]>{name = kCFRunLoopDefaultMode, port set = 0x1803, queue = 0x7f9293700fb0, source = 0x7f9293701020 (not fired), timer port = 0x1a03, 
+	sources0 = <CFBasicHash 0x7f92937010c0 [0x7fff7dda5f00]>{type = mutable set, count = 0,
+entries =>
+}
+,
+	sources1 = <CFBasicHash 0x7f9293701290 [0x7fff7dda5f00]>{type = mutable set, count = 145,
+entries =>
+	2 : <CFRunLoopSource 0x7f929342b450 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342b3c0 [0x7fff7dda5f00]>{valid = Yes, port = 12d03, source = 0x7f929342b450, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	5 : <CFRunLoopSource 0x7f9293428660 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934237b0 [0x7fff7dda5f00]>{valid = Yes, port = 15f07, source = 0x7f9293428660, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	10 : <CFRunLoopSource 0x7f92935288b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293528dd0 [0x7fff7dda5f00]>{valid = Yes, port = 1ba3b, source = 0x7f92935288b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	11 : <CFRunLoopSource 0x7f92935287b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293520940 [0x7fff7dda5f00]>{valid = Yes, port = 13db7, source = 0x7f92935287b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	12 : <CFRunLoopSource 0x7f929351dff0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351df60 [0x7fff7dda5f00]>{valid = Yes, port = 12f03, source = 0x7f929351dff0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	13 : <CFRunLoopSource 0x7f9293504960 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92935044c0 [0x7fff7dda5f00]>{valid = Yes, port = 3403, source = 0x7f9293504960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	15 : <CFRunLoopSource 0x7f9293419500 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293419b70 [0x7fff7dda5f00]>{valid = Yes, port = 9903, source = 0x7f9293419500, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	16 : <CFRunLoopSource 0x7f929360eda0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929361aa00 [0x7fff7dda5f00]>{valid = Yes, port = 9517, source = 0x7f929360eda0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	17 : <CFRunLoopSource 0x7f92936298d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362cb00 [0x7fff7dda5f00]>{valid = Yes, port = fd07, source = 0x7f92936298d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	20 : <CFRunLoopSource 0x7f92936192e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293625c10 [0x7fff7dda5f00]>{valid = Yes, port = e873, source = 0x7f92936192e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	24 : <CFRunLoopSource 0x7f9293709180 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937087c0 [0x7fff7dda5f00]>{valid = Yes, port = 18d2f, source = 0x7f9293709180, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	25 : <CFRunLoopSource 0x7f92934163b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615240 [0x7fff7dda5f00]>{valid = Yes, port = 9b03, source = 0x7f92934163b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	26 : <CFRunLoopSource 0x7f929340de70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340dde0 [0x7fff7dda5f00]>{valid = Yes, port = 6903, source = 0x7f929340de70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	27 : <CFRunLoopSource 0x7f929370e500 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293710dd0 [0x7fff7dda5f00]>{valid = Yes, port = ff07, source = 0x7f929370e500, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	30 : <CFRunLoopSource 0x7f9293612cf0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293617de0 [0x7fff7dda5f00]>{valid = Yes, port = 9c03, source = 0x7f9293612cf0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	35 : <CFRunLoopSource 0x7f929350c850 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929350c7c0 [0x7fff7dda5f00]>{valid = Yes, port = 6a07, source = 0x7f929350c850, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	36 : <CFRunLoopSource 0x7f9293711da0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293710f20 [0x7fff7dda5f00]>{valid = Yes, port = 19ceb, source = 0x7f9293711da0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	42 : <CFRunLoopSource 0x7f929362f380 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936256f0 [0x7fff7dda5f00]>{valid = Yes, port = d6e3, source = 0x7f929362f380, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	45 : <CFRunLoopSource 0x7f9293629d70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293624030 [0x7fff7dda5f00]>{valid = Yes, port = 110bf, source = 0x7f9293629d70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	46 : <CFRunLoopSource 0x7f929342d5c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342eca0 [0x7fff7dda5f00]>{valid = Yes, port = 13be3, source = 0x7f929342d5c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	49 : <CFRunLoopSource 0x7f9293712d30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293712ca0 [0x7fff7dda5f00]>{valid = Yes, port = 104ff, source = 0x7f9293712d30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	54 : <CFRunLoopSource 0x7f9293423280 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293422ee0 [0x7fff7dda5f00]>{valid = Yes, port = 1350f, source = 0x7f9293423280, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	55 : <CFRunLoopSource 0x7f9293618200 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293618170 [0x7fff7dda5f00]>{valid = Yes, port = 3b0b, source = 0x7f9293618200, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	59 : <CFRunLoopSource 0x7f9293523080 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293527060 [0x7fff7dda5f00]>{valid = Yes, port = 1981b, source = 0x7f9293523080, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	60 : <CFRunLoopSource 0x7f929341c890 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341c800 [0x7fff7dda5f00]>{valid = Yes, port = a203, source = 0x7f929341c890, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	61 : <CFRunLoopSource 0x7f92934255e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293425550 [0x7fff7dda5f00]>{valid = Yes, port = 13ee3, source = 0x7f92934255e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	62 : <CFRunLoopSource 0x7f929352e130 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293529060 [0x7fff7dda5f00]>{valid = Yes, port = 1e1a7, source = 0x7f929352e130, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	63 : <CFRunLoopSource 0x7f9293631780 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936278d0 [0x7fff7dda5f00]>{valid = Yes, port = 1c04f, source = 0x7f9293631780, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	64 : <CFRunLoopSource 0x7f929363a3c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293635350 [0x7fff7dda5f00]>{valid = Yes, port = fc3b, source = 0x7f929363a3c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	66 : <CFRunLoopSource 0x7f929370c6c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370c570 [0x7fff7dda5f00]>{valid = Yes, port = 1d5e7, source = 0x7f929370c6c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	68 : <CFRunLoopSource 0x7f92936117b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929360fd60 [0x7fff7dda5f00]>{valid = Yes, port = 3c13, source = 0x7f92936117b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	69 : <CFRunLoopSource 0x7f9293421440 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342c2a0 [0x7fff7dda5f00]>{valid = Yes, port = 10127, source = 0x7f9293421440, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	72 : <CFRunLoopSource 0x7f9293521990 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293521730 [0x7fff7dda5f00]>{valid = Yes, port = 11f8f, source = 0x7f9293521990, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	73 : <CFRunLoopSource 0x7f929370f990 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370c130 [0x7fff7dda5f00]>{valid = Yes, port = 13feb, source = 0x7f929370f990, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	74 : <CFRunLoopSource 0x7f92937105a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937100d0 [0x7fff7dda5f00]>{valid = Yes, port = 16c0b, source = 0x7f92937105a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	76 : <CFRunLoopSource 0x7f92937110d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293711040 [0x7fff7dda5f00]>{valid = Yes, port = 16e03, source = 0x7f92937110d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	79 : <CFRunLoopSource 0x7f9293519690 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351b1e0 [0x7fff7dda5f00]>{valid = Yes, port = a507, source = 0x7f9293519690, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	80 : <CFRunLoopSource 0x7f929370d760 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370d6d0 [0x7fff7dda5f00]>{valid = Yes, port = 16d0b, source = 0x7f929370d760, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	82 : <CFRunLoopSource 0x7f929342c940 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342d8b0 [0x7fff7dda5f00]>{valid = Yes, port = 1be6f, source = 0x7f929342c940, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	83 : <CFRunLoopSource 0x7f929370a570 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370a2f0 [0x7fff7dda5f00]>{valid = Yes, port = eba3, source = 0x7f929370a570, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	84 : <CFRunLoopSource 0x7f929360e590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293703f60 [0x7fff7dda5f00]>{valid = Yes, port = 400f, source = 0x7f929360e590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	85 : <CFRunLoopSource 0x7f9293611df0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293611d60 [0x7fff7dda5f00]>{valid = Yes, port = 410b, source = 0x7f9293611df0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	86 : <CFRunLoopSource 0x7f929370f3f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370f360 [0x7fff7dda5f00]>{valid = Yes, port = 17003, source = 0x7f929370f3f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	91 : <CFRunLoopSource 0x7f9293410130 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340e360 [0x7fff7dda5f00]>{valid = Yes, port = 7603, source = 0x7f9293410130, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	92 : <CFRunLoopSource 0x7f9293613a50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936139c0 [0x7fff7dda5f00]>{valid = Yes, port = 4403, source = 0x7f9293613a50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	93 : <CFRunLoopSource 0x7f9293700c80 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937004e0 [0x7fff7dda5f00]>{valid = Yes, port = 1203, source = 0x7f9293700c80, callout = ??? (0x10df32e6a), context = <SIGTERM MP>}}
+	95 : <CFRunLoopSource 0x7f9293431f50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293427b00 [0x7fff7dda5f00]>{valid = Yes, port = 12683, source = 0x7f9293431f50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	96 : <CFRunLoopSource 0x7f9293410e10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293410d80 [0x7fff7dda5f00]>{valid = Yes, port = 7703, source = 0x7f9293410e10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	97 : <CFRunLoopSource 0x7f92934240d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934242f0 [0x7fff7dda5f00]>{valid = Yes, port = 14003, source = 0x7f92934240d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	98 : <CFRunLoopSource 0x7f92937113f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370f660 [0x7fff7dda5f00]>{valid = Yes, port = 17203, source = 0x7f92937113f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	101 : <CFRunLoopSource 0x7f92936232c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936216f0 [0x7fff7dda5f00]>{valid = Yes, port = 702b, source = 0x7f92936232c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	102 : <CFRunLoopSource 0x7f9293614980 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936148f0 [0x7fff7dda5f00]>{valid = Yes, port = 4603, source = 0x7f9293614980, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	103 : <CFRunLoopSource 0x7f929340f420 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340f390 [0x7fff7dda5f00]>{valid = Yes, port = 7223, source = 0x7f929340f420, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	104 : <CFRunLoopSource 0x7f929341c3f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341c6d0 [0x7fff7dda5f00]>{valid = Yes, port = dd03, source = 0x7f929341c3f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	106 : <CFRunLoopSource 0x7f92934331a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293432a30 [0x7fff7dda5f00]>{valid = Yes, port = 1ce37, source = 0x7f92934331a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	107 : <CFRunLoopSource 0x7f9293704a00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293704970 [0x7fff7dda5f00]>{valid = Yes, port = 4703, source = 0x7f9293704a00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	108 : <CFRunLoopSource 0x7f9293424960 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934248d0 [0x7fff7dda5f00]>{valid = Yes, port = 14203, source = 0x7f9293424960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	109 : <CFRunLoopSource 0x7f9293625830 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936257a0 [0x7fff7dda5f00]>{valid = Yes, port = de03, source = 0x7f9293625830, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	110 : <CFRunLoopSource 0x7f9293523510 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293523480 [0x7fff7dda5f00]>{valid = Yes, port = acfb, source = 0x7f9293523510, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	111 : <CFRunLoopSource 0x7f9293711bb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293711b20 [0x7fff7dda5f00]>{valid = Yes, port = 17503, source = 0x7f9293711bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	116 : <CFRunLoopSource 0x7f9293625ed0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293627460 [0x7fff7dda5f00]>{valid = Yes, port = c973, source = 0x7f9293625ed0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	117 : <CFRunLoopSource 0x7f929362b670 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362b980 [0x7fff7dda5f00]>{valid = Yes, port = 14403, source = 0x7f929362b670, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	118 : <CFRunLoopSource 0x7f9293705600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293705570 [0x7fff7dda5f00]>{valid = Yes, port = 4903, source = 0x7f9293705600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	119 : <CFRunLoopSource 0x7f92936263a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293626310 [0x7fff7dda5f00]>{valid = Yes, port = e003, source = 0x7f92936263a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	120 : <CFRunLoopSource 0x7f9293412280 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934121f0 [0x7fff7dda5f00]>{valid = Yes, port = 7b03, source = 0x7f9293412280, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	124 : <CFRunLoopSource 0x7f9293626700 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293626670 [0x7fff7dda5f00]>{valid = Yes, port = e103, source = 0x7f9293626700, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	126 : <CFRunLoopSource 0x7f9293616600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293623450 [0x7fff7dda5f00]>{valid = Yes, port = 7d03, source = 0x7f9293616600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	127 : <CFRunLoopSource 0x7f9293624f00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293624e70 [0x7fff7dda5f00]>{valid = Yes, port = 14603, source = 0x7f9293624f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	130 : <CFRunLoopSource 0x7f929370c600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293714c80 [0x7fff7dda5f00]>{valid = Yes, port = 1d627, source = 0x7f929370c600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	131 : <CFRunLoopSource 0x7f929351d110 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351d080 [0x7fff7dda5f00]>{valid = Yes, port = 4b07, source = 0x7f929351d110, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	132 : <CFRunLoopSource 0x7f929352de80 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352e500 [0x7fff7dda5f00]>{valid = Yes, port = 1d433, source = 0x7f929352de80, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	133 : <CFRunLoopSource 0x7f929352ec90 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352ec00 [0x7fff7dda5f00]>{valid = Yes, port = 1adf7, source = 0x7f929352ec90, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	134 : <CFRunLoopSource 0x7f929362db60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362cb90 [0x7fff7dda5f00]>{valid = Yes, port = 1b2db, source = 0x7f929362db60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	136 : <CFRunLoopSource 0x7f92936195b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936236c0 [0x7fff7dda5f00]>{valid = Yes, port = 7f03, source = 0x7f92936195b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	137 : <CFRunLoopSource 0x7f92935244f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293523d90 [0x7fff7dda5f00]>{valid = Yes, port = 14803, source = 0x7f92935244f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	138 : <CFRunLoopSource 0x7f9293606f40 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293606eb0 [0x7fff7dda5f00]>{valid = Yes, port = 1b03, source = 0x7f9293606f40, callout = ??? (0x10df336ab), context = <main DynamicStore MP>}}
+	140 : <CFRunLoopSource 0x7f9293430ca0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293430770 [0x7fff7dda5f00]>{valid = Yes, port = 17a07, source = 0x7f9293430ca0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	141 : <CFRunLoopSource 0x7f9293615770 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615590 [0x7fff7dda5f00]>{valid = Yes, port = 8003, source = 0x7f9293615770, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	142 : <CFRunLoopSource 0x7f9293432600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293430800 [0x7fff7dda5f00]>{valid = Yes, port = 1b1eb, source = 0x7f9293432600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	143 : <CFRunLoopSource 0x7f9293628680 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615c50 [0x7fff7dda5f00]>{valid = Yes, port = 11317, source = 0x7f9293628680, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	144 : <CFRunLoopSource 0x7f9293618f60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293618ed0 [0x7fff7dda5f00]>{valid = Yes, port = b207, source = 0x7f9293618f60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	145 : <CFRunLoopSource 0x7f929341e190 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341e100 [0x7fff7dda5f00]>{valid = Yes, port = b303, source = 0x7f929341e190, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	146 : <CFRunLoopSource 0x7f9293415fe0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293411270 [0x7fff7dda5f00]>{valid = Yes, port = b013, source = 0x7f9293415fe0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	147 : <CFRunLoopSource 0x7f9293424bb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340b370 [0x7fff7dda5f00]>{valid = Yes, port = 14a03, source = 0x7f9293424bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	148 : <CFRunLoopSource 0x7f929362ea70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293635630 [0x7fff7dda5f00]>{valid = Yes, port = 13a4f, source = 0x7f929362ea70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	156 : <CFRunLoopSource 0x7f929370d2c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370c3a0 [0x7fff7dda5f00]>{valid = Yes, port = 1180b, source = 0x7f929370d2c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	158 : <CFRunLoopSource 0x7f9293607250 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936071c0 [0x7fff7dda5f00]>{valid = Yes, port = 1f03, source = 0x7f9293607250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	161 : <CFRunLoopSource 0x7f9293433270 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934321e0 [0x7fff7dda5f00]>{valid = Yes, port = 11cf7, source = 0x7f9293433270, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	162 : <CFRunLoopSource 0x7f9293709480 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937077a0 [0x7fff7dda5f00]>{valid = Yes, port = e70b, source = 0x7f9293709480, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	163 : <CFRunLoopSource 0x7f9293630ba0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362be50 [0x7fff7dda5f00]>{valid = Yes, port = bfd3, source = 0x7f9293630ba0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	165 : <CFRunLoopSource 0x7f9293411f00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293411e70 [0x7fff7dda5f00]>{valid = Yes, port = 7843, source = 0x7f9293411f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	170 : <CFRunLoopSource 0x7f9293521800 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293518ee0 [0x7fff7dda5f00]>{valid = Yes, port = 125d3, source = 0x7f9293521800, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	173 : <CFRunLoopSource 0x7f9293709d30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293709ca0 [0x7fff7dda5f00]>{valid = Yes, port = ea07, source = 0x7f9293709d30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	175 : <CFRunLoopSource 0x7f9293422010 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293420b80 [0x7fff7dda5f00]>{valid = Yes, port = efeb, source = 0x7f9293422010, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	176 : <CFRunLoopSource 0x7f9293705d10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293705c80 [0x7fff7dda5f00]>{valid = Yes, port = 8703, source = 0x7f9293705d10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	177 : <CFRunLoopSource 0x7f9293425ce0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293425c50 [0x7fff7dda5f00]>{valid = Yes, port = 15003, source = 0x7f9293425ce0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	178 : <CFRunLoopSource 0x7f9293629e30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293633780 [0x7fff7dda5f00]>{valid = Yes, port = 18ad7, source = 0x7f9293629e30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	179 : <CFRunLoopSource 0x7f9293627660 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293630110 [0x7fff7dda5f00]>{valid = Yes, port = 10f4f, source = 0x7f9293627660, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	181 : <CFRunLoopSource 0x7f92934293e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342f9f0 [0x7fff7dda5f00]>{valid = Yes, port = 19e77, source = 0x7f92934293e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	183 : <CFRunLoopSource 0x7f92937096e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293709650 [0x7fff7dda5f00]>{valid = Yes, port = ec07, source = 0x7f92937096e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	184 : <CFRunLoopSource 0x7f92934238b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342c5d0 [0x7fff7dda5f00]>{valid = Yes, port = 1a45b, source = 0x7f92934238b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	185 : <CFRunLoopSource 0x7f9293424c80 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293426dd0 [0x7fff7dda5f00]>{valid = Yes, port = 124e7, source = 0x7f9293424c80, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	186 : <CFRunLoopSource 0x7f929342c100 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293432150 [0x7fff7dda5f00]>{valid = Yes, port = 1c6af, source = 0x7f929342c100, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	190 : <CFRunLoopSource 0x7f929342e9a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934330a0 [0x7fff7dda5f00]>{valid = Yes, port = 10687, source = 0x7f929342e9a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	191 : <CFRunLoopSource 0x7f9293709960 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293709b10 [0x7fff7dda5f00]>{valid = Yes, port = 10783, source = 0x7f9293709960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	192 : <CFRunLoopSource 0x7f929351c8d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293521e80 [0x7fff7dda5f00]>{valid = Yes, port = 12007, source = 0x7f929351c8d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	193 : <CFRunLoopSource 0x7f9293616420 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615620 [0x7fff7dda5f00]>{valid = Yes, port = 8a03, source = 0x7f9293616420, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	197 : <CFRunLoopSource 0x7f9293434120 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341fbf0 [0x7fff7dda5f00]>{valid = Yes, port = 1c1d3, source = 0x7f9293434120, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	198 : <CFRunLoopSource 0x7f9293400470 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934003c0 [0x7fff7dda5f00]>{valid = Yes, port = 2703, source = 0x7f9293400470, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	199 : <CFRunLoopSource 0x7f9293629ba0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362adf0 [0x7fff7dda5f00]>{valid = Yes, port = 12203, source = 0x7f9293629ba0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	200 : <CFRunLoopSource 0x7f92936325f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615ce0 [0x7fff7dda5f00]>{valid = Yes, port = b81f, source = 0x7f92936325f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	201 : <CFRunLoopSource 0x7f9293712590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293710bd0 [0x7fff7dda5f00]>{valid = Yes, port = 1a567, source = 0x7f9293712590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	203 : <CFRunLoopSource 0x7f929341d690 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293428090 [0x7fff7dda5f00]>{valid = Yes, port = 12303, source = 0x7f929341d690, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	204 : <CFRunLoopSource 0x7f92934209f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293420960 [0x7fff7dda5f00]>{valid = Yes, port = f103, source = 0x7f92934209f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	207 : <CFRunLoopSource 0x7f9293400530 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293415f50 [0x7fff7dda5f00]>{valid = Yes, port = 91eb, source = 0x7f9293400530, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	209 : <CFRunLoopSource 0x7f929362e250 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362e1c0 [0x7fff7dda5f00]>{valid = Yes, port = 1540f, source = 0x7f929362e250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	211 : <CFRunLoopSource 0x7f92935276e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351cad0 [0x7fff7dda5f00]>{valid = Yes, port = 18903, source = 0x7f92935276e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	212 : <CFRunLoopSource 0x7f9293422df0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934279e0 [0x7fff7dda5f00]>{valid = Yes, port = 1a863, source = 0x7f9293422df0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	213 : <CFRunLoopSource 0x7f9293407310 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293407280 [0x7fff7dda5f00]>{valid = Yes, port = 2a03, source = 0x7f9293407310, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	214 : <CFRunLoopSource 0x7f9293431a50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342dbd0 [0x7fff7dda5f00]>{valid = Yes, port = a87f, source = 0x7f9293431a50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	215 : <CFRunLoopSource 0x7f9293618410 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362c500 [0x7fff7dda5f00]>{valid = Yes, port = d49f, source = 0x7f9293618410, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	216 : <CFRunLoopSource 0x7f929361f930 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929361f8a0 [0x7fff7dda5f00]>{valid = Yes, port = 5c07, source = 0x7f929361f930, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	220 : <CFRunLoopSource 0x7f929342af10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342ae80 [0x7fff7dda5f00]>{valid = Yes, port = cdc7, source = 0x7f929342af10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	222 : <CFRunLoopSource 0x7f9293427fa0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293420dc0 [0x7fff7dda5f00]>{valid = Yes, port = 1c2e7, source = 0x7f9293427fa0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	223 : <CFRunLoopSource 0x7f929352fd00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352e790 [0x7fff7dda5f00]>{valid = Yes, port = 164c7, source = 0x7f929352fd00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	224 : <CFRunLoopSource 0x7f9293427140 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934270b0 [0x7fff7dda5f00]>{valid = Yes, port = 1570f, source = 0x7f9293427140, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	225 : <CFRunLoopSource 0x7f929352d920 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352d160 [0x7fff7dda5f00]>{valid = Yes, port = 10d87, source = 0x7f929352d920, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	227 : <CFRunLoopSource 0x7f92935212a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92935280c0 [0x7fff7dda5f00]>{valid = Yes, port = 194d7, source = 0x7f92935212a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	228 : <CFRunLoopSource 0x7f9293429910 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342a040 [0x7fff7dda5f00]>{valid = Yes, port = c20b, source = 0x7f9293429910, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	229 : <CFRunLoopSource 0x7f9293610fe0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936193a0 [0x7fff7dda5f00]>{valid = Yes, port = 8f0f, source = 0x7f9293610fe0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	230 : <CFRunLoopSource 0x7f9293625150 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362d390 [0x7fff7dda5f00]>{valid = Yes, port = 1c8cf, source = 0x7f9293625150, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	234 : <CFRunLoopSource 0x7f9293625d40 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293626e30 [0x7fff7dda5f00]>{valid = Yes, port = f703, source = 0x7f9293625d40, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	235 : <CFRunLoopSource 0x7f9293415320 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293417c10 [0x7fff7dda5f00]>{valid = Yes, port = 9207, source = 0x7f9293415320, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	236 : <CFRunLoopSource 0x7f9293623d70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293623ce0 [0x7fff7dda5f00]>{valid = Yes, port = 9303, source = 0x7f9293623d70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	237 : <CFRunLoopSource 0x7f929341faf0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341d380 [0x7fff7dda5f00]>{valid = Yes, port = 11663, source = 0x7f929341faf0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	238 : <CFRunLoopSource 0x7f9293522590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293522500 [0x7fff7dda5f00]>{valid = Yes, port = 12a03, source = 0x7f9293522590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	239 : <CFRunLoopSource 0x7f929342f7f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293432070 [0x7fff7dda5f00]>{valid = Yes, port = 1de6b, source = 0x7f929342f7f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	240 : <CFRunLoopSource 0x7f929362ed60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293631c00 [0x7fff7dda5f00]>{valid = Yes, port = 1cfb7, source = 0x7f929362ed60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	243 : <CFRunLoopSource 0x7f9293521560 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293513fa0 [0x7fff7dda5f00]>{valid = Yes, port = 11767, source = 0x7f9293521560, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	245 : <CFRunLoopSource 0x7f92935273b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293527320 [0x7fff7dda5f00]>{valid = Yes, port = 17b6b, source = 0x7f92935273b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	246 : <CFRunLoopSource 0x7f9293623f00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293627090 [0x7fff7dda5f00]>{valid = Yes, port = 6207, source = 0x7f9293623f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	247 : <CFRunLoopSource 0x7f9293508bb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293508b20 [0x7fff7dda5f00]>{valid = Yes, port = 6303, source = 0x7f9293508bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	248 : <CFRunLoopSource 0x7f9293428250 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934281c0 [0x7fff7dda5f00]>{valid = Yes, port = 15d07, source = 0x7f9293428250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	249 : <CFRunLoopSource 0x7f929362f9d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293618be0 [0x7fff7dda5f00]>{valid = Yes, port = 196e3, source = 0x7f929362f9d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	250 : <CFRunLoopSource 0x7f92937135b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293712950 [0x7fff7dda5f00]>{valid = Yes, port = 19bcb, source = 0x7f92937135b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+}
+,
+	observers = (null),
+	timers = (null),
+	currently 447264906 (135017880088595) / soft deadline in: 1.84466091e+10 sec (@ -1) / hard deadline in: 1.84466091e+10 sec (@ -1)
+},
+
+}
+}
+
+Plug-in thread :
+
+<CFRunLoop 0x7f9293503850 [0x7fff7dda5f00]>{wakeup port = 0x2203, stopped = false, ignoreWakeUps = false, 
+current mode = kCFRunLoopDefaultMode,
+common modes = <CFBasicHash 0x7f9293500bc0 [0x7fff7dda5f00]>{type = mutable set, count = 1,
+entries =>
+	2 : <CFString 0x7fff7dd8bd00 [0x7fff7dda5f00]>{contents = "kCFRunLoopDefaultMode"}
+}
+,
+common mode items = <CFBasicHash 0x7f9293409430 [0x7fff7dda5f00]>{type = mutable set, count = 3,
+entries =>
+	0 : <CFRunLoopSource 0x7f9293507f10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f929361f7d0, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f929361f6a0>}}
+	1 : <CFRunLoopSource 0x7f929340f850 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f929340f0b0, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f929340ee90>}}
+	2 : <CFRunLoopSource 0x7f9293616dd0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293616d00, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f9293614da0>}}
+}
+,
+modes = <CFBasicHash 0x7f9293500c00 [0x7fff7dda5f00]>{type = mutable set, count = 1,
+entries =>
+	2 : <CFRunLoopMode 0x7f9293503900 [0x7fff7dda5f00]>{name = kCFRunLoopDefaultMode, port set = 0x2303, queue = 0x7f9293503370, source = 0x7f92935039d0 (not fired), timer port = 0x2503, 
+	sources0 = <CFBasicHash 0x7f9293503bc0 [0x7fff7dda5f00]>{type = mutable set, count = 15,
+entries =>
+	4 : <CFRunLoopSource 0x7f92936134f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFSocket 0x7f92936133d0 [0x7fff7dda5f00]>{valid = Yes, type = 3, socket = 4, socket set count = 1,
+    callback types = 0x1, callout = ??? (0x10df3f020), source = 0x7f92936134f0,
+    run loops = <CFArray 0x7f929351da60 [0x7fff7dda5f00]>{type = mutable-small, count = 1, values = (
+	0 : <0x7f9293503850>
+)},
+    context = <kernel event socket>}}
+	5 : <CFRunLoopSource 0x7f929340b790 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293508a20, callout = 0x10df4884a, context = <SCDynamicStore context 0x0>}}
+	8 : <CFRunLoopSource 0x7f9293411a50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293410ba0, callout = 0x10e893962, context = <SCDynamicStore context 0x0>}}
+	10 : <CFRunLoopSource 0x7f9293504cb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f929340dc60, callout = 0x10df543d1, context = <SCDynamicStore context 0x0>}}
+	11 : <CFRunLoopSource 0x7f929340e0e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f929350c5a0, callout = 0x10df55349, context = <SCDynamicStore context 0x0>}}
+	12 : <CFRunLoopSource 0x7f929340f850 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f929340f0b0, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f929340ee90>}}
+	13 : <CFRunLoopSource 0x7f9293512bd0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293622570, callout = 0x10dfcba74, context = <SCDynamicStore context 0x0>}}
+	14 : <CFRunLoopSource 0x7f9293615b10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource context>{version = 0, info = 0x7f9293613040, callout = ??? (0x10e8a2726)}}
+	16 : <CFRunLoopSource 0x7f9293616dd0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293616d00, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f9293614da0>}}
+	17 : <CFRunLoopSource 0x7f9293507f10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f929361f7d0, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f929361f6a0>}}
+	18 : <CFRunLoopSource 0x7f9293704f30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293408bd0, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f9293614c30>}}
+	19 : <CFRunLoopSource 0x7f92937047b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293613730, callout = 0x10df57a28, context = <SCDynamicStore context 0x0>}}
+	20 : <CFRunLoopSource 0x7f92934104d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <SCDynamicStore RLS> {store = 0x7f9293624390, callout = 0x7fff99792570, context = <SCDynamicStore context 0x7f92935139e0>}}
+	21 : <CFRunLoopSource 0x7f9293530f80 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFSocket 0x7f9293520440 [0x7fff7dda5f00]>{valid = Yes, type = 3, socket = 15, socket set count = 1,
+    callback types = 0x1, callout = ??? (0x10e88e384), source = 0x7f9293530f80,
+    run loops = <CFArray 0x7f929351d530 [0x7fff7dda5f00]>{type = mutable-small, count = 1, values = (
+	0 : <0x7f9293503850>
+)},
+    context = <CFSocket context 0x7f9293525bb0>}}
+	22 : <CFRunLoopSource 0x7f9293519480 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFRunLoopSource context>{version = 0, info = 0x7f92935192f0, callout = ??? (0x10e8a2726)}}
+}
+,
+	sources1 = <CFBasicHash 0x7f9293503c00 [0x7fff7dda5f00]>{type = mutable set, count = 18,
+entries =>
+	1 : <CFRunLoopSource 0x7f92934096a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293408fc0 [0x7fff7dda5f00]>{valid = Yes, port = 480f, source = 0x7f92934096a0, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293616d00}}}
+	2 : <CFRunLoopSource 0x7f9293513920 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293511700 [0x7fff7dda5f00]>{valid = Yes, port = 7347, source = 0x7f9293513920, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293622570}}}
+	5 : <CFRunLoopSource 0x7f9293614590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293613d20 [0x7fff7dda5f00]>{valid = Yes, port = 430b, source = 0x7f9293614590, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293613730}}}
+	6 : <CFRunLoopSource 0x7f929340eda0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340ebe0 [0x7fff7dda5f00]>{valid = Yes, port = 6b07, source = 0x7f929340eda0, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f929350c5a0}}}
+	7 : <CFRunLoopSource 0x7f9293502f60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293502e30 [0x7fff7dda5f00]>{valid = Yes, port = 2003, source = 0x7f9293502f60, callout = childrenReaped (0x7fff9978faec), context = <SIGCHLD MP>}}
+	8 : <CFRunLoopSource 0x7f9293410950 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293410770 [0x7fff7dda5f00]>{valid = Yes, port = 7447, source = 0x7f9293410950, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293624390}}}
+	9 : <CFRunLoopSource 0x7f9293508180 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936201b0 [0x7fff7dda5f00]>{valid = Yes, port = 5e03, source = 0x7f9293508180, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f929361f7d0}}}
+	10 : <CFRunLoopSource 0x7f9293411120 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929361f090 [0x7fff7dda5f00]>{valid = Yes, port = 4e33, source = 0x7f9293411120, callout = server_handle_request (0x10dfcc52c), context = <CFMachPort context 0x0>}}
+	11 : <CFRunLoopSource 0x7f929340fe00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340fbc0 [0x7fff7dda5f00]>{valid = Yes, port = 713f, source = 0x7f929340fe00, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f929340f0b0}}}
+	12 : <CFRunLoopSource 0x7f929350bf20 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929350bfe0 [0x7fff7dda5f00]>{valid = Yes, port = 640b, source = 0x7f929350bf20, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293508a20}}}
+	13 : <CFRunLoopSource 0x7f929350ce70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929350cb00 [0x7fff7dda5f00]>{valid = Yes, port = 6d07, source = 0x7f929350ce70, callout = IODispatchCalloutFromCFMessage (0x7fff99fb58c5), context = <CFMachPort context 0x7f929350c710>}}
+	14 : <CFRunLoopSource 0x7f929340d6e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = -1, context = <CFMachPort 0x7f92935099d0 [0x7fff7dda5f00]>{valid = Yes, port = 651f, source = 0x7f929340d6e0, callout = ??? (0x10df4572a), context = <CFMachPort context 0x0>}}
+	15 : <CFRunLoopSource 0x7f929350c4b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929350c2b0 [0x7fff7dda5f00]>{valid = Yes, port = 6047, source = 0x7f929350c4b0, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f929340dc60}}}
+	16 : <CFRunLoopSource 0x7f9293412fb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293411c60 [0x7fff7dda5f00]>{valid = Yes, port = 842f, source = 0x7f9293412fb0, callout = iopm_mach_port_callback (0x7fff99fd2b76), context = <CFMachPort context 0x7f9293519620>}}
+	18 : <CFRunLoopSource 0x7f929370bd90 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293712df0 [0x7fff7dda5f00]>{valid = Yes, port = 15957, source = 0x7f929370bd90, callout = server_handle_request (0x10dfcc52c), context = <CFMachPort context 0x0>}}
+	19 : <CFRunLoopSource 0x7f9293705350 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293705010 [0x7fff7dda5f00]>{valid = Yes, port = 4513, source = 0x7f9293705350, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293408bd0}}}
+	20 : <CFRunLoopSource 0x7f9293517f70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351a080 [0x7fff7dda5f00]>{valid = Yes, port = 8803, source = 0x7f9293517f70, callout = ??? (0x10e89a38e), context = <CFMachPort context 0x0>}}
+	21 : <CFRunLoopSource 0x7f9293518070 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293512f30 [0x7fff7dda5f00]>{valid = Yes, port = 7903, source = 0x7f9293518070, callout = rlsCallback (0x7fff99791998), context = <SCDynamicStore notification MP> {store = 0x7f9293410ba0}}}
+}
+,
+	observers = (
+    "<CFRunLoopObserver 0x7f9293410fa0 [0x7fff7dda5f00]>{valid = Yes, activities = 0xfffffff, repeats = Yes, order = 0, callout = ??? (0x10e895139), context = <CFRunLoopObserver context 0x0>}"
+),
+	timers = <CFArray 0x7f9293518e80 [0x7fff7dda5f00]>{type = mutable-small, count = 1, values = (
+	0 : <CFRunLoopTimer 0x7f9293435200 [0x7fff7dda5f00]>{valid = Yes, firing = No, interval = 0, tolerance = 0, next fire date = 447265155 (248.961322 @ 135266870925697), callout = timer_callout_set (0x10e89a736 / 0x10e89a736) (/System/Library/SystemConfiguration/IPConfiguration.bundle/Contents/MacOS/IPConfiguration), context = <CFRunLoopTimer context 0x7f9293518c80>}
+)},
+	currently 447264906 (135017882320253) / soft deadline in: 248.988605 sec (@ 135266870925697) / hard deadline in: 248.988605 sec (@ 135266870925697)
+},
+
+}
+}
+
+Current sessions :
+	0 : port = 0x1b03
+		<CFMachPort 0x7f9293606eb0 [0x7fff7dda5f00]>{valid = Yes, port = 1b03, source = 0x7f9293606f40, callout = ??? (0x10df336ab), context = <main DynamicStore MP>}
+	1 : port = 0x1f03, name = com.apple.powerd:powerd
+		<CFMachPort 0x7f92936071c0 [0x7fff7dda5f00]>{valid = Yes, port = 1f03, source = 0x7f9293607250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293607250 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936071c0 [0x7fff7dda5f00]>{valid = Yes, port = 1f03, source = 0x7f9293607250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	2 : port = 0x2703, name = com.apple.powerd:com.apple.configd.powermanagement
+		<CFMachPort 0x7f92934003c0 [0x7fff7dda5f00]>{valid = Yes, port = 2703, source = 0x7f9293400470, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293400470 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934003c0 [0x7fff7dda5f00]>{valid = Yes, port = 2703, source = 0x7f9293400470, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	3 : port = 0x3403, name = /usr/libexec/configd:InterfaceNamer
+		<CFMachPort 0x7f92935044c0 [0x7fff7dda5f00]>{valid = Yes, port = 3403, source = 0x7f9293504960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293504960 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92935044c0 [0x7fff7dda5f00]>{valid = Yes, port = 3403, source = 0x7f9293504960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	4 : port = 0x2a03, name = /usr/libexec/opendirectoryd:com.apple.opendirectoryd.trigger
+		<CFMachPort 0x7f9293407280 [0x7fff7dda5f00]>{valid = Yes, port = 2a03, source = 0x7f9293407310, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293407310 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293407280 [0x7fff7dda5f00]>{valid = Yes, port = 2a03, source = 0x7f9293407310, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	5 : port = 0x3c13, name = /usr/libexec/opendirectoryd:com.apple.opendirectoryd
+		<CFMachPort 0x7f929360fd60 [0x7fff7dda5f00]>{valid = Yes, port = 3c13, source = 0x7f92936117b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936117b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929360fd60 [0x7fff7dda5f00]>{valid = Yes, port = 3c13, source = 0x7f92936117b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	6 : port = 0x410b, name = /usr/libexec/opendirectoryd:com.apple.opendirectoryd.searchpath.publish
+		<CFMachPort 0x7f9293611d60 [0x7fff7dda5f00]>{valid = Yes, port = 410b, source = 0x7f9293611df0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293611df0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293611d60 [0x7fff7dda5f00]>{valid = Yes, port = 410b, source = 0x7f9293611df0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	7 : port = 0x400f, name = /usr/libexec/configd:Kernel Event Monitor plug-in
+		<CFMachPort 0x7f9293703f60 [0x7fff7dda5f00]>{valid = Yes, port = 400f, source = 0x7f929360e590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929360e590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293703f60 [0x7fff7dda5f00]>{valid = Yes, port = 400f, source = 0x7f929360e590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	8 : port = 0x4403, name = /usr/libexec/configd:Link Configuraton plug-in
+		<CFMachPort 0x7f92936139c0 [0x7fff7dda5f00]>{valid = Yes, port = 4403, source = 0x7f9293613a50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293613a50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936139c0 [0x7fff7dda5f00]>{valid = Yes, port = 4403, source = 0x7f9293613a50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	9 : port = 0x4603, name = /usr/libexec/configd:PreferencesMonitor.bundle
+		<CFMachPort 0x7f92936148f0 [0x7fff7dda5f00]>{valid = Yes, port = 4603, source = 0x7f9293614980, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293614980 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936148f0 [0x7fff7dda5f00]>{valid = Yes, port = 4603, source = 0x7f9293614980, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	10 : port = 0x4703, name = /usr/libexec/configd:PreferencesMonitor.bundle
+		<CFMachPort 0x7f9293704970 [0x7fff7dda5f00]>{valid = Yes, port = 4703, source = 0x7f9293704a00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293704a00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293704970 [0x7fff7dda5f00]>{valid = Yes, port = 4703, source = 0x7f9293704a00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	11 : port = 0x4903, name = /usr/libexec/configd:EAPOLControlPrefs
+		<CFMachPort 0x7f9293705570 [0x7fff7dda5f00]>{valid = Yes, port = 4903, source = 0x7f9293705600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293705600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293705570 [0x7fff7dda5f00]>{valid = Yes, port = 4903, source = 0x7f9293705600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	12 : port = 0x5c07, name = /usr/libexec/configd:IPMonitorControlPrefs
+		<CFMachPort 0x7f929361f8a0 [0x7fff7dda5f00]>{valid = Yes, port = 5c07, source = 0x7f929361f930, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929361f930 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929361f8a0 [0x7fff7dda5f00]>{valid = Yes, port = 5c07, source = 0x7f929361f930, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	13 : port = 0x6303, name = /usr/libexec/configd:IPMonitor
+		<CFMachPort 0x7f9293508b20 [0x7fff7dda5f00]>{valid = Yes, port = 6303, source = 0x7f9293508bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293508bb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293508b20 [0x7fff7dda5f00]>{valid = Yes, port = 6303, source = 0x7f9293508bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	14 : port = 0x6a07, name = /usr/libexec/configd:smb-configuration
+		<CFMachPort 0x7f929350c7c0 [0x7fff7dda5f00]>{valid = Yes, port = 6a07, source = 0x7f929350c850, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929350c850 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929350c7c0 [0x7fff7dda5f00]>{valid = Yes, port = 6a07, source = 0x7f929350c850, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	15 : port = 0x6903, name = /usr/libexec/configd:set-hostname
+		<CFMachPort 0x7f929340dde0 [0x7fff7dda5f00]>{valid = Yes, port = 6903, source = 0x7f929340de70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929340de70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340dde0 [0x7fff7dda5f00]>{valid = Yes, port = 6903, source = 0x7f929340de70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	16 : port = 0x7223, name = /usr/libexec/configd:IPConfigurationControlPrefs
+		<CFMachPort 0x7f929340f390 [0x7fff7dda5f00]>{valid = Yes, port = 7223, source = 0x7f929340f420, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929340f420 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340f390 [0x7fff7dda5f00]>{valid = Yes, port = 7223, source = 0x7f929340f420, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	17 : port = 0x702b, name = /usr/libexec/configd:EAPOLController
+		<CFMachPort 0x7f92936216f0 [0x7fff7dda5f00]>{valid = Yes, port = 702b, source = 0x7f92936232c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936232c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936216f0 [0x7fff7dda5f00]>{valid = Yes, port = 702b, source = 0x7f92936232c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	18 : port = 0x7703, name = /usr/libexec/configd:IPConfiguration
+		<CFMachPort 0x7f9293410d80 [0x7fff7dda5f00]>{valid = Yes, port = 7703, source = 0x7f9293410e10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293410e10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293410d80 [0x7fff7dda5f00]>{valid = Yes, port = 7703, source = 0x7f9293410e10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	19 : port = 0x7603, name = /usr/libexec/configd:IPConfiguration.DHCPClient
+		<CFMachPort 0x7f929340e360 [0x7fff7dda5f00]>{valid = Yes, port = 7603, source = 0x7f9293410130, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293410130 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340e360 [0x7fff7dda5f00]>{valid = Yes, port = 7603, source = 0x7f9293410130, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	20 : port = 0x7843, name = /usr/libexec/diskarbitrationd:com.apple.DiskArbitration.diskarbitrationd
+		<CFMachPort 0x7f9293411e70 [0x7fff7dda5f00]>{valid = Yes, port = 7843, source = 0x7f9293411f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293411f00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293411e70 [0x7fff7dda5f00]>{valid = Yes, port = 7843, source = 0x7f9293411f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	21 : port = 0x7b03, name = /usr/libexec/UserEventAgent:CaptivePrefs
+		<CFMachPort 0x7f92934121f0 [0x7fff7dda5f00]>{valid = Yes, port = 7b03, source = 0x7f9293412280, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293412280 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934121f0 [0x7fff7dda5f00]>{valid = Yes, port = 7b03, source = 0x7f9293412280, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	22 : port = 0x7d03, name = /usr/libexec/UserEventAgent:Captive
+		<CFMachPort 0x7f9293623450 [0x7fff7dda5f00]>{valid = Yes, port = 7d03, source = 0x7f9293616600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293616600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293623450 [0x7fff7dda5f00]>{valid = Yes, port = 7d03, source = 0x7f9293616600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	23 : port = 0x7f03, name = /usr/libexec/UserEventAgent:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f92936236c0 [0x7fff7dda5f00]>{valid = Yes, port = 7f03, source = 0x7f92936195b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936195b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936236c0 [0x7fff7dda5f00]>{valid = Yes, port = 7f03, source = 0x7f92936195b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	24 : port = 0x8003, name = /usr/libexec/UserEventAgent:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293615590 [0x7fff7dda5f00]>{valid = Yes, port = 8003, source = 0x7f9293615770, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293615770 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615590 [0x7fff7dda5f00]>{valid = Yes, port = 8003, source = 0x7f9293615770, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	25 : port = 0x8703, name = /usr/libexec/configd:SCNCController
+		<CFMachPort 0x7f9293705c80 [0x7fff7dda5f00]>{valid = Yes, port = 8703, source = 0x7f9293705d10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293705d10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293705c80 [0x7fff7dda5f00]>{valid = Yes, port = 8703, source = 0x7f9293705d10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	26 : port = 0x8a03, name = /usr/libexec/configd:app_layer_rules
+		<CFMachPort 0x7f9293615620 [0x7fff7dda5f00]>{valid = Yes, port = 8a03, source = 0x7f9293616420, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293616420 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615620 [0x7fff7dda5f00]>{valid = Yes, port = 8a03, source = 0x7f9293616420, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	27 : port = 0x9207, name = /usr/libexec/configd:PPPController
+		<CFMachPort 0x7f9293417c10 [0x7fff7dda5f00]>{valid = Yes, port = 9207, source = 0x7f9293415320, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293415320 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293417c10 [0x7fff7dda5f00]>{valid = Yes, port = 9207, source = 0x7f9293415320, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	28 : port = 0x8f0f, name = /usr/libexec/opendirectoryd:com.apple.opendirectoryd.plistfile
+		<CFMachPort 0x7f92936193a0 [0x7fff7dda5f00]>{valid = Yes, port = 8f0f, source = 0x7f9293610fe0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293610fe0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936193a0 [0x7fff7dda5f00]>{valid = Yes, port = 8f0f, source = 0x7f9293610fe0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	29 : port = 0x9303, name = /usr/libexec/kextd:com.apple.KernelExtensionServer
+		<CFMachPort 0x7f9293623ce0 [0x7fff7dda5f00]>{valid = Yes, port = 9303, source = 0x7f9293623d70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293623d70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293623ce0 [0x7fff7dda5f00]>{valid = Yes, port = 9303, source = 0x7f9293623d70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	30 : port = 0x91eb, name = /usr/libexec/UserEventAgent:com.apple.WorkstationPlugIn
+		<CFMachPort 0x7f9293415f50 [0x7fff7dda5f00]>{valid = Yes, port = 91eb, source = 0x7f9293400530, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293400530 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293415f50 [0x7fff7dda5f00]>{valid = Yes, port = 91eb, source = 0x7f9293400530, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	31 : port = 0x9517, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f929361aa00 [0x7fff7dda5f00]>{valid = Yes, port = 9517, source = 0x7f929360eda0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929360eda0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929361aa00 [0x7fff7dda5f00]>{valid = Yes, port = 9517, source = 0x7f929360eda0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	32 : port = 0x9903, name = /usr/libexec/UserEventAgent:SCUserEvents
+		<CFMachPort 0x7f9293419b70 [0x7fff7dda5f00]>{valid = Yes, port = 9903, source = 0x7f9293419500, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293419500 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293419b70 [0x7fff7dda5f00]>{valid = Yes, port = 9903, source = 0x7f9293419500, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	33 : port = 0x9b03, name = /usr/libexec/UserEventAgent:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293615240 [0x7fff7dda5f00]>{valid = Yes, port = 9b03, source = 0x7f92934163b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934163b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615240 [0x7fff7dda5f00]>{valid = Yes, port = 9b03, source = 0x7f92934163b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	34 : port = 0x9c03, name = /usr/libexec/UserEventAgent:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293617de0 [0x7fff7dda5f00]>{valid = Yes, port = 9c03, source = 0x7f9293612cf0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293612cf0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293617de0 [0x7fff7dda5f00]>{valid = Yes, port = 9c03, source = 0x7f9293612cf0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	35 : port = 0xa203, name = /usr/libexec/UserEventAgent:SCUserEvents
+		<CFMachPort 0x7f929341c800 [0x7fff7dda5f00]>{valid = Yes, port = a203, source = 0x7f929341c890, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929341c890 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341c800 [0x7fff7dda5f00]>{valid = Yes, port = a203, source = 0x7f929341c890, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	36 : port = 0xa87f, name = com.apple.wifi.WiFiKeychainProxy:WiFiKeychainProxy
+		<CFMachPort 0x7f929342dbd0 [0x7fff7dda5f00]>{valid = Yes, port = a87f, source = 0x7f9293431a50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293431a50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342dbd0 [0x7fff7dda5f00]>{valid = Yes, port = a87f, source = 0x7f9293431a50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	37 : port = 0xa507, name = /usr/libexec/configd:SCNetworkReachability
+		<CFMachPort 0x7f929351b1e0 [0x7fff7dda5f00]>{valid = Yes, port = a507, source = 0x7f9293519690, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293519690 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351b1e0 [0x7fff7dda5f00]>{valid = Yes, port = a507, source = 0x7f9293519690, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	38 : port = 0x124e7, name = com.apple.dashboard.client:com.apple.WebCore
+		<CFMachPort 0x7f9293426dd0 [0x7fff7dda5f00]>{valid = Yes, port = 124e7, source = 0x7f9293424c80, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293424c80 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293426dd0 [0x7fff7dda5f00]>{valid = Yes, port = 124e7, source = 0x7f9293424c80, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	39 : port = 0x3b0b, name = /usr/libexec/opendirectoryd:com.apple.opendirectoryd.modules.SystemCache
+		<CFMachPort 0x7f9293618170 [0x7fff7dda5f00]>{valid = Yes, port = 3b0b, source = 0x7f9293618200, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293618200 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293618170 [0x7fff7dda5f00]>{valid = Yes, port = 3b0b, source = 0x7f9293618200, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	40 : port = 0xd49f, name = com.apple.identityservicesd:com.apple.IDSAppleRegistrationController
+		<CFMachPort 0x7f929362c500 [0x7fff7dda5f00]>{valid = Yes, port = d49f, source = 0x7f9293618410, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293618410 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362c500 [0x7fff7dda5f00]>{valid = Yes, port = d49f, source = 0x7f9293618410, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	41 : port = 0xb013, name = /usr/sbin/mDNSResponder:mDNSResponder:WatchForNetworkChanges
+		<CFMachPort 0x7f9293411270 [0x7fff7dda5f00]>{valid = Yes, port = b013, source = 0x7f9293415fe0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293415fe0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293411270 [0x7fff7dda5f00]>{valid = Yes, port = b013, source = 0x7f9293415fe0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	42 : port = 0xb207, name = /usr/libexec/autofsd:(null)
+		<CFMachPort 0x7f9293618ed0 [0x7fff7dda5f00]>{valid = Yes, port = b207, source = 0x7f9293618f60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293618f60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293618ed0 [0x7fff7dda5f00]>{valid = Yes, port = b207, source = 0x7f9293618f60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	43 : port = 0xb303, name = /usr/libexec/autofsd:(null)
+		<CFMachPort 0x7f929341e100 [0x7fff7dda5f00]>{valid = Yes, port = b303, source = 0x7f929341e190, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929341e190 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341e100 [0x7fff7dda5f00]>{valid = Yes, port = b303, source = 0x7f929341e190, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	44 : port = 0xacfb, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:ATSServer
+		<CFMachPort 0x7f9293523480 [0x7fff7dda5f00]>{valid = Yes, port = acfb, source = 0x7f9293523510, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293523510 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293523480 [0x7fff7dda5f00]>{valid = Yes, port = acfb, source = 0x7f9293523510, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	45 : port = 0xbfd3, name = com.google.Chrome:com.apple.mail
+		<CFMachPort 0x7f929362be50 [0x7fff7dda5f00]>{valid = Yes, port = bfd3, source = 0x7f9293630ba0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293630ba0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362be50 [0x7fff7dda5f00]>{valid = Yes, port = bfd3, source = 0x7f9293630ba0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	46 : port = 0x125d3, name = com.apple.mail:com.apple.WebCore
+		<CFMachPort 0x7f9293518ee0 [0x7fff7dda5f00]>{valid = Yes, port = 125d3, source = 0x7f9293521800, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293521800 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293518ee0 [0x7fff7dda5f00]>{valid = Yes, port = 125d3, source = 0x7f9293521800, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	47 : port = 0x19ceb, name = com.apple.sharingd:com.apple.mail
+		<CFMachPort 0x7f9293710f20 [0x7fff7dda5f00]>{valid = Yes, port = 19ceb, source = 0x7f9293711da0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293711da0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293710f20 [0x7fff7dda5f00]>{valid = Yes, port = 19ceb, source = 0x7f9293711da0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	48 : port = 0x194d7, name = com.apple.CalendarAgent:com.apple.mail
+		<CFMachPort 0x7f92935280c0 [0x7fff7dda5f00]>{valid = Yes, port = 194d7, source = 0x7f92935212a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92935212a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92935280c0 [0x7fff7dda5f00]>{valid = Yes, port = 194d7, source = 0x7f92935212a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	49 : port = 0xb81f, name = com.apple.Safari:watchForComputerNameChanges
+		<CFMachPort 0x7f9293615ce0 [0x7fff7dda5f00]>{valid = Yes, port = b81f, source = 0x7f92936325f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936325f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615ce0 [0x7fff7dda5f00]>{valid = Yes, port = b81f, source = 0x7f92936325f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	50 : port = 0x18903, name = com.apple.mail:com.apple.mail
+		<CFMachPort 0x7f929351cad0 [0x7fff7dda5f00]>{valid = Yes, port = 18903, source = 0x7f92935276e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92935276e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351cad0 [0x7fff7dda5f00]>{valid = Yes, port = 18903, source = 0x7f92935276e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	51 : port = 0xdd03, name = com.apple.airport.airportd:AirPort plug-in
+		<CFMachPort 0x7f929341c6d0 [0x7fff7dda5f00]>{valid = Yes, port = dd03, source = 0x7f929341c3f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929341c3f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341c6d0 [0x7fff7dda5f00]>{valid = Yes, port = dd03, source = 0x7f929341c3f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	52 : port = 0x18d2f, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f92937087c0 [0x7fff7dda5f00]>{valid = Yes, port = 18d2f, source = 0x7f9293709180, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293709180 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937087c0 [0x7fff7dda5f00]>{valid = Yes, port = 18d2f, source = 0x7f9293709180, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	53 : port = 0xde03, name = com.apple.airport.airportd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f92936257a0 [0x7fff7dda5f00]>{valid = Yes, port = de03, source = 0x7f9293625830, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293625830 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936257a0 [0x7fff7dda5f00]>{valid = Yes, port = de03, source = 0x7f9293625830, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	54 : port = 0xe003, name = com.apple.airport.airportd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293626310 [0x7fff7dda5f00]>{valid = Yes, port = e003, source = 0x7f92936263a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936263a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293626310 [0x7fff7dda5f00]>{valid = Yes, port = e003, source = 0x7f92936263a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	55 : port = 0xe103, name = com.apple.airport.airportd:AirPort plug-in
+		<CFMachPort 0x7f9293626670 [0x7fff7dda5f00]>{valid = Yes, port = e103, source = 0x7f9293626700, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293626700 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293626670 [0x7fff7dda5f00]>{valid = Yes, port = e103, source = 0x7f9293626700, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	56 : port = 0xe70b, name = com.apple.locationd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f92937077a0 [0x7fff7dda5f00]>{valid = Yes, port = e70b, source = 0x7f9293709480, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293709480 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937077a0 [0x7fff7dda5f00]>{valid = Yes, port = e70b, source = 0x7f9293709480, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	57 : port = 0xea07, name = com.apple.locationd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293709ca0 [0x7fff7dda5f00]>{valid = Yes, port = ea07, source = 0x7f9293709d30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293709d30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293709ca0 [0x7fff7dda5f00]>{valid = Yes, port = ea07, source = 0x7f9293709d30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	58 : port = 0xe873, name = com.apple.airport.airportd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293625c10 [0x7fff7dda5f00]>{valid = Yes, port = e873, source = 0x7f92936192e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936192e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293625c10 [0x7fff7dda5f00]>{valid = Yes, port = e873, source = 0x7f92936192e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	59 : port = 0xec07, name = com.apple.airport.airportd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293709650 [0x7fff7dda5f00]>{valid = Yes, port = ec07, source = 0x7f92937096e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92937096e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293709650 [0x7fff7dda5f00]>{valid = Yes, port = ec07, source = 0x7f92937096e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	60 : port = 0xeba3, name = com.apple.airport.airportd:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929370a2f0 [0x7fff7dda5f00]>{valid = Yes, port = eba3, source = 0x7f929370a570, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370a570 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370a2f0 [0x7fff7dda5f00]>{valid = Yes, port = eba3, source = 0x7f929370a570, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	61 : port = 0xf103, name = com.apple.loginwindow:com.apple.loginwindow.SCDisconnectCallback
+		<CFMachPort 0x7f9293420960 [0x7fff7dda5f00]>{valid = Yes, port = f103, source = 0x7f92934209f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934209f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293420960 [0x7fff7dda5f00]>{valid = Yes, port = f103, source = 0x7f92934209f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	62 : port = 0x12303, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f9293428090 [0x7fff7dda5f00]>{valid = Yes, port = 12303, source = 0x7f929341d690, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929341d690 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293428090 [0x7fff7dda5f00]>{valid = Yes, port = 12303, source = 0x7f929341d690, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	63 : port = 0xf703, name = com.apple.loginwindow:ALSPlugin
+		<CFMachPort 0x7f9293626e30 [0x7fff7dda5f00]>{valid = Yes, port = f703, source = 0x7f9293625d40, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293625d40 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293626e30 [0x7fff7dda5f00]>{valid = Yes, port = f703, source = 0x7f9293625d40, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	64 : port = 0xefeb, name = com.apple.loginwindow:(null)
+		<CFMachPort 0x7f9293420b80 [0x7fff7dda5f00]>{valid = Yes, port = efeb, source = 0x7f9293422010, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293422010 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293420b80 [0x7fff7dda5f00]>{valid = Yes, port = efeb, source = 0x7f9293422010, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	65 : port = 0x1d627, name = /System/Library/SystemConfiguration/EAPOLController.bundle/Contents/Resources/eapolclient:EAPOLControlPrefs
+		<CFMachPort 0x7f9293714c80 [0x7fff7dda5f00]>{valid = Yes, port = 1d627, source = 0x7f929370c600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370c600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293714c80 [0x7fff7dda5f00]>{valid = Yes, port = 1d627, source = 0x7f929370c600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	66 : port = 0x10f4f, name = com.google.Chrome:com.apple.configd.powermanagement
+		<CFMachPort 0x7f9293630110 [0x7fff7dda5f00]>{valid = Yes, port = 10f4f, source = 0x7f9293627660, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293627660 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293630110 [0x7fff7dda5f00]>{valid = Yes, port = 10f4f, source = 0x7f9293627660, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	67 : port = 0x13feb, name = com.apple.inputmethod.SCIM:com.apple.mail
+		<CFMachPort 0x7f929370c130 [0x7fff7dda5f00]>{valid = Yes, port = 13feb, source = 0x7f929370f990, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370f990 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370c130 [0x7fff7dda5f00]>{valid = Yes, port = 13feb, source = 0x7f929370f990, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	68 : port = 0x1570f, name = com.apple.mail:com.apple.mail
+		<CFMachPort 0x7f92934270b0 [0x7fff7dda5f00]>{valid = Yes, port = 1570f, source = 0x7f9293427140, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293427140 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934270b0 [0x7fff7dda5f00]>{valid = Yes, port = 1570f, source = 0x7f9293427140, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	69 : port = 0xff07, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f9293710dd0 [0x7fff7dda5f00]>{valid = Yes, port = ff07, source = 0x7f929370e500, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370e500 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293710dd0 [0x7fff7dda5f00]>{valid = Yes, port = ff07, source = 0x7f929370e500, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	70 : port = 0xfd07, name = com.apple.finder:watchForComputerNameChanges
+		<CFMachPort 0x7f929362cb00 [0x7fff7dda5f00]>{valid = Yes, port = fd07, source = 0x7f92936298d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92936298d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362cb00 [0x7fff7dda5f00]>{valid = Yes, port = fd07, source = 0x7f92936298d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	71 : port = 0x1d433, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f929352e500 [0x7fff7dda5f00]>{valid = Yes, port = 1d433, source = 0x7f929352de80, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929352de80 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352e500 [0x7fff7dda5f00]>{valid = Yes, port = 1d433, source = 0x7f929352de80, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	72 : port = 0x10783, name = /opt/cisco/anyconnect/bin/vpnagentd:com.cisco.anyconnect.vpnagentd
+		<CFMachPort 0x7f9293709b10 [0x7fff7dda5f00]>{valid = Yes, port = 10783, source = 0x7f9293709960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293709960 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293709b10 [0x7fff7dda5f00]>{valid = Yes, port = 10783, source = 0x7f9293709960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	73 : port = 0x1a45b, name = com.apple.iWork.Pages:watchForComputerNameChanges
+		<CFMachPort 0x7f929342c5d0 [0x7fff7dda5f00]>{valid = Yes, port = 1a45b, source = 0x7f92934238b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934238b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342c5d0 [0x7fff7dda5f00]>{valid = Yes, port = 1a45b, source = 0x7f92934238b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	74 : port = 0x11317, name = com.apple.airport.airportd:airportd
+		<CFMachPort 0x7f9293615c50 [0x7fff7dda5f00]>{valid = Yes, port = 11317, source = 0x7f9293628680, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293628680 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293615c50 [0x7fff7dda5f00]>{valid = Yes, port = 11317, source = 0x7f9293628680, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	75 : port = 0x1180b, name = /opt/cisco/anyconnect/bin/acwebsecagent:com.apple.dts.ConsoleUser
+		<CFMachPort 0x7f929370c3a0 [0x7fff7dda5f00]>{valid = Yes, port = 1180b, source = 0x7f929370d2c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370d2c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370c3a0 [0x7fff7dda5f00]>{valid = Yes, port = 1180b, source = 0x7f929370d2c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	76 : port = 0x110bf, name = com.apple.airport.airportd:AirPort Deamon
+		<CFMachPort 0x7f9293624030 [0x7fff7dda5f00]>{valid = Yes, port = 110bf, source = 0x7f9293629d70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293629d70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293624030 [0x7fff7dda5f00]>{valid = Yes, port = 110bf, source = 0x7f9293629d70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	77 : port = 0x11767, name = /usr/libexec/networkd:networkd.115
+		<CFMachPort 0x7f9293513fa0 [0x7fff7dda5f00]>{valid = Yes, port = 11767, source = 0x7f9293521560, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293521560 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293513fa0 [0x7fff7dda5f00]>{valid = Yes, port = 11767, source = 0x7f9293521560, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	78 : port = 0x18ad7, name = com.apple.Safari:com.apple.mail
+		<CFMachPort 0x7f9293633780 [0x7fff7dda5f00]>{valid = Yes, port = 18ad7, source = 0x7f9293629e30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293629e30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293633780 [0x7fff7dda5f00]>{valid = Yes, port = 18ad7, source = 0x7f9293629e30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	79 : port = 0xc20b, name = com.apple.aps.framework:com.apple.applepushservice.ConsoleUser
+		<CFMachPort 0x7f929342a040 [0x7fff7dda5f00]>{valid = Yes, port = c20b, source = 0x7f9293429910, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293429910 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342a040 [0x7fff7dda5f00]>{valid = Yes, port = c20b, source = 0x7f9293429910, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	80 : port = 0x11f8f, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:com.apple.FontServer
+		<CFMachPort 0x7f9293521730 [0x7fff7dda5f00]>{valid = Yes, port = 11f8f, source = 0x7f9293521990, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293521990 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293521730 [0x7fff7dda5f00]>{valid = Yes, port = 11f8f, source = 0x7f9293521990, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	81 : port = 0x12007, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:com.apple.FontRegistry
+		<CFMachPort 0x7f9293521e80 [0x7fff7dda5f00]>{valid = Yes, port = 12007, source = 0x7f929351c8d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929351c8d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293521e80 [0x7fff7dda5f00]>{valid = Yes, port = 12007, source = 0x7f929351c8d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	82 : port = 0x12203, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:ATSServer
+		<CFMachPort 0x7f929362adf0 [0x7fff7dda5f00]>{valid = Yes, port = 12203, source = 0x7f9293629ba0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293629ba0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362adf0 [0x7fff7dda5f00]>{valid = Yes, port = 12203, source = 0x7f9293629ba0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	83 : port = 0x104ff, name = /System/Library/SystemConfiguration/EAPOLController.bundle/Contents/Resources/eapolclient:EAPOLClient
+		<CFMachPort 0x7f9293712ca0 [0x7fff7dda5f00]>{valid = Yes, port = 104ff, source = 0x7f9293712d30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293712d30 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293712ca0 [0x7fff7dda5f00]>{valid = Yes, port = 104ff, source = 0x7f9293712d30, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	84 : port = 0x1c2e7, name = com.eusoft.freeeudic:com.apple.WebCore
+		<CFMachPort 0x7f9293420dc0 [0x7fff7dda5f00]>{valid = Yes, port = 1c2e7, source = 0x7f9293427fa0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293427fa0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293420dc0 [0x7fff7dda5f00]>{valid = Yes, port = 1c2e7, source = 0x7f9293427fa0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	85 : port = 0x12a03, name = com.apple.ubd:ubd.monitor_computer_name
+		<CFMachPort 0x7f9293522500 [0x7fff7dda5f00]>{valid = Yes, port = 12a03, source = 0x7f9293522590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293522590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293522500 [0x7fff7dda5f00]>{valid = Yes, port = 12a03, source = 0x7f9293522590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	86 : port = 0xc973, name = com.apple.loginwindow:TISLogoutNotification
+		<CFMachPort 0x7f9293627460 [0x7fff7dda5f00]>{valid = Yes, port = c973, source = 0x7f9293625ed0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293625ed0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293627460 [0x7fff7dda5f00]>{valid = Yes, port = c973, source = 0x7f9293625ed0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	87 : port = 0x13a4f, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f9293635630 [0x7fff7dda5f00]>{valid = Yes, port = 13a4f, source = 0x7f929362ea70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362ea70 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293635630 [0x7fff7dda5f00]>{valid = Yes, port = 13a4f, source = 0x7f929362ea70, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	88 : port = 0x4b07, name = com.apple.systemuiserver:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929351d080 [0x7fff7dda5f00]>{valid = Yes, port = 4b07, source = 0x7f929351d110, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929351d110 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351d080 [0x7fff7dda5f00]>{valid = Yes, port = 4b07, source = 0x7f929351d110, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	89 : port = 0x6207, name = com.apple.systemuiserver:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f9293627090 [0x7fff7dda5f00]>{valid = Yes, port = 6207, source = 0x7f9293623f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293623f00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293627090 [0x7fff7dda5f00]>{valid = Yes, port = 6207, source = 0x7f9293623f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	90 : port = 0xcdc7, name = com.apple.systemuiserver:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929342ae80 [0x7fff7dda5f00]>{valid = Yes, port = cdc7, source = 0x7f929342af10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342af10 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342ae80 [0x7fff7dda5f00]>{valid = Yes, port = cdc7, source = 0x7f929342af10, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	91 : port = 0x12d03, name = com.apple.systemuiserver:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929342b3c0 [0x7fff7dda5f00]>{valid = Yes, port = 12d03, source = 0x7f929342b450, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342b450 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342b3c0 [0x7fff7dda5f00]>{valid = Yes, port = 12d03, source = 0x7f929342b450, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	92 : port = 0x12f03, name = com.apple.systemuiserver:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929351df60 [0x7fff7dda5f00]>{valid = Yes, port = 12f03, source = 0x7f929351dff0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929351dff0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929351df60 [0x7fff7dda5f00]>{valid = Yes, port = 12f03, source = 0x7f929351dff0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	93 : port = 0x1350f, name = com.apple.imagent:com.apple.messagingagent
+		<CFMachPort 0x7f9293422ee0 [0x7fff7dda5f00]>{valid = Yes, port = 1350f, source = 0x7f9293423280, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293423280 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293422ee0 [0x7fff7dda5f00]>{valid = Yes, port = 1350f, source = 0x7f9293423280, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	94 : port = 0x14003, name = /usr/libexec/UserEventAgent:BTMMPortInUseAgent
+		<CFMachPort 0x7f92934242f0 [0x7fff7dda5f00]>{valid = Yes, port = 14003, source = 0x7f92934240d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934240d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934242f0 [0x7fff7dda5f00]>{valid = Yes, port = 14003, source = 0x7f92934240d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	95 : port = 0x14203, name = com.apple.CalendarAgent:com.apple.mail
+		<CFMachPort 0x7f92934248d0 [0x7fff7dda5f00]>{valid = Yes, port = 14203, source = 0x7f9293424960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293424960 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934248d0 [0x7fff7dda5f00]>{valid = Yes, port = 14203, source = 0x7f9293424960, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	96 : port = 0x14403, name = /usr/libexec/UserEventAgent:bluetoothFramework
+		<CFMachPort 0x7f929362b980 [0x7fff7dda5f00]>{valid = Yes, port = 14403, source = 0x7f929362b670, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362b670 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362b980 [0x7fff7dda5f00]>{valid = Yes, port = 14403, source = 0x7f929362b670, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	97 : port = 0x14603, name = /usr/libexec/UserEventAgent:CaptivePrefs
+		<CFMachPort 0x7f9293624e70 [0x7fff7dda5f00]>{valid = Yes, port = 14603, source = 0x7f9293624f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293624f00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293624e70 [0x7fff7dda5f00]>{valid = Yes, port = 14603, source = 0x7f9293624f00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	98 : port = 0x14803, name = /usr/libexec/UserEventAgent:EAPOLMonitor
+		<CFMachPort 0x7f9293523d90 [0x7fff7dda5f00]>{valid = Yes, port = 14803, source = 0x7f92935244f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92935244f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293523d90 [0x7fff7dda5f00]>{valid = Yes, port = 14803, source = 0x7f92935244f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	99 : port = 0x14a03, name = /usr/libexec/UserEventAgent:EAPOLControlPrefs
+		<CFMachPort 0x7f929340b370 [0x7fff7dda5f00]>{valid = Yes, port = 14a03, source = 0x7f9293424bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293424bb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929340b370 [0x7fff7dda5f00]>{valid = Yes, port = 14a03, source = 0x7f9293424bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	100 : port = 0x13ee3, name = /usr/libexec/UserEventAgent:SCMonitor
+		<CFMachPort 0x7f9293425550 [0x7fff7dda5f00]>{valid = Yes, port = 13ee3, source = 0x7f92934255e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934255e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293425550 [0x7fff7dda5f00]>{valid = Yes, port = 13ee3, source = 0x7f92934255e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	101 : port = 0x15003, name = /usr/libexec/UserEventAgent:SCUserEvents
+		<CFMachPort 0x7f9293425c50 [0x7fff7dda5f00]>{valid = Yes, port = 15003, source = 0x7f9293425ce0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293425ce0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293425c50 [0x7fff7dda5f00]>{valid = Yes, port = 15003, source = 0x7f9293425ce0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	102 : port = 0x1540f, name = com.google.Chrome:org.chromium
+		<CFMachPort 0x7f929362e1c0 [0x7fff7dda5f00]>{valid = Yes, port = 1540f, source = 0x7f929362e250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362e250 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362e1c0 [0x7fff7dda5f00]>{valid = Yes, port = 1540f, source = 0x7f929362e250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	103 : port = 0x15d07, name = com.google.Chrome:org.chromium
+		<CFMachPort 0x7f92934281c0 [0x7fff7dda5f00]>{valid = Yes, port = 15d07, source = 0x7f9293428250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293428250 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934281c0 [0x7fff7dda5f00]>{valid = Yes, port = 15d07, source = 0x7f9293428250, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	104 : port = 0x15f07, name = com.google.Chrome:org.chromium
+		<CFMachPort 0x7f92934237b0 [0x7fff7dda5f00]>{valid = Yes, port = 15f07, source = 0x7f9293428660, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293428660 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934237b0 [0x7fff7dda5f00]>{valid = Yes, port = 15f07, source = 0x7f9293428660, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	105 : port = 0x1c6af, name = com.getdropbox.dropbox:Dropbox
+		<CFMachPort 0x7f9293432150 [0x7fff7dda5f00]>{valid = Yes, port = 1c6af, source = 0x7f929342c100, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342c100 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293432150 [0x7fff7dda5f00]>{valid = Yes, port = 1c6af, source = 0x7f929342c100, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	106 : port = 0x19e77, name = com.apple.TextEdit:com.apple.WebCore
+		<CFMachPort 0x7f929342f9f0 [0x7fff7dda5f00]>{valid = Yes, port = 19e77, source = 0x7f92934293e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934293e0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342f9f0 [0x7fff7dda5f00]>{valid = Yes, port = 19e77, source = 0x7f92934293e0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	107 : port = 0x16c0b, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f92937100d0 [0x7fff7dda5f00]>{valid = Yes, port = 16c0b, source = 0x7f92937105a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92937105a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92937100d0 [0x7fff7dda5f00]>{valid = Yes, port = 16c0b, source = 0x7f92937105a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	108 : port = 0x16d0b, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f929370d6d0 [0x7fff7dda5f00]>{valid = Yes, port = 16d0b, source = 0x7f929370d760, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370d760 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370d6d0 [0x7fff7dda5f00]>{valid = Yes, port = 16d0b, source = 0x7f929370d760, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	109 : port = 0x16e03, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f9293711040 [0x7fff7dda5f00]>{valid = Yes, port = 16e03, source = 0x7f92937110d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92937110d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293711040 [0x7fff7dda5f00]>{valid = Yes, port = 16e03, source = 0x7f92937110d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	110 : port = 0x17003, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f929370f360 [0x7fff7dda5f00]>{valid = Yes, port = 17003, source = 0x7f929370f3f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370f3f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370f360 [0x7fff7dda5f00]>{valid = Yes, port = 17003, source = 0x7f929370f3f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	111 : port = 0x17203, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f929370f660 [0x7fff7dda5f00]>{valid = Yes, port = 17203, source = 0x7f92937113f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92937113f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370f660 [0x7fff7dda5f00]>{valid = Yes, port = 17203, source = 0x7f92937113f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	112 : port = 0x1c8cf, name = com.getdropbox.dropbox:com.apple.WebCore
+		<CFMachPort 0x7f929362d390 [0x7fff7dda5f00]>{valid = Yes, port = 1c8cf, source = 0x7f9293625150, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293625150 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362d390 [0x7fff7dda5f00]>{valid = Yes, port = 1c8cf, source = 0x7f9293625150, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	113 : port = 0x17503, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f9293711b20 [0x7fff7dda5f00]>{valid = Yes, port = 17503, source = 0x7f9293711bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293711bb0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293711b20 [0x7fff7dda5f00]>{valid = Yes, port = 17503, source = 0x7f9293711bb0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	114 : port = 0x17b6b, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f9293527320 [0x7fff7dda5f00]>{valid = Yes, port = 17b6b, source = 0x7f92935273b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92935273b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293527320 [0x7fff7dda5f00]>{valid = Yes, port = 17b6b, source = 0x7f92935273b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	115 : port = 0x13db7, name = com.apple.finder:com.apple.WebCore
+		<CFMachPort 0x7f9293520940 [0x7fff7dda5f00]>{valid = Yes, port = 13db7, source = 0x7f92935287b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92935287b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293520940 [0x7fff7dda5f00]>{valid = Yes, port = 13db7, source = 0x7f92935287b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	116 : port = 0x1be6f, name = /usr/libexec/UserEventAgent:(null)
+		<CFMachPort 0x7f929342d8b0 [0x7fff7dda5f00]>{valid = Yes, port = 1be6f, source = 0x7f929342c940, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342c940 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342d8b0 [0x7fff7dda5f00]>{valid = Yes, port = 1be6f, source = 0x7f929342c940, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	117 : port = 0x11cf7, name = /usr/sbin/netbiosd:com.apple.netbiosd
+		<CFMachPort 0x7f92934321e0 [0x7fff7dda5f00]>{valid = Yes, port = 11cf7, source = 0x7f9293433270, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293433270 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934321e0 [0x7fff7dda5f00]>{valid = Yes, port = 11cf7, source = 0x7f9293433270, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	118 : port = 0x11663, name = com.google.Chrome:watchForComputerNameChanges
+		<CFMachPort 0x7f929341d380 [0x7fff7dda5f00]>{valid = Yes, port = 11663, source = 0x7f929341faf0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929341faf0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341d380 [0x7fff7dda5f00]>{valid = Yes, port = 11663, source = 0x7f929341faf0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	119 : port = 0x19bcb, name = com.apple.ImageCaptureExtension2:ImageCaptureAgent
+		<CFMachPort 0x7f9293712950 [0x7fff7dda5f00]>{valid = Yes, port = 19bcb, source = 0x7f92937135b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92937135b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293712950 [0x7fff7dda5f00]>{valid = Yes, port = 19bcb, source = 0x7f92937135b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	120 : port = 0x1981b, name = com.apple.TextEdit:watchForComputerNameChanges
+		<CFMachPort 0x7f9293527060 [0x7fff7dda5f00]>{valid = Yes, port = 1981b, source = 0x7f9293523080, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293523080 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293527060 [0x7fff7dda5f00]>{valid = Yes, port = 1981b, source = 0x7f9293523080, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	121 : port = 0x1a863, name = com.apple.Safari:com.apple.Safari
+		<CFMachPort 0x7f92934279e0 [0x7fff7dda5f00]>{valid = Yes, port = 1a863, source = 0x7f9293422df0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293422df0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934279e0 [0x7fff7dda5f00]>{valid = Yes, port = 1a863, source = 0x7f9293422df0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	122 : port = 0x17a07, name = /usr/libexec/secd:com.apple.securityd.cloudcircleserver
+		<CFMachPort 0x7f9293430770 [0x7fff7dda5f00]>{valid = Yes, port = 17a07, source = 0x7f9293430ca0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293430ca0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293430770 [0x7fff7dda5f00]>{valid = Yes, port = 17a07, source = 0x7f9293430ca0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	123 : port = 0x1ba3b, name = com.eusoft.freeeudic.LightPeek:com.apple.WebCore
+		<CFMachPort 0x7f9293528dd0 [0x7fff7dda5f00]>{valid = Yes, port = 1ba3b, source = 0x7f92935288b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92935288b0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293528dd0 [0x7fff7dda5f00]>{valid = Yes, port = 1ba3b, source = 0x7f92935288b0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	124 : port = 0x1e1a7, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f9293529060 [0x7fff7dda5f00]>{valid = Yes, port = 1e1a7, source = 0x7f929352e130, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929352e130 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293529060 [0x7fff7dda5f00]>{valid = Yes, port = 1e1a7, source = 0x7f929352e130, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	125 : port = 0x10d87, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f929352d160 [0x7fff7dda5f00]>{valid = Yes, port = 10d87, source = 0x7f929352d920, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929352d920 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352d160 [0x7fff7dda5f00]>{valid = Yes, port = 10d87, source = 0x7f929352d920, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	126 : port = 0x1a567, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f9293710bd0 [0x7fff7dda5f00]>{valid = Yes, port = 1a567, source = 0x7f9293712590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293712590 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293710bd0 [0x7fff7dda5f00]>{valid = Yes, port = 1a567, source = 0x7f9293712590, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	127 : port = 0x1b1eb, name = com.apple.aosnotifyd:com.apple.AOSNotification
+		<CFMachPort 0x7f9293430800 [0x7fff7dda5f00]>{valid = Yes, port = 1b1eb, source = 0x7f9293432600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293432600 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293430800 [0x7fff7dda5f00]>{valid = Yes, port = 1b1eb, source = 0x7f9293432600, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	128 : port = 0x10687, name = com.apple.Notes:com.apple.Notes
+		<CFMachPort 0x7f92934330a0 [0x7fff7dda5f00]>{valid = Yes, port = 10687, source = 0x7f929342e9a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342e9a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92934330a0 [0x7fff7dda5f00]>{valid = Yes, port = 10687, source = 0x7f929342e9a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	129 : port = 0x1ce37, name = com.apple.Notes:com.apple.WebCore
+		<CFMachPort 0x7f9293432a30 [0x7fff7dda5f00]>{valid = Yes, port = 1ce37, source = 0x7f92934331a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f92934331a0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293432a30 [0x7fff7dda5f00]>{valid = Yes, port = 1ce37, source = 0x7f92934331a0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	130 : port = 0x12683, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f9293427b00 [0x7fff7dda5f00]>{valid = Yes, port = 12683, source = 0x7f9293431f50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293431f50 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293427b00 [0x7fff7dda5f00]>{valid = Yes, port = 12683, source = 0x7f9293431f50, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	131 : port = 0x1c04f, name = com.apple.WebKit.WebContent:com.apple.WebCore
+		<CFMachPort 0x7f92936278d0 [0x7fff7dda5f00]>{valid = Yes, port = 1c04f, source = 0x7f9293631780, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293631780 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936278d0 [0x7fff7dda5f00]>{valid = Yes, port = 1c04f, source = 0x7f9293631780, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	132 : port = 0x1de6b, name = /System/Library/CoreServices/Software%20Update.app/Contents/Resources/softwareupdated:com.apple.WebCore
+		<CFMachPort 0x7f9293432070 [0x7fff7dda5f00]>{valid = Yes, port = 1de6b, source = 0x7f929342f7f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342f7f0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293432070 [0x7fff7dda5f00]>{valid = Yes, port = 1de6b, source = 0x7f929342f7f0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	133 : port = 0x1d5e7, name = com.apple.appstore:com.apple.WebCore
+		<CFMachPort 0x7f929370c570 [0x7fff7dda5f00]>{valid = Yes, port = 1d5e7, source = 0x7f929370c6c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929370c6c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929370c570 [0x7fff7dda5f00]>{valid = Yes, port = 1d5e7, source = 0x7f929370c6c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	134 : port = 0x164c7, name = com.apple.wifi.diagnostics:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929352e790 [0x7fff7dda5f00]>{valid = Yes, port = 164c7, source = 0x7f929352fd00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929352fd00 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352e790 [0x7fff7dda5f00]>{valid = Yes, port = 164c7, source = 0x7f929352fd00, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	135 : port = 0x1adf7, name = com.apple.wifi.diagnostics:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f929352ec00 [0x7fff7dda5f00]>{valid = Yes, port = 1adf7, source = 0x7f929352ec90, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929352ec90 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929352ec00 [0x7fff7dda5f00]>{valid = Yes, port = 1adf7, source = 0x7f929352ec90, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	136 : port = 0x13be3, name = com.apple.wifi.diagnostics:Wireless Diagnostics
+		<CFMachPort 0x7f929342eca0 [0x7fff7dda5f00]>{valid = Yes, port = 13be3, source = 0x7f929342d5c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929342d5c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342eca0 [0x7fff7dda5f00]>{valid = Yes, port = 13be3, source = 0x7f929342d5c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	137 : port = 0xd6e3, name = com.apple.wifi.diagnostics:com.apple.framework.CoreWLAN
+		<CFMachPort 0x7f92936256f0 [0x7fff7dda5f00]>{valid = Yes, port = d6e3, source = 0x7f929362f380, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362f380 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f92936256f0 [0x7fff7dda5f00]>{valid = Yes, port = d6e3, source = 0x7f929362f380, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	138 : port = 0x196e3, name = com.apple.wifi.diagnostics:Wireless Diagnostics
+		<CFMachPort 0x7f9293618be0 [0x7fff7dda5f00]>{valid = Yes, port = 196e3, source = 0x7f929362f9d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362f9d0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293618be0 [0x7fff7dda5f00]>{valid = Yes, port = 196e3, source = 0x7f929362f9d0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	139 : port = 0x1b2db, name = /usr/libexec/wdhelper:wdhelper
+		<CFMachPort 0x7f929362cb90 [0x7fff7dda5f00]>{valid = Yes, port = 1b2db, source = 0x7f929362db60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362db60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929362cb90 [0x7fff7dda5f00]>{valid = Yes, port = 1b2db, source = 0x7f929362db60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	140 : port = 0x10127, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:com.apple.FontServer
+		<CFMachPort 0x7f929342c2a0 [0x7fff7dda5f00]>{valid = Yes, port = 10127, source = 0x7f9293421440, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293421440 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929342c2a0 [0x7fff7dda5f00]>{valid = Yes, port = 10127, source = 0x7f9293421440, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	141 : port = 0xfc3b, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:ATSServer
+		<CFMachPort 0x7f9293635350 [0x7fff7dda5f00]>{valid = Yes, port = fc3b, source = 0x7f929363a3c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929363a3c0 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293635350 [0x7fff7dda5f00]>{valid = Yes, port = fc3b, source = 0x7f929363a3c0, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	142 : port = 0x1cfb7, name = /usr/sbin/scutil:scutil
+		<CFMachPort 0x7f9293631c00 [0x7fff7dda5f00]>{valid = Yes, port = 1cfb7, source = 0x7f929362ed60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f929362ed60 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f9293631c00 [0x7fff7dda5f00]>{valid = Yes, port = 1cfb7, source = 0x7f929362ed60, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+	143 : port = 0x1c1d3, name = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd:ATSServer
+		<CFMachPort 0x7f929341fbf0 [0x7fff7dda5f00]>{valid = Yes, port = 1c1d3, source = 0x7f9293434120, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}
+		<CFRunLoopSource 0x7f9293434120 [0x7fff7dda5f00]>{signalled = No, valid = Yes, order = 0, context = <CFMachPort 0x7f929341fbf0 [0x7fff7dda5f00]>{valid = Yes, port = 1c1d3, source = 0x7f9293434120, callout = ??? (0x10df336ab), context = <SCDynamicStore MP>}}
+

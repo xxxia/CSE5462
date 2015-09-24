@@ -1,0 +1,25 @@
+2015-02-19 21:56:59.653484 EST - opendirectoryd (build 339.102.1) launched...
+2015-02-19 21:56:59.654436 EST - Logging level limit changed to 'error'
+2015-02-19 21:56:59.670430 EST - Initialize trigger support
+2015-02-19 21:56:59.689597 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/SystemCache.bundle'
+2015-02-19 21:56:59.699248 EST - Registered node with name '/Active Directory' as hidden
+2015-02-19 21:56:59.699691 EST - Registered node with name '/Configure' as hidden
+2015-02-19 21:56:59.700185 EST - Discovered configuration for node name '/Contacts' at path '/Library/Preferences/OpenDirectory/Configurations//Contacts.plist'
+2015-02-19 21:56:59.700198 EST - Registered node with name '/Contacts'
+2015-02-19 21:56:59.700570 EST - Registered node with name '/LDAPv3' as hidden
+2015-02-19 21:56:59.702568 EST - Registered node with name '/Local' as hidden
+2015-02-19 21:56:59.704333 EST - Registered node with name '/NIS' as hidden
+2015-02-19 21:56:59.704825 EST - Discovered configuration for node name '/Search' at path '/Library/Preferences/OpenDirectory/Configurations//Search.plist'
+2015-02-19 21:56:59.704847 EST - Registered node with name '/Search'
+2015-02-19 21:56:59.706661 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/legacy.bundle'
+2015-02-19 21:56:59.708771 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/search.bundle'
+2015-02-19 21:56:59.711453 EST - '/Search' has registered, loading additional services
+2015-02-19 21:56:59.711464 EST - Initialize augmentation support
+2015-02-19 21:56:59.713936 EST - Successfully registered for Kernel identity service requests
+2015-02-19 21:56:59.713950 EST - Adjusting kernel ID cache (100 -> 250) and membership cache (100 -> 500)
+2015-02-19 21:57:00.039671 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/PlistFile.bundle'
+2015-02-19 21:57:00.041299 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/FDESupport.bundle'
+2015-02-19 21:57:00.045590 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/AppleID.bundle'
+2015-02-19 21:57:00.087825 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/ConfigurationProfiles.bundle'
+2015-02-19 21:57:00.089294 EST - Registered subnode with name '/Local/Default'
+2015-02-19 21:57:03.253968 EST - Loaded bundle at path '/System/Library/OpenDirectory/Modules/ldap.bundle'

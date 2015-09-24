@@ -1,0 +1,99 @@
+# --- Check Connectivity
+
+
+
+# --- Wi-Fi Interface
+	Interface Name		: en0
+	MAC Address		: 48:d7:05:ce:e6:d7
+	Network Name		: osuwireless
+	Active PHY Mode		: 802.11ac
+	Security		: WPA2 Enterprise
+	SSID		: osuwireless
+	BSSID		: 94:b4:0f:ae:06:70
+	Country		: US
+	RSSI		: -53 dBm
+	Noise		: -92 dBm
+	Rate		: 360 Mbps
+	Channel		: 36
+	Channel Width		: 40MHz
+
+
+
+# --- Bluetooth
+	Power State		: Off
+	Paired Devices		: 0
+
+
+
+# --- Wireless Environment
+	2.4 GHz Networks	: 12
+	5 GHz Networks		: 27
+	Current Channel Networks	: 3
+	Recommended 2.4GHz Channels	: [ 6 2 3 4 5 7 8 9 10 ] 
+	Recommended 5GHz Channels	: [ 144 153 165 ] 
+
+
+
+# --- Network Configuration
+	Primary IPv4 Interface	: en0
+	IPv4 Address		: 164.107.225.41
+	IPv4 Router		: 164.107.224.1
+	Primary IPv6 Interface	: None
+	IPv6 Address		: None
+	IPv6 Router		: None
+	DNS Servers		: 128.146.48.7
+				  128.146.1.7
+
+
+
+# --- Debug Log Entries
+03/05/15 11:13:46.2400 	Large preferred networks list count <29>
+
+
+
+# --- Environment Test Cases
+03/05/15 11:13:57.8050 	Crowded Wi-Fi channel detected with on channel 36
+
+
+
+# --- Environment Summary
+03/05/15 11:13:57.8130 	Crowded Wi-Fi Channel
+
+
+
+# --- Configuration Test Cases
+
+
+
+# --- Configuration Summary
+
+
+
+# --- Monitor
+03/05/15 11:14:05.5300 	AutoJoin State Changed : active=Yes
+03/05/15 11:14:05.5490 	AutoJoin State Changed : active=No
+03/05/15 11:14:05.8540 	AutoJoin State Changed : active=Yes
+03/05/15 11:14:05.8770 	AutoJoin State Changed : active=No
+03/05/15 11:14:05.8930 	AutoJoin State Changed : active=Yes
+03/05/15 11:14:05.9060 	AutoJoin State Changed : active=No
+03/05/15 11:14:08.2050 	Link Quality Changed : rssi=-51 dBm, txRate=270 Mbps
+03/05/15 11:14:15.2120 	USER STOPPED MONITORING!!!
+03/05/15 11:14:15.2720 	AutoJoin State Changed : active=Yes
+03/05/15 11:14:15.2950 	AutoJoin State Changed : active=No
+
+
+
+# --- Additional Information
+03/05/15 11:14:25.9280 	
+
+
+
+# --- Router Information
+03/05/15 11:14:29.3530 	
+
+
+
+# --- Create Diagnostics Report
+
+
+

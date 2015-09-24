@@ -1,0 +1,706 @@
+Date/Time:       2015-03-01 00:00:00 -0500
+OS Version:      10.9.5 (Build 13F34)
+Architecture:    x86_64
+Report Version:  18
+
+Event:           powerstats
+Signature:       com.apple.SystemStats.TopPowerEvent
+Start time:      2015-03-01 00:00:00 -0500
+End time:        2015-03-01 00:01:03 -0500
+Duration:        63s
+Steps:           67
+
+Hardware model:  MacBookAir6,2
+Active cpus:     4
+
+
+Powerstats for:  LeagueofLegends
+Microstackshots: 50 samples
+Primary state:   41 samples state 0x1a
+  Binary Images:
+  		<25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC>	
+  com.apple.AppKit	6.9 (1265.21)	<1D31697B-6F33-3239-BACE-5D1361B1F79A>	/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+  com.apple.CoreServices.CarbonCore	1077.17 (1077.17)	<02C72D54-E3D3-32B0-A081-E85A7038489D>	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+  libcompiler_rt.dylib	(35)	<9924DF2E-D80B-3A21-920D-544A4597203F>	/usr/lib/system/libcompiler_rt.dylib
+  com.apple.HIToolbox	2.1.1	<FE3938F3-6338-3C5E-AAB3-47B2F5FAC762>	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+  com.apple.framework.IOKit	2.0.1	<D1308EE0-96AA-3442-A27B-264F58AE12B4>	/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+  libsystem_pthread.dylib	(53.1.4)	<8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C>	/usr/lib/system/libsystem_pthread.dylib
+  libGPUSupportMercury.dylib	(9.6.1)	<4733F91D-0778-3DA3-965E-624DD53D0C9C>	/System/Library/PrivateFrameworks/GPUSupport.framework/Versions/A/Libraries/libGPUSupportMercury.dylib
+  libsystem_m.dylib	(3047.16)	<28E614E8-7802-3E84-960A-AD4721EF10F7>	/usr/lib/system/libsystem_m.dylib
+  libsystem_c.dylib	(997.90.3)	<80D21D3D-1031-314C-B1F0-0B35B977CEFB>	/usr/lib/system/libsystem_c.dylib
+  libsystem_malloc.dylib	(23.10.1)	<CB52555E-0F5B-31E3-A42A-FD4F930E2192>	/usr/lib/system/libsystem_malloc.dylib
+  com.apple.IOAccelerator	98.23 (98.23)	<305E0437-D56C-3D47-8152-C501B1F22E9C>	/System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator
+  libsystem_kernel.dylib	(2422.115.4)	<011434BC-0EFD-35E9-B76D-A22B76DC83DC>	/usr/lib/system/libsystem_kernel.dylib
+  com.apple.CoreFoundation	6.9 (855.17)	<E382BBB6-4F41-3959-ADC7-238BE49A2155>	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+  com.apple.opengl	9.6.1 (9.6.1)	<B8205F16-6435-3062-89C9-2D8FF1799B3C>	/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL
+  GLEngine	(9.6.1)	<6E7FF87C-BDE5-3FAA-9943-050C2FCA956F>	/System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLEngine.bundle/GLEngine
+  libGL.dylib	(9.6.1)	<885E9C1F-11C7-347D-BE10-522A40A46596>	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+
+  27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 26101
+    27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2208744
+      27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9680088
+        27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2436376
+          27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2207415
+            27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2206573
+              27 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2200700
+                26 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2182736
+                  26 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2162975
+                    15 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2159848
+                      6  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5907025
+                        6  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5949351
+                          2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5948589
+                            2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5937973
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5940605
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5971692
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5961683
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9926789
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10777538
+                                        1  885E9C1F-11C7-347D-BE10-522A40A46596 + 2596
+                                          1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 98533
+                                            1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 1042809
+                                              1  4733F91D-0778-3DA3-965E-624DD53D0C9C + 19589
+                                                1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3458988
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5939880
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5971692
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5962696
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5967945
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9926384
+                                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10776017
+                                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10826459
+                                            1  885E9C1F-11C7-347D-BE10-522A40A46596 + 2352
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5947593
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10083948
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10049830
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9822386
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10759601
+                                    1  885E9C1F-11C7-347D-BE10-522A40A46596 + 18253
+                                      1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 772223
+                                        1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 1049760
+                                          1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3972787
+                                            1  4733F91D-0778-3DA3-965E-624DD53D0C9C + 39246
+                                              1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3983314
+                                                1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3985335
+                                                  1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3985797
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5947297
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9926789
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10777538
+                                1  885E9C1F-11C7-347D-BE10-522A40A46596 + 2596
+                                  1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 98902
+                                    1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3442864
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5947893
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5924300
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10179575
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10153305
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9909133
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10777039
+                                      1  885E9C1F-11C7-347D-BE10-522A40A46596 + 18253
+                                        1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 772499
+                                          1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3500057
+                                            1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 4022746
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5948611
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5941949
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10442308
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10398611
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9926427
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10776033
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10826633
+                                        1  885E9C1F-11C7-347D-BE10-522A40A46596 + 16502
+                                          1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 70121
+                      3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5906809
+                        3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10426894
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10429987
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2723283
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9364176
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10429159
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10527934
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10431495
+                      3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5908284
+                        2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7538538
+                          2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7317768
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7320486
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7332053
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7337038
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9919971
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10776725
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10830027
+                                        1  885E9C1F-11C7-347D-BE10-522A40A46596 + 47648
+                                          1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 168371
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7320454
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7329424
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7337038
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9919971
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10776725
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10830312
+                                        1  885E9C1F-11C7-347D-BE10-522A40A46596 + 52975
+                                          1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 248917
+                                            1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 1017967
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7539215
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6513095
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6504220
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 11485315
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 11358412
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 11358184
+                                    1  8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 18348
+                                      1  8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 18657
+                      3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5908214
+                        2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7186375
+                          2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 351208
+                            2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 496363
+                              2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6863823
+                                2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6845753
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6848058
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6771152
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9919971
+                                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10776665
+                                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10775913
+                                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10732680
+                                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10763275
+                                                1  885E9C1F-11C7-347D-BE10-522A40A46596 + 54545
+                                                  1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 613326
+                                                    1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 605281
+                                                      1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 657726
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6848196
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6771152
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9919971
+                                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10777039
+                                          1  885E9C1F-11C7-347D-BE10-522A40A46596 + 18253
+                                            1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 772499
+                                              1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3500057
+                                                1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 4011998
+                                                  1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 4007712
+                                                    1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 4009351
+                                                      1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3449252
+                                                        1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3444329
+                                                          1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3429254
+                                                            1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3444741
+                                                              1  4733F91D-0778-3DA3-965E-624DD53D0C9C + 13211
+                                                                1  305E0437-D56C-3D47-8152-C501B1F22E9C + 5696
+                                                                  1  D1308EE0-96AA-3442-A27B-264F58AE12B4 + 22283
+                                                                    1  D1308EE0-96AA-3442-A27B-264F58AE12B4 + 21583
+                                                                      1  D1308EE0-96AA-3442-A27B-264F58AE12B4 + 440076
+                                                                        1  011434BC-0EFD-35E9-B76D-A22B76DC83DC + 77690
+                                                                          1  <state 0x9a>
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7186531
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9738683
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9719237
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9721458
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9724613
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9909133
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10777039
+                                      1  885E9C1F-11C7-347D-BE10-522A40A46596 + 18253
+                                        1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 772223
+                                          1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 1049760
+                                            1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3972787
+                                              1  4733F91D-0778-3DA3-965E-624DD53D0C9C + 39246
+                                                1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3983314
+                                                  1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3985004
+                    6  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2157757
+                      6  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2712144
+                        2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5578740
+                          2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2723283
+                            2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9364186
+                              2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9363386
+                                2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9389784
+                                  2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9463274
+                                    2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9399529
+                                      2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9386108
+                                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9474607
+                                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8885535
+                                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9474570
+                                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8885511
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7963660
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7976131
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9358280
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 545510
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 196257
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 202599
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 324756
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 212299
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9362854
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9384989
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9645181
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5578557
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8368674
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 487751
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 196043
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 201089
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 307377
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10889899
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10890215
+                    2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2159996
+                      2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5719098
+                        2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5701038
+                          2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5753286
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6598314
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 6578309
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7861354
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7126881
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7088344
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7089674
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 356592
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 353483
+                                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 306772
+                                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10149676
+                                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8949794
+                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2159822
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2156348
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2727899
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9969907
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8936093
+                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2160033
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9949373
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10782318
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9695140
+                            1  1D31697B-6F33-3239-BACE-5D1361B1F79A + 6680801
+                              1  B8205F16-6435-3062-89C9-2D8FF1799B3C + 54267
+                                1  6E7FF87C-BDE5-3FAA-9943-050C2FCA956F + 87440
+                                  1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3449409
+                                    1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3444329
+                                      1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3429254
+                                        1  E98BAE1C-BA6D-36AE-B76C-9FDD40BA1236 + 3444741
+                                          1  4733F91D-0778-3DA3-965E-624DD53D0C9C + 13211
+                                            1  305E0437-D56C-3D47-8152-C501B1F22E9C + 5696
+                                              1  D1308EE0-96AA-3442-A27B-264F58AE12B4 + 22283
+                                                1  D1308EE0-96AA-3442-A27B-264F58AE12B4 + 21583
+                                                  1  D1308EE0-96AA-3442-A27B-264F58AE12B4 + 440076
+                                                    1  011434BC-0EFD-35E9-B76D-A22B76DC83DC + 77690
+                                                      1  <state 0x9a>
+                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2156843
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5719098
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5701038
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 5753286
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7861354
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7126881
+                                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7088344
+                                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 7089674
+                                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 358126
+                                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2713726
+                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 2184267
+                  1  9924DF2E-D80B-3A21-920D-544A4597203F + 11664
+  23 8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 27890
+    23 8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 5253
+      23 8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 5627
+        10 25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8554441
+          8  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10413344
+            8  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10414953
+              7  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10440806
+                6  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10471424
+                  6  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10486935
+                    4  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10490470
+                      2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10499696
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10501786
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8864331
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10502195
+                    2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10490512
+                      2  28E614E8-7802-3E84-960A-AD4721EF10F7 + 30348
+                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10470893
+              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10440034
+                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10439123
+                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10366938
+                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8386717
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9188641
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9222444
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8976912
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8971504
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8973115
+                                1  CB52555E-0F5B-31E3-A42A-FD4F930E2192 + 69444
+                                  1  CB52555E-0F5B-31E3-A42A-FD4F930E2192 + 66907
+                                    1  CB52555E-0F5B-31E3-A42A-FD4F930E2192 + 15210
+                                      1  CB52555E-0F5B-31E3-A42A-FD4F930E2192 + 57305
+          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9041511
+            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 8997268
+              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9018310
+                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 9010075
+                  1  011434BC-0EFD-35E9-B76D-A22B76DC83DC + 96862
+                    1  <state 0x9a>
+          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10413443
+            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 10416163
+        7  C1EB0949-3526-3DE0-B7E0-AF4F501D9F29 + 473993
+          6  C1EB0949-3526-3DE0-B7E0-AF4F501D9F29 + 24604
+            6  80D21D3D-1031-314C-B1F0-0B35B977CEFB + 507490
+              6  011434BC-0EFD-35E9-B76D-A22B76DC83DC + 97142
+                6  <state 0x9a>
+          1  C1EB0949-3526-3DE0-B7E0-AF4F501D9F29 + 24615
+            1  80D21D3D-1031-314C-B1F0-0B35B977CEFB + 72106
+        5  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15907370
+          3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15586339
+            3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15492630
+              3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15922758
+                3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15922970
+                  3  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15921549
+                    2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16051924
+                      2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16076427
+                        2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16070922
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16073699
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16076131
+                              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16068680
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16074035
+                            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16060652
+                    1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16047842
+                      1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16076427
+                        1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16070922
+                          1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 16073802
+          2  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15586366
+            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15590332
+              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15822120
+            1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15587440
+              1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15593032
+                1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15522437
+                  1  25B6B4AA-6661-3ACB-9CF7-D10A48F9E9DC + 15769333
+        1  1D31697B-6F33-3239-BACE-5D1361B1F79A + 1907592
+          1  E382BBB6-4F41-3959-ADC7-238BE49A2155 + 481355
+            1  E382BBB6-4F41-3959-ADC7-238BE49A2155 + 481770
+              1  E382BBB6-4F41-3959-ADC7-238BE49A2155 + 484530
+                1  E382BBB6-4F41-3959-ADC7-238BE49A2155 + 548219
+                  1  E382BBB6-4F41-3959-ADC7-238BE49A2155 + 548373
+                    1  E382BBB6-4F41-3959-ADC7-238BE49A2155 + 548840
+                      1  FE3938F3-6338-3C5E-AAB3-47B2F5FAC762 + 214822
+                        1  FE3938F3-6338-3C5E-AAB3-47B2F5FAC762 + 215209
+                          1  02C72D54-E3D3-32B0-A081-E85A7038489D + 1057338
+
+
+Powerstats for:  LoLPatcher
+Microstackshots: 10 samples
+Primary state:   7 samples state 0x98
+  Binary Images:
+  		<07ECD46C-E4E8-3471-B4E2-EA0C5A4DBA7B>	
+  libsystem_pthread.dylib	(53.1.4)	<8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C>	/usr/lib/system/libsystem_pthread.dylib
+  libsystem_c.dylib	(997.90.3)	<80D21D3D-1031-314C-B1F0-0B35B977CEFB>	/usr/lib/system/libsystem_c.dylib
+  libsystem_kernel.dylib	(2422.115.4)	<011434BC-0EFD-35E9-B76D-A22B76DC83DC>	/usr/lib/system/libsystem_kernel.dylib
+
+  10 8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 27890
+    10 8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 5253
+      10 8B1B7B84-1B5D-32A8-AC0D-1E689E5C8A4C + 5627
+        10 711DDA19-B0BE-3DA0-9A3C-8D364D1AD191 + 41913
+          8 711DDA19-B0BE-3DA0-9A3C-8D364D1AD191 + 23762
+            8 80D21D3D-1031-314C-B1F0-0B35B977CEFB + 507490
+              7 011434BC-0EFD-35E9-B76D-A22B76DC83DC + 97142
+              1 011434BC-0EFD-35E9-B76D-A22B76DC83DC + 103573
+                1 011434BC-0EFD-35E9-B76D-A22B76DC83DC + 1565
+                  1 <state 0x18>
+          2 711DDA19-B0BE-3DA0-9A3C-8D364D1AD191 + 23766
+            2 <state 0x18>
+
+
+Powerstats for:  Google Chrome He
+Microstackshots: 4 samples
+Primary state:   4 samples state 0x18
+  Binary Images:
+  com.google.Chrome.helper	40.0.2214.115 (2214.115)	<588443EA-EA1A-3832-878E-2D92163BBAAE>	/Applications/Google Chrome.app/Contents/Versions/40.0.2214.115/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper
+  com.google.Chrome.framework	40.0.2214.115 (2214.115)	<6481BF69-599C-3E94-9CBF-FB476C7F6DAE>	/Applications/Google Chrome.app/Contents/Versions/40.0.2214.115/Google Chrome Framework.framework/Google Chrome Framework
+  com.apple.Foundation	6.9 (1056.16)	<24349208-3603-3F5D-95CC-B379616FBEF8>	/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+  com.apple.CoreFoundation	6.9 (855.17)	<729BD6DA-1F63-3E72-A148-26F21EBF52BB>	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+
+  4 588443EA-EA1A-3832-878E-2D92163BBAAE + 3876
+    4 588443EA-EA1A-3832-878E-2D92163BBAAE + 3897
+      4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 13298
+        4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6720422
+          4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6722900
+            4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 64059776
+              4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 7135549
+                4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 7223987
+                  4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6843948
+                    4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6845476
+                      4 24349208-3603-3F5D-95CC-B379616FBEF8 + 430444
+                        4 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 458357
+                          4 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 459759
+                            4 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 461922
+                              4 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 521649
+                                4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6844353
+                                  4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 7138367
+                                    4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 7137311
+                                      4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6934340
+                                        4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 11929144
+                                          4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 62754529
+                                            4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 17678060
+                                              4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 17678147
+                                                4 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 63921397
+                                                  2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66600253
+                                                    2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66633003
+                                                      2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66680361
+                                                        2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66633544
+                                                          2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66646306
+                                                            2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66676076
+                                                              2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 38915367
+                                                                2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 38916236
+                                                                  2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 39123758
+                                                                    2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                      2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                        2 ???
+                                                                          2 ???
+                                                                            2 ???
+                                                                              2 ???
+                                                                                2 ???
+                                                                                  2 ???
+                                                                                    2 ???
+                                                                                      2 ???
+                                                                                        2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26160022
+                                                                                          2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26008255
+                                                                                            2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66673474
+                                                                                              2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                                                2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                                  2 ???
+                                                                                                    2 ???
+                                                                                                      2 ???
+                                                                                                        2 ???
+                                                                                                          2 ???
+                                                                                                            2 ???
+                                                                                                              2 ???
+                                                                                                                2 ???
+                                                                                                                  2 ???
+                                                                                                                    2 ???
+                                                                                                                      2 ???
+                                                                                                                        2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26160022
+                                                                                                                          2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26008255
+                                                                                                                            2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66673474
+                                                                                                                              2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                                                                                2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                                                                  2 ???
+                                                                                                                                    2 ???
+                                                                                                                                      2 ???
+                                                                                                                                        2 ???
+                                                                                                                                          2 ???
+                                                                                                                                            2 ???
+                                                                                                                                              2 ???
+                                                                                                                                                2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26160022
+                                                                                                                                                  2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26008255
+                                                                                                                                                    2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66673474
+                                                                                                                                                      2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                                                                                                        2 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                                                                                          2 ???
+                                                                                                                                                            2 ???
+                                                                                                                                                              2 ???
+                                                                                                                                                                2 ???
+                                                                                                                                                                  1 ???
+                                                                                                                                                                    1 ???
+                                                                                                                                                                      1 ???
+                                                                                                                                                                        1 ???
+                                                                                                                                                                          1 ???
+                                                                                                                                                                            1 ???
+                                                                                                                                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26160022
+                                                                                                                                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26008255
+                                                                                                                                                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66673474
+                                                                                                                                                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                                                                                                                                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                                                                                                                        1 ???
+                                                                                                                                                                                          1 ???
+                                                                                                                                                                                            1 ???
+                                                                                                                                                                                              1 ???
+                                                                                                                                                                                                1 ???
+                                                                                                                                                                                                  1 ???
+                                                                                                                                                                                                    1 ???
+                                                                                                                                                                                                      1 ???
+                                                                                                                                                                                                        1 ???
+                                                                                                                                                                                                          1 ???
+                                                                                                                                                                                                            1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 28278747
+                                                                                                                                                                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 28256805
+                                                                                                                                                                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                                                                                                                                                  1 ???
+                                                                                                                                                                                                                    1 ???
+                                                                                                                                                                                                                      1 ???
+                                                                                                                                                                                                                        1 ???
+                                                                                                                                                                                                                          1 ???
+                                                                                                                                                                                                                            1 ???
+                                                                                                                                                                                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26148656
+                                                                                                                                                                                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26171812
+                                                                                                                                                                                                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                                                                                                                                                                    1 ???
+                                                                                                                                                                                                                                      1 ???
+                                                                                                                                                                                                                                        1 ???
+                                                                                                                                                                                                                                          1 ???
+                                                                                                                                                                                                                                            1 ???
+                                                                                                                                                                                                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 28285831
+                                                                                                                                                                                                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26011447
+                                                                                                                                                                                                                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25870072
+                                                                                                                                                                  1 ???
+                                                                                                                                                                    1 ???
+                                                                                                                                                                      1 ???
+                                                                                                                                                                        1 ???
+                                                                                                                                                                          1 ???
+                                                                                                                                                                            1 ???
+                                                                                                                                                                              1 ???
+                                                                                                                                                                                1 ???
+                                                                                                                                                                                  1 ???
+                                                                                                                                                                                    1 ???
+                                                                                                                                                                                      1 ???
+                                                                                                                                                                                        1 ???
+                                                                                                                                                                                          1 ???
+                                                                                                                                                                                            1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27044289
+                                                                                                                                                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 28954168
+                                                                                                                                                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27186651
+                                                                                                                                                                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27191692
+                                                                                                                                                                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27191418
+                                                                                                                                                                                                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26004904
+                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66600032
+                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66631706
+                                                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66680361
+                                                        1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66639093
+                                                          1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66632406
+                                                            1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66646306
+                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66676076
+                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 38915367
+                                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 38916236
+                                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 39123758
+                                                                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                        1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036673
+                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66598734
+                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66665656
+                                                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66678782
+                                                        1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66646306
+                                                          1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66676076
+                                                            1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 38915367
+                                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 38916236
+                                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 39123758
+                                                                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                      1 ???
+                                                                        1 ???
+                                                                          1 ???
+                                                                            1 ???
+                                                                              1 ???
+                                                                                1 ???
+                                                                                  1 ???
+                                                                                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26160022
+                                                                                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 26008255
+                                                                                        1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 66673474
+                                                                                          1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 25941809
+                                                                                            1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 27036670
+                                                                                              1 ???
+                                                                                                1 ???
+                                                                                                  1 ???
+                                                                                                    1 ???
+                                                                                                      1 ???
+                                                                                                        1 ???
+                                                                                                          1 ???
+                                                                                                            1 ???
+                                                                                                              1 ???
+                                                                                                                1 ???
+                                                                                                                  1 ???
+                                                                                                                    1 ???
+                                                                                                                      1 ???
+                                                                                                                        1 ???
+                                                                                                                          1 ???
+                                                                                                                            1 ???
+                                                                                                                              1 ???
+                                                                                                                                1 ???
+                                                                                                                                  1 ???
+
+
+Powerstats for:  mds_stores
+Microstackshots: 1 samples
+Primary state:   1 samples state 0x98
+  Binary Images:
+  mds_stores	(800.28)	<72A62EB9-3E38-380E-9D4A-A20C79484FD0>	/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+  com.apple.spotlight.index	10.7.0 (800.28)	<B86EF12D-CDC3-38D5-B59C-CC78E3B815B3>	/System/Library/PrivateFrameworks/SpotlightIndex.framework/Versions/A/SpotlightIndex
+  libdispatch.dylib	(339.92.1)	<C4E4A18D-3C3B-3C9C-8709-A4270D998DE7>	/usr/lib/system/libdispatch.dylib
+  libsystem_kernel.dylib	(2422.115.4)	<9EDE872E-2A9E-3A78-8E1D-AB790794A098>	/usr/lib/system/libsystem_kernel.dylib
+  libsystem_pthread.dylib	(53.1.4)	<AB498556-B555-310E-9041-F67EC9E00E2C>	/usr/lib/system/libsystem_pthread.dylib
+
+  1 AB498556-B555-310E-9041-F67EC9E00E2C + 24505
+    1 AB498556-B555-310E-9041-F67EC9E00E2C + 12024
+      1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 16759
+        1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 12418
+          1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 4749
+            1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 22408
+              1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 18881
+                1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 13939
+                  1 C4E4A18D-3C3B-3C9C-8709-A4270D998DE7 + 4749
+                    1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 279055
+                      1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 93395
+                        1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 614770
+                          1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 617624
+                            1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 629942
+                              1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 632201
+                                1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 638731
+                                  1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 621329
+                                    1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 700365
+                                      1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 1224554
+                                        1 B86EF12D-CDC3-38D5-B59C-CC78E3B815B3 + 1214178
+                                          1 9EDE872E-2A9E-3A78-8E1D-AB790794A098 + 92514
+
+
+Powerstats for:  WindowServer
+Microstackshots: 1 samples
+Primary state:   1 samples state 0x98
+  Binary Images:
+  WindowServer	(599.35.4)	<12FD01E4-47F8-383B-B407-8A0E4498D7A4>	/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Resources/WindowServer
+  com.apple.CoreGraphics	1.600.0	<C8CBC664-0CD2-3C7D-A301-9B3BA731250C>	/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+  libsystem_kernel.dylib	(2422.115.4)	<9EDE872E-2A9E-3A78-8E1D-AB790794A098>	/usr/lib/system/libsystem_kernel.dylib
+  libdyld.dylib	(239.4)	<7C9EC3B7-DDE3-33FF-953F-4067C743951D>	/usr/lib/system/libdyld.dylib
+
+  1 7C9EC3B7-DDE3-33FF-953F-4067C743951D + 13821
+    1 12FD01E4-47F8-383B-B407-8A0E4498D7A4 + 3990
+      1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 2416438
+        1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 2415447
+          1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 2420987
+            1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 5226136
+              1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 5219232
+                1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 4145863
+                  1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 3059667
+                    1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 5218666
+                      1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 3059667
+                        1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 5225500
+                          1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 1702729
+                            1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 4351057
+                              1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 1703447
+                                1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 5228223
+                                  1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 3059641
+                                    1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 3065896
+                                      1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 4366576
+                                        1 C8CBC664-0CD2-3C7D-A301-9B3BA731250C + 4365910
+                                          1 9EDE872E-2A9E-3A78-8E1D-AB790794A098 + 91938
+
+
+Powerstats for:  Google Chrome
+Microstackshots: 1 samples
+Primary state:   1 samples state 0x38
+  Binary Images:
+  com.google.Chrome	40.0.2214.115 (2214.115)	<D8D03E48-9A68-32F8-B5F0-D707AA3E660A>	/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+  com.google.Chrome.framework	40.0.2214.115 (2214.115)	<6481BF69-599C-3E94-9CBF-FB476C7F6DAE>	/Applications/Google Chrome.app/Contents/Versions/40.0.2214.115/Google Chrome Framework.framework/Google Chrome Framework
+  com.apple.HIToolbox	2.1.1	<A388E773-AE7B-3FD1-8662-A98E6E24EA16>	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+  com.apple.CoreFoundation	6.9 (855.17)	<729BD6DA-1F63-3E72-A148-26F21EBF52BB>	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+  com.apple.AppKit	6.9 (1265.21)	<9DC13B27-841D-3839-93B2-3EDE66157BDE>	/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+
+  1 D8D03E48-9A68-32F8-B5F0-D707AA3E660A + 3876
+    1 D8D03E48-9A68-32F8-B5F0-D707AA3E660A + 3897
+      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 13298
+        1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6720422
+          1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6722900
+            1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 51158295
+              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 51183010
+                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 51173385
+                  1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 774129
+                    1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 7223987
+                      1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6843948
+                        1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6845854
+                          1 9DC13B27-841D-3839-93B2-3EDE66157BDE + 96668
+                            1 9DC13B27-841D-3839-93B2-3EDE66157BDE + 145563
+                              1 9DC13B27-841D-3839-93B2-3EDE66157BDE + 148046
+                                1 A388E773-AE7B-3FD1-8662-A98E6E24EA16 + 189884
+                                  1 A388E773-AE7B-3FD1-8662-A98E6E24EA16 + 190391
+                                    1 A388E773-AE7B-3FD1-8662-A98E6E24EA16 + 190989
+                                      1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 458357
+                                        1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 459759
+                                          1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 461922
+                                            1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 521649
+                                              1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6844421
+                                                1 6481BF69-599C-3E94-9CBF-FB476C7F6DAE + 6844134
+                                                  1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 738437
+                                                    1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 490807
+                                                      1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 407832
+                                                        1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 229721
+                                                          1 729BD6DA-1F63-3E72-A148-26F21EBF52BB + 39452
+
+================================================================
+Rank:            2
+C-State res:     0.0%
+Interrupt Rate:  3162 Hz
+BG QoS Ratio:    1.5 %
+Proc Idle Wkups: 6691
+CPU time:        00:01:32 (147.1%)
+                 00:01:15 (119.1%) 2131 LeagueofLegends
+                 00:00:08 (13.2%) 16 Google Chrome H
+                 00:00:02 (3.5%) 3750 LoLPatcher
+                 00:00:02 (3.3%) 305 kernel_task
+                 00:00:01 (3.0%) 172 com.apple.audio.coreaudiod
+Power:           -19134 mW (-37.7 %/hr)
